@@ -1,14 +1,14 @@
 # ICLR Research Workspace
 
-This repository records a falsification-first research process: the original billiards-inspired discussion, prior novelty audits, the completed control-flip experiment, and the current Pro handoff.
+This repository records a falsification-first research process: the original billiards-inspired discussion, prior novelty audits, the completed control-flip experiment, and the resulting operator-interference pivot.
 
 ## Start here
 
 1. Read [`docs/current/CURRENT_STATUS.md`](docs/current/CURRENT_STATUS.md) for the binding decision.
-2. Read [`experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md`](experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md) for the completed 7,200-generation experiment.
-3. Give [`docs/prompts/PRO_ALGORITHMIC_PROMPTING_AUDIT.md`](docs/prompts/PRO_ALGORITHMIC_PROMPTING_AUDIT.md) to Pro for the next targeted literature and design audit.
+2. Read [`docs/audits/ALGORITHMIC_PROMPTING_NOVELTY_AUDIT.md`](docs/audits/ALGORITHMIC_PROMPTING_NOVELTY_AUDIT.md) for the completed Pro novelty audit and the exact one-day gate.
+3. Read [`experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md`](experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md) for the completed 7,200-generation exploratory experiment.
 
-The original controller-insensitive-planning seed is a **NO-GO**. The only surviving observation is a narrower one: correct algorithmic scaffolding can have non-monotonic, model-dependent effects and substantially harm Qwen3.5-9B on the paired diagnostic. This is a research seed, not yet a paper claim.
+The original controller-insensitive-planning seed is a **NO-GO**, and the broad “algorithmic prompting inversion” interpretation is a **PIVOT** rather than a paper claim. The remaining testable hypothesis is whether a conditionally irrelevant competing operator causally induces wrong-operator execution, with genuinely different signs across independent model families.
 
 ## Repository layout
 
