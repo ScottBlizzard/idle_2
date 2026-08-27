@@ -50,6 +50,10 @@ class BenchmarkTests(unittest.TestCase):
             self.assertEqual(schema["properties"]["nodes"]["minItems"], 4)
             regex = output_regex(record)
             self.assertIn('"final_action"', regex)
+            self.assertIn("[0-9]{1,6}", regex)
+            self.assertIn("[0-9]{0,5}", regex)
+            value_pattern = schema["properties"]["nodes"]["items"]["properties"]["selected_value"]["pattern"]
+            self.assertIn("{1,6}", value_pattern)
 
             active = record["active_controller"]
             active_assignment_a = next(

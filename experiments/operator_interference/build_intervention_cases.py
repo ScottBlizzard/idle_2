@@ -48,7 +48,7 @@ def stage2_prompt(record: dict, table: list[dict]) -> str:
 
 
 def stage2_regex(record: dict) -> str:
-    number = "(-?[0-9]+|-?[0-9]+/[1-9][0-9]*)"
+    number = "(-?[0-9]{1,6}|-?[0-9]{1,6}/[1-9][0-9]{0,5})"
     action_parts = [
         r'\{"action":"' + action + r'","expected_value":"' + number + r'"\}'
         for action in record["action_order"]

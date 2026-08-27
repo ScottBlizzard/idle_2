@@ -208,7 +208,7 @@ def output_schema(record: dict) -> dict:
                     "properties": {
                         "node": {"type": "string", "enum": node_names},
                         "operator": {"type": "string", "enum": ["OP_X", "OP_Y"]},
-                        "selected_value": {"type": "string", "pattern": "^-?[0-9]+(?:/[1-9][0-9]*)?$"},
+                            "selected_value": {"type": "string", "pattern": "^-?[0-9]{1,6}(?:/[1-9][0-9]{0,5})?$"},
                     },
                 },
             },
@@ -222,7 +222,7 @@ def output_schema(record: dict) -> dict:
                     "required": ["action", "expected_value"],
                     "properties": {
                         "action": {"type": "string", "enum": ["ACTION_P", "ACTION_Q"]},
-                        "expected_value": {"type": "string", "pattern": "^-?[0-9]+(?:/[1-9][0-9]*)?$"},
+                        "expected_value": {"type": "string", "pattern": "^-?[0-9]{1,6}(?:/[1-9][0-9]{0,5})?$"},
                     },
                 },
             },
@@ -233,7 +233,7 @@ def output_schema(record: dict) -> dict:
 
 def output_regex(record: dict) -> str:
     """A compact JSON grammar with fixed structural labels and free semantic values."""
-    number = "(-?[0-9]+|-?[0-9]+/[1-9][0-9]*)"
+    number = "(-?[0-9]{1,6}|-?[0-9]{1,6}/[1-9][0-9]{0,5})"
     operator = "(OP_X|OP_Y)"
     controller = "(ROLE_A|ROLE_B)"
     final_action = "(ACTION_P|ACTION_Q)"

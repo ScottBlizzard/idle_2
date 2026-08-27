@@ -49,7 +49,7 @@ All models use BF16, official/native chat templates, disabled native thinking wh
 
 ## Primary outputs
 
-The primary run uses grammar-constrained JSON with a common dynamic schema and `max_new_tokens=192`. Invalid or truncated outputs count as wrong. No fallback parser is allowed. Every record stores rendered text, input and output token IDs, schema status, EOS/length stop reason, software versions, GPU, and prompt/schema hashes.
+The primary run uses grammar-constrained JSON with a common dynamic schema and `max_new_tokens=192`. Exact integer and rational literals are bounded to six numerator digits and six denominator digits, far outside the generated benchmark's oracle range, to prevent unbounded digit loops under grammar decoding. Invalid or truncated outputs count as wrong. No fallback parser is allowed. Every record stores rendered text, input and output token IDs, schema status, EOS/length stop reason, software versions, GPU, and prompt/schema hashes.
 
 Primary unit: paired tree. Pair accuracy is one only when both controller variants are correct.
 
