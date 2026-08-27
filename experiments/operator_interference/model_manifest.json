@@ -141,5 +141,5 @@
   "primary_batch_size": 1,
   "quantization": null,
   "revisions_frozen": true,
-  "runner_commit": "880e5367859e72835636040c8f8bdf5626d280f6"
+  "runner_commit": "3f8cb8828fa82ea1c8c597624817806109d010e4"
 }
