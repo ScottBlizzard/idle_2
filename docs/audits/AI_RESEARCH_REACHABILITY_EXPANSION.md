@@ -1,6 +1,6 @@
 # AI_RESEARCH_REACHABILITY_EXPANSION
 
-> **Artifact:** [Download `AI_RESEARCH_REACHABILITY_EXPANSION.md`](sandbox:/mnt/data/AI_RESEARCH_REACHABILITY_EXPANSION.md)  
+> **Repository status:** Historical adversarial audit; retained as a binding negative result.
 > **Literature cutoff:** 25 August 2026  
 > **Executive verdict:** **PIVOT**  
 > **Broad seed:** **NO-GO as a paper claim**  

@@ -1,5 +1,7 @@
 # From Billiards Reasoning to Falsifiable AI Research Seeds
 
+> **Status notice (2026-08-27):** This document preserves the complete mechanism discussion and historical seed-generation prompt. Its research recommendation has been superseded by [`CURRENT_STATUS.md`](CURRENT_STATUS.md) and the completed [`control_flip` experiment](../../experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md). Do not use the older embedded Pro prompt as the current task.
+
 **整理日期：** 2026-08-26  
 **目标会议：** ICLR（以 Oral 级别的反直觉性与机制深度为目标，但不预设能够达到）  
 **硬件约束：** 8× NVIDIA RTX 4090，单卡 24 GB；无 NVLink、无显存池化；原则上仅使用 GPU/CPU 仿真与公开数据，不依赖实体机器人  
@@ -547,10 +549,10 @@ CURRENT DATE AND SEARCH CUTOFF
 - Search multiple synonymous formulations. Absence under one phrase is not evidence of novelty.
 
 MANDATORY LOCAL INPUTS — READ ALL FOUR FILES COMPLETELY BEFORE REASONING
-1. D:\ICLR_2\BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md
-2. D:\ICLR_2\AI_RESEARCH_REABSTRACTION.md
-3. D:\ICLR_2\AI_RESEARCH_REACHABILITY_EXPANSION.md
-4. D:\ICLR_2\AI_RESEARCH_CARRIER_VIABILITY.md
+1. docs/current/BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md
+2. docs/audits/AI_RESEARCH_REABSTRACTION.md
+3. docs/audits/AI_RESEARCH_REACHABILITY_EXPANSION.md
+4. docs/audits/AI_RESEARCH_CARRIER_VIABILITY.md
 
 The first file contains the complete new discussion and three candidate research seeds. The other three are binding negative audits. Do not rediscover or revive directions they already rejected unless you identify genuinely new evidence that changes a verdict.
 
@@ -664,7 +666,7 @@ NON-NEGOTIABLE NOVELTY RULES
 
 OUTPUT CONTRACT
 - Produce one self-contained English Markdown document.
-- Suggested filename: D:\ICLR_2\AI_RESEARCH_RESET_DIAGNOSTICITY_AUDIT.md
+- Suggested filename: docs/audits/AI_RESEARCH_RESET_DIAGNOSTICITY_AUDIT.md
 - The document must be understandable without the billiards story, although one short motivation paragraph is allowed.
 - Include an executive verdict at the top, direct primary-source links near every literature claim, a collision matrix, elimination funnel, formal hypotheses, killer experiment, compute ledger, reviewer attacks, and binding GO/NO-GO thresholds.
 - Clearly label verified facts, literature-supported judgments, inferences, hypotheses, and project decisions.

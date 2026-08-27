@@ -4,7 +4,7 @@
 **Target venue:** ICLR  
 **Hardware constraint:** 8× NVIDIA RTX 4090; GPU-only; no physical robotics  
 **Executive verdict:** **NO-GO**  
-**Downloadable source:** [AI_RESEARCH_CARRIER_VIABILITY.md](sandbox:/mnt/data/AI_RESEARCH_CARRIER_VIABILITY.md)
+**Repository status:** Historical adversarial audit; retained as a binding negative result.
 
 ---
 

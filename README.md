@@ -1,43 +1,33 @@
-# ICLR Research-Idea Audit Pack
+# ICLR Research Workspace
 
-This repository contains the complete research-idea trail and the current prompt for an adversarial Pro literature audit.
+This repository records a falsification-first research process: the original billiards-inspired discussion, prior novelty audits, the completed control-flip experiment, and the current Pro handoff.
 
 ## Start here
 
-Read [BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md](BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md) first. It contains:
+1. Read [`docs/current/CURRENT_STATUS.md`](docs/current/CURRENT_STATUS.md) for the binding decision.
+2. Read [`experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md`](experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md) for the completed 7,200-generation experiment.
+3. Give [`docs/prompts/PRO_ALGORITHMIC_PROMPTING_AUDIT.md`](docs/prompts/PRO_ALGORITHMIC_PROMPTING_AUDIT.md) to Pro for the next targeted literature and design audit.
 
-- the complete billiards-to-AI mechanism discussion;
-- the three current competing research seeds;
-- the binding 8×RTX 4090 and rapid-experiment constraints;
-- the English prompt to give Pro in Section 6;
-- explicit novelty, falsification, and reviewer-rejection gates.
+The original controller-insensitive-planning seed is a **NO-GO**. The only surviving observation is a narrower one: correct algorithmic scaffolding can have non-monotonic, model-dependent effects and substantially harm Qwen3.5-9B on the paired diagnostic. This is a research seed, not yet a paper claim.
 
-## Mandatory context for Pro
+## Repository layout
 
-Pro should read these four documents completely before producing the next audit:
+```text
+docs/
+  current/      Current decision and complete billiards-to-AI synthesis
+  prompts/      Current and historical Pro prompts
+  audits/       Prior adversarial literature/research audits
+  archive/      Early provenance material
+experiments/
+  control_flip/ Reproducible benchmark, inference code, raw outputs, and analysis
+```
 
-1. [BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md](BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md)
-2. [AI_RESEARCH_REABSTRACTION.md](AI_RESEARCH_REABSTRACTION.md)
-3. [AI_RESEARCH_REACHABILITY_EXPANSION.md](AI_RESEARCH_REACHABILITY_EXPANSION.md)
-4. [AI_RESEARCH_CARRIER_VIABILITY.md](AI_RESEARCH_CARRIER_VIABILITY.md)
+See [`docs/README.md`](docs/README.md) for the full documentation map and [`experiments/control_flip/README.md`](experiments/control_flip/README.md) for reproduction instructions.
 
-The last three reports contain binding negative results. The next audit must not revive rejected broad directions merely by renaming them.
+## Binding constraints
 
-## Earlier provenance
-
-These files preserve the earlier idea-generation and re-abstraction stages:
-
-- [AI_RESEARCH_IDEA_LANDSCAPE.md](AI_RESEARCH_IDEA_LANDSCAPE.md)
-- [AI_research_idea_scout_prompt.md](AI_research_idea_scout_prompt.md)
-- [AI_research_reabstraction_prompt.md](AI_research_reabstraction_prompt.md)
-
-They are useful for provenance but are not substitutes for the four mandatory files above.
-
-## Binding project constraints
-
-- Target: ICLR; Oral-level insight is aspirational, not assumed.
-- Compute: exactly 8 independent RTX 4090 GPUs with 24 GB VRAM each; no NVLink or pooled memory.
-- No physical robot requirement.
-- Prefer public datasets, official evaluators, strong public baselines, and open-weight models.
-- Require a 3–7 day falsification experiment before any 30-day project is authorized.
-
+- Target venue: ICLR; oral-level insight is aspirational, never assumed.
+- Compute: 8 independent RTX 4090 GPUs with 24 GB VRAM each.
+- No physical robot dependency.
+- Prefer public benchmarks, official evaluators, strong baselines, and open-weight models.
+- Require a cheap falsification gate before authorizing a large experiment.
