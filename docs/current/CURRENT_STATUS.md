@@ -34,3 +34,11 @@ The frozen rule now applies: do not add models, prompts, subgroups, parsers, or 
 ## Historical context
 
 The earlier controller-insensitive-planning seed was also a NO-GO: compact chain-of-thought solved it too well. The subsequent broad algorithmic-prompting interpretation was narrowed by the novelty audit because correct-constraint harm, constrained-CoT harm, instruction interference, and prompt-dependent model reversals were already occupied. The now-completed factor-isolation experiment was the sole authorized test of the remaining competing-operator mechanism.
+
+## Next candidate audit
+
+An internal multi-reviewer audit has also rejected **error shaping / viability-aligned planning** as a new general principle. Minimum intervention, goal-equivalent manifolds, LQG motion planning, covariance steering, stochastic reachability, STRUG and option-preservation work already cover its main ingredients.
+
+The only conditional pivot is a short kill test of **decision-calibrated uncertainty for learned planners**: whether an apparently calibrated learned world model systematically misranks risk relative to a downstream learned value boundary, and whether a boundary-aware estimator beats direct Monte Carlo and existing risk objectives at equal compute. No full experiment or Pro audit is authorized until a one-page preregistration and hard stop conditions are frozen.
+
+- Internal audit: [`../audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md`](../audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md)

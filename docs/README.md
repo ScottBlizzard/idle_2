@@ -5,6 +5,7 @@ The documentation is organized by role rather than chronology.
 ## Current decision
 
 - [`current/CURRENT_STATUS.md`](current/CURRENT_STATUS.md): short, binding project status.
+- [`audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md`](audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md): multi-reviewer literature and novelty audit of the post-experiment error-shaping idea; broad claim `NO-GO`, learned-planner boundary calibration `CONDITIONAL PIVOT`.
 - [`audits/ALGORITHMIC_PROMPTING_NOVELTY_AUDIT.md`](audits/ALGORITHMIC_PROMPTING_NOVELTY_AUDIT.md): completed Pro audit; verdict `PIVOT` and specification of the only authorized one-day smoke test.
 - [`current/BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md`](current/BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md): complete billiards/snooker mechanism discussion and the route that produced the tested seed.
 - [`../experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md`](../experiments/control_flip/CONTROL_FLIP_EXPERIMENT_REPORT_ZH.md): completed falsification experiment and current research decision.
