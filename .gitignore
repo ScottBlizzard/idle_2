@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+experiments/operator_interference/logs/
+experiments/operator_interference/outputs/
+experiments/operator_interference/models/
+experiments/operator_interference/.venv/

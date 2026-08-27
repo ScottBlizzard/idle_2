@@ -1,0 +1,17 @@
+{
+  "models": [
+    {"family": "meta_llama", "hub_id": "unsloth/Meta-Llama-3.1-8B-Instruct", "local_dir": "models/llama31_8b", "gpu": 0, "role": "primary"},
+    {"family": "google_gemma", "hub_id": "unsloth/gemma-2-9b-it", "local_dir": "models/gemma2_9b", "gpu": 1, "role": "primary"},
+    {"family": "mistral", "hub_id": "mistralai/Mistral-7B-Instruct-v0.3", "local_dir": "models/mistral7b_v03", "gpu": 2, "role": "primary"},
+    {"family": "microsoft_phi", "hub_id": "microsoft/Phi-4-mini-instruct", "local_dir": "models/phi4_mini", "gpu": 3, "role": "primary"},
+    {"family": "ai2_olmo", "hub_id": "allenai/OLMo-2-1124-7B-Instruct", "local_dir": "models/olmo2_7b", "gpu": 4, "role": "primary"},
+    {"family": "ibm_granite", "hub_id": "ibm-granite/granite-3.1-8b-instruct", "local_dir": "models/granite31_8b", "gpu": 5, "role": "primary"},
+    {"family": "qwen_positive_control", "hub_id": "Qwen/Qwen3.5-9B", "local_dir": "/home/ccj/soccer/ICLR/memories-not-additive/models/Qwen3.5-9B", "gpu": 6, "role": "positive_control"}
+  ],
+  "precision": "bfloat16",
+  "quantization": null,
+  "max_context_tokens": 2048,
+  "max_new_tokens": 192,
+  "primary_batch_size": 1,
+  "revisions_frozen": false
+}
