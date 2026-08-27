@@ -12,7 +12,7 @@ sys.path.insert(0, str(ROOT))
 
 from generate_benchmark import make_records, metadata_probe_accuracy, validate_records  # noqa: E402
 from prompts import ALL_PACKS, output_regex, output_schema, rule_card, unpadded_user_prompt  # noqa: E402
-from run_model import select_records  # noqa: E402
+from selection import select_records  # noqa: E402
 
 
 class BenchmarkTests(unittest.TestCase):

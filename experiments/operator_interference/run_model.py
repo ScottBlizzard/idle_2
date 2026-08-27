@@ -14,6 +14,7 @@ import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from prompts import ALL_PACKS, SYSTEM_PROMPT, output_regex, output_schema, render_user_prompt
+from selection import select_records
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -32,15 +33,6 @@ def completed_ids(path: Path) -> set[str]:
             except (json.JSONDecodeError, KeyError):
                 continue
     return completed
-
-
-def select_records(records: list[dict], wanted: set[str]) -> list[dict]:
-    """Select exact records or both controller variants of a frozen pair ID."""
-    return [
-        record
-        for record in records
-        if record["id"] in wanted or record["pair_id"] in wanted
-    ]
 
 
 def stable_hash(value) -> str:
