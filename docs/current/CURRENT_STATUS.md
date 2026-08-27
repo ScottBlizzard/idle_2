@@ -1,6 +1,6 @@
 # Current Research Status
 
-Last updated: 2026-08-27
+Last updated: 2026-08-28
 
 ## Binding decision
 
@@ -35,10 +35,13 @@ The frozen rule now applies: do not add models, prompts, subgroups, parsers, or 
 
 The earlier controller-insensitive-planning seed was also a NO-GO: compact chain-of-thought solved it too well. The subsequent broad algorithmic-prompting interpretation was narrowed by the novelty audit because correct-constraint harm, constrained-CoT harm, instruction interference, and prompt-dependent model reversals were already occupied. The now-completed factor-isolation experiment was the sole authorized test of the remaining competing-operator mechanism.
 
-## Next candidate audit
+## Latest candidate decision
 
-An internal multi-reviewer audit has also rejected **error shaping / viability-aligned planning** as a new general principle. Minimum intervention, goal-equivalent manifolds, LQG motion planning, covariance steering, stochastic reachability, STRUG and option-preservation work already cover its main ingredients.
+The conditional **decision-calibrated uncertainty for learned planners** pivot is now also **`NO_GO_BEFORE_EXPERIMENT`**. A second three-agent audit found a decisive July 2026 collision: *Learning from World Feedback: Why Model Uncertainty Fails as a Risk Signal in Model-Based RL* already demonstrates calibrated world models whose internal uncertainty is weakly aligned with constraint-boundary risk, degraded safety when used as a penalty, and strong gains from an outcome-supervised failure predictor. Earlier risk-aware MPC, reachability, conformal safety, and decision-calibration work occupies the proposed method components.
 
-The only conditional pivot is a short kill test of **decision-calibrated uncertainty for learned planners**: whether an apparently calibrated learned world model systematically misranks risk relative to a downstream learned value boundary, and whether a boundary-aware estimator beats direct Monte Carlo and existing risk objectives at equal compute. No full experiment or Pro audit is authorized until a one-page preregistration and hard stop conditions are frozen.
+No Stage 0 benchmark or Safety-Gym/GPUDrive run is authorized for this seed. Compute availability was verified and is not the reason for stopping; the experiment was stopped because it would reproduce an occupied phenomenon before specifying a distinct estimator or theorem.
 
-- Internal audit: [`../audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md`](../audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md)
+- Binding collision audit: [`../audits/DECISION_CALIBRATED_UQ_COLLISION_AUDIT.md`](../audits/DECISION_CALIBRATED_UQ_COLLISION_AUDIT.md)
+- Preceding broad-principle audit: [`../audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md`](../audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md)
+
+The repository currently has no authorized active paper seed. Any continuation must begin with a new, separately audited theorem or estimator rather than a renamed version of task-relevant uncertainty, boundary risk, or outcome prediction.

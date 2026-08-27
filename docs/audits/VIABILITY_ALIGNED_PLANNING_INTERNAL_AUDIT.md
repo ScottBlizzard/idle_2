@@ -1,5 +1,7 @@
 # Viability-Aligned Planning Internal Novelty Audit
 
+> **Superseded on 2026-08-28:** the conditional decision-calibrated uncertainty pivot below was rejected by a follow-up literature collision audit before experimentation. See [`DECISION_CALIBRATED_UQ_COLLISION_AUDIT.md`](DECISION_CALIBRATED_UQ_COLLISION_AUDIT.md). The broad-principle `NO-GO` remains valid; the `CONDITIONAL PIVOT` does not.
+
 Audit date: 2026-08-27  
 Method: three parallel adversarial reviews covering control theory, ML/RL and ICLR-style significance, followed by primary-source cross-checking and synthesis.  
 Candidate origin: the billiards observation that a longer route can tolerate more total variation when that variation is aligned with a region of good follow-up positions.
@@ -215,4 +217,3 @@ An oral-level story would additionally require a broad, reproducible failure mec
 Do not send the broad idea to Pro for another unconstrained brainstorm and do not start a large experiment. The internal review is already sufficient to reject the principle-level claim.
 
 If continuing, first write a one-page preregistration for the decision-calibrated learned-planner kill test. Run Stage 0 and Stage 1 only. Ask Pro for a final targeted audit only if the new score beats direct Monte Carlo and strong existing risk baselines at equal compute. That ordering prevents another literature-first NO-GO after a large model sweep.
-
