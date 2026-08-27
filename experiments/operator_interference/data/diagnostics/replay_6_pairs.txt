@@ -1,0 +1,12 @@
+oi_conf_0000.ROLE_A
+oi_conf_0000.ROLE_B
+oi_conf_0009.ROLE_A
+oi_conf_0009.ROLE_B
+oi_conf_0018.ROLE_A
+oi_conf_0018.ROLE_B
+oi_conf_0027.ROLE_A
+oi_conf_0027.ROLE_B
+oi_conf_0036.ROLE_A
+oi_conf_0036.ROLE_B
+oi_conf_0045.ROLE_A
+oi_conf_0045.ROLE_B

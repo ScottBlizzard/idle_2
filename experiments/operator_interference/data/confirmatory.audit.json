@@ -1,0 +1,9 @@
+{
+  "design_commit": "32c517fc5c7c02b6474e52404b267c3784b4e67a",
+  "metadata_probe_accuracy": 0.5,
+  "pairs": 54,
+  "records": 108,
+  "seed": 20260827,
+  "sha256": "0270bf2c1f8dbe1a791a9935b08b9751a698902837452108cdc75fb1e804a688",
+  "split": "confirmatory"
+}
