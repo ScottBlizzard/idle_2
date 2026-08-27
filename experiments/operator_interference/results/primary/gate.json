@@ -1,0 +1,55 @@
+{
+  "models": {
+    "ai2_olmo": {
+      "basic_admissibility": false,
+      "diagnostics_pending": [
+        "exact_replay",
+        "template_stability"
+      ]
+    },
+    "google_gemma": {
+      "basic_admissibility": true,
+      "diagnostics_pending": [
+        "exact_replay",
+        "template_stability"
+      ]
+    },
+    "ibm_granite": {
+      "basic_admissibility": false,
+      "diagnostics_pending": [
+        "exact_replay",
+        "template_stability"
+      ]
+    },
+    "meta_llama": {
+      "basic_admissibility": false,
+      "diagnostics_pending": [
+        "exact_replay",
+        "template_stability"
+      ]
+    },
+    "microsoft_phi": {
+      "basic_admissibility": false,
+      "diagnostics_pending": [
+        "exact_replay",
+        "template_stability"
+      ]
+    },
+    "mistral": {
+      "basic_admissibility": false,
+      "diagnostics_pending": [
+        "exact_replay",
+        "template_stability"
+      ]
+    },
+    "qwen_positive_control": {
+      "basic_admissibility": false,
+      "diagnostics_pending": [
+        "exact_replay",
+        "template_stability"
+      ]
+    }
+  },
+  "note": "No scientific GO can be issued until replay, template, wording, process intervention, and reverse injection are complete.",
+  "status": "PRIMARY_RESULTS_ONLY_DIAGNOSTICS_PENDING"
+}

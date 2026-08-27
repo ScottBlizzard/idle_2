@@ -1,0 +1,8 @@
+model_id,items,token_match_rate,text_match_rate
+ai2_olmo,84,1.0,1.0
+google_gemma,84,1.0,1.0
+ibm_granite,84,1.0,1.0
+meta_llama,84,1.0,1.0
+microsoft_phi,84,1.0,1.0
+mistral,84,1.0,1.0
+qwen_positive_control,84,1.0,1.0

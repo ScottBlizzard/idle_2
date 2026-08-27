@@ -1,0 +1,118 @@
+{
+  "all_required_results_complete": true,
+  "binding_note": "Do not expand models, prompts, subgroups, or benchmarks to rescue this seed.",
+  "models": {
+    "ai2_olmo": {
+      "D_minus_C": 0.037037037037037,
+      "admissible": false,
+      "complete": true,
+      "difficulty_D_minus_C": [
+        0.1111111111111111,
+        0.05555555555555555,
+        -0.05555555555555555
+      ],
+      "interaction": 0.0555555555555555,
+      "negative_family_pass": false,
+      "pack_B_D_minus_C": 0.0555555555555555,
+      "plain_template_D_minus_C": 0.0833333333333333,
+      "positive_family_pass": false,
+      "process_pass": false,
+      "rescue_fraction": 0.0784313725490196,
+      "unconstrained_D_minus_C": 0.0
+    },
+    "google_gemma": {
+      "D_minus_C": -0.1851851851851851,
+      "admissible": true,
+      "complete": true,
+      "difficulty_D_minus_C": [
+        -0.2777777777777778,
+        -0.05555555555555555,
+        -0.2222222222222222
+      ],
+      "interaction": -0.1851851851851851,
+      "negative_family_pass": false,
+      "pack_B_D_minus_C": -0.0555555555555555,
+      "plain_template_D_minus_C": -0.25,
+      "positive_family_pass": false,
+      "process_pass": true,
+      "rescue_fraction": 1.0,
+      "unconstrained_D_minus_C": 0.0
+    },
+    "ibm_granite": {
+      "D_minus_C": 0.0185185185185185,
+      "admissible": false,
+      "complete": true,
+      "difficulty_D_minus_C": [
+        0.05555555555555555,
+        0.05555555555555555,
+        -0.05555555555555555
+      ],
+      "interaction": -0.0555555555555555,
+      "negative_family_pass": false,
+      "pack_B_D_minus_C": -0.074074074074074,
+      "plain_template_D_minus_C": 0.16666666666666669,
+      "positive_family_pass": false,
+      "process_pass": true,
+      "rescue_fraction": 0.5652173913043478,
+      "unconstrained_D_minus_C": 0.0
+    },
+    "meta_llama": {
+      "D_minus_C": -0.0555555555555555,
+      "admissible": false,
+      "complete": true,
+      "difficulty_D_minus_C": [
+        0.0,
+        0.0,
+        -0.16666666666666666
+      ],
+      "interaction": 0.0555555555555555,
+      "negative_family_pass": false,
+      "pack_B_D_minus_C": -0.0925925925925925,
+      "plain_template_D_minus_C": 0.0,
+      "positive_family_pass": false,
+      "process_pass": true,
+      "rescue_fraction": 0.9333333333333335,
+      "unconstrained_D_minus_C": 0.1666666666666667
+    },
+    "microsoft_phi": {
+      "D_minus_C": 0.0185185185185185,
+      "admissible": false,
+      "complete": true,
+      "difficulty_D_minus_C": [
+        -0.1111111111111111,
+        0.0,
+        0.16666666666666666
+      ],
+      "interaction": -0.037037037037037,
+      "negative_family_pass": false,
+      "pack_B_D_minus_C": -0.0555555555555555,
+      "plain_template_D_minus_C": 0.16666666666666669,
+      "positive_family_pass": false,
+      "process_pass": false,
+      "rescue_fraction": 0.8,
+      "unconstrained_D_minus_C": 0.0
+    },
+    "mistral": {
+      "D_minus_C": -0.0555555555555555,
+      "admissible": false,
+      "complete": true,
+      "difficulty_D_minus_C": [
+        -0.16666666666666666,
+        0.1111111111111111,
+        -0.1111111111111111
+      ],
+      "interaction": -0.1111111111111111,
+      "negative_family_pass": false,
+      "pack_B_D_minus_C": -0.074074074074074,
+      "plain_template_D_minus_C": -0.08333333333333331,
+      "positive_family_pass": false,
+      "process_pass": false,
+      "rescue_fraction": 0.37209302325581395,
+      "unconstrained_D_minus_C": 0.0
+    }
+  },
+  "negative_families": [],
+  "positive_families": [],
+  "strong_negative_families": [],
+  "verdict": "NO_GO_STOP_CURRENT_SEED"
+}
