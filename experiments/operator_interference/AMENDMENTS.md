@@ -13,3 +13,7 @@ Before confirmatory inference, `run_all_diagnostics.sh` and `run_analysis_and_in
 ## Model-source provenance
 
 Before confirmatory inference, the manifest freezer was strengthened to record the Hugging Face snapshot commit preserved in download metadata plus hashes of local tokenizer artifacts. It rejects a model whose config and weights resolve to mixed Hub revisions. Existing local checkpoints without Hub metadata remain pinned by their local config, tokenizer, weight names, and byte sizes. This changes only provenance validation.
+
+## Redundant Mistral artifact exclusion
+
+The Mistral repository publishes both the three indexed `model-*.safetensors` shards used by Transformers and a redundant `consolidated.safetensors`. Before model freezing or confirmatory inference, the acquisition script was changed to exclude the redundant file. The three indexed shards, config, tokenizer, and Hub revision remain the frozen checkpoint.
