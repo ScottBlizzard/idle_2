@@ -39,4 +39,5 @@ Otherwise stop this seed.
 - Main metrics: [`../../experiments/control_flip/results/v2/analysis/summary.csv`](../../experiments/control_flip/results/v2/analysis/summary.csv)
 - Paired comparisons: [`../../experiments/control_flip/results/v2/analysis/prompt_comparisons.csv`](../../experiments/control_flip/results/v2/analysis/prompt_comparisons.csv)
 - Operator audit: [`../../experiments/control_flip/results/v2/analysis/OPERATOR_AUDIT.md`](../../experiments/control_flip/results/v2/analysis/OPERATOR_AUDIT.md)
+- Prior reset audit: [`../audits/AI_RESEARCH_RESET_DIAGNOSTICITY_AUDIT.md`](../audits/AI_RESEARCH_RESET_DIAGNOSTICITY_AUDIT.md)
 - Next Pro prompt: [`../prompts/PRO_ALGORITHMIC_PROMPTING_AUDIT.md`](../prompts/PRO_ALGORITHMIC_PROMPTING_AUDIT.md)

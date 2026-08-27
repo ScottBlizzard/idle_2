@@ -16,6 +16,7 @@ The documentation is organized by role rather than chronology.
 
 ## Prior audits
 
+- [`audits/AI_RESEARCH_RESET_DIAGNOSTICITY_AUDIT.md`](audits/AI_RESEARCH_RESET_DIAGNOSTICITY_AUDIT.md): binding adversarial reset audit that rejected the earlier Seeds A/B/C.
 - [`audits/AI_RESEARCH_REABSTRACTION.md`](audits/AI_RESEARCH_REABSTRACTION.md)
 - [`audits/AI_RESEARCH_REACHABILITY_EXPANSION.md`](audits/AI_RESEARCH_REACHABILITY_EXPANSION.md)
 - [`audits/AI_RESEARCH_CARRIER_VIABILITY.md`](audits/AI_RESEARCH_CARRIER_VIABILITY.md)
@@ -25,3 +26,4 @@ These contain binding negative results. Do not revive their rejected broad claim
 ## Archive
 
 - [`archive/AI_RESEARCH_IDEA_LANDSCAPE.md`](archive/AI_RESEARCH_IDEA_LANDSCAPE.md): early landscape report retained for provenance, not as a current recommendation.
+- [`archive/SNOOKER_MECHANISM_DISCUSSION_BRIEF_FOR_GEMINI.md`](archive/SNOOKER_MECHANISM_DISCUSSION_BRIEF_FOR_GEMINI.md): historical snooker-mechanism discussion brief retained as idea provenance.

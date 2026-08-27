@@ -19,8 +19,9 @@ Read these files completely before making recommendations:
 7. `experiments/control_flip/results/v2/analysis/prompt_comparisons.csv`
 8. `experiments/control_flip/run_model.py`
 9. `experiments/control_flip/generate_benchmark.py`
+10. `docs/audits/AI_RESEARCH_RESET_DIAGNOSTICITY_AUDIT.md`
 
-Use the older documents under `docs/audits/` only when needed to prevent revival of already rejected broad directions. Treat `docs/archive/` as provenance, not evidence for the current seed.
+The reset audit in item 10 is required because it records binding negative results for earlier Seeds A/B/C. Use the other older documents under `docs/audits/` only when needed to prevent revival of already rejected broad directions. Treat `docs/archive/` as provenance, not evidence for the current seed.
 
 ## Empirical fact pattern to audit
 
