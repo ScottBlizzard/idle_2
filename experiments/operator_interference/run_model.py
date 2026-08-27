@@ -34,6 +34,15 @@ def completed_ids(path: Path) -> set[str]:
     return completed
 
 
+def select_records(records: list[dict], wanted: set[str]) -> list[dict]:
+    """Select exact records or both controller variants of a frozen pair ID."""
+    return [
+        record
+        for record in records
+        if record["id"] in wanted or record["pair_id"] in wanted
+    ]
+
+
 def stable_hash(value) -> str:
     if not isinstance(value, str):
         value = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
@@ -155,7 +164,7 @@ def main(argv: Sequence[str] | None = None) -> None:
     records = read_jsonl(args.data)
     if args.ids_file:
         wanted = {line.strip() for line in args.ids_file.read_text(encoding="utf-8").splitlines() if line.strip()}
-        records = [record for record in records if record["id"] in wanted]
+        records = select_records(records, wanted)
     if args.reverse_order:
         records.reverse()
     if args.limit is not None:

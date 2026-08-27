@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT))
 
 from generate_benchmark import make_records, metadata_probe_accuracy, validate_records  # noqa: E402
 from prompts import ALL_PACKS, output_regex, output_schema, rule_card, unpadded_user_prompt  # noqa: E402
+from run_model import select_records  # noqa: E402
 
 
 class BenchmarkTests(unittest.TestCase):
@@ -62,6 +63,18 @@ class BenchmarkTests(unittest.TestCase):
                 if active + " is assigned" in line
             )
             self.assertTrue(any(active_assignment_c in line for line in rule_card(record, "D", "A").splitlines()))
+
+    def test_pair_id_filter_selects_both_controller_variants(self) -> None:
+        records = make_records(6, 17, "engineering")
+        selected = select_records(records, {records[0]["pair_id"]})
+        self.assertEqual(len(selected), 2)
+        self.assertEqual(
+            {record["active_controller"] for record in selected},
+            {"ROLE_A", "ROLE_B"},
+        )
+
+        exact = select_records(records, {records[0]["id"]})
+        self.assertEqual([record["id"] for record in exact], [records[0]["id"]])
 
 
 if __name__ == "__main__":
