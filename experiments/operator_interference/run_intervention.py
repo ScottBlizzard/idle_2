@@ -36,6 +36,8 @@ def main() -> None:
     done = completed(args.output)
     cases = [case for case in all_cases if case["model_id"] == args.model_id and case["case_id"] not in done]
     if not cases:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.touch(exist_ok=True)
         print(json.dumps({"status": "no_cases", "model_id": args.model_id}))
         return
     tokenizer, model = load_model(args.model)
