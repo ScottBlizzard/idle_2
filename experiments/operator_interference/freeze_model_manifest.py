@@ -27,7 +27,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--root", type=Path, required=True)
+    parser.add_argument("--runner-commit", required=True)
     args = parser.parse_args()
+    if not re.fullmatch(r"[0-9a-f]{40}", args.runner_commit):
+        raise SystemExit("--runner-commit must be a full 40-character Git SHA")
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
     for model in manifest["models"]:
         directory = Path(model["local_dir"])
@@ -84,6 +87,7 @@ def main() -> None:
             }
         )
     manifest["revisions_frozen"] = True
+    manifest["runner_commit"] = args.runner_commit
     args.manifest.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(json.dumps({"models": len(manifest["models"]), "revisions_frozen": True}, sort_keys=True))
 
