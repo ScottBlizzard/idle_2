@@ -9,3 +9,7 @@ The report writer now falls back to a fenced CSV table when that optional packag
 ## Orchestration wrappers
 
 Before confirmatory inference, `run_all_diagnostics.sh` and `run_analysis_and_interventions.sh` were added to preflight completeness and invoke the already frozen replay, template, unconstrained-output, intervention, and final-gate programs without manual filename assembly. They introduce no new condition, sample, statistic, threshold, or fallback analysis.
+
+## Model-source provenance
+
+Before confirmatory inference, the manifest freezer was strengthened to record the Hugging Face snapshot commit preserved in download metadata plus hashes of local tokenizer artifacts. It rejects a model whose config and weights resolve to mixed Hub revisions. Existing local checkpoints without Hub metadata remain pinned by their local config, tokenizer, weight names, and byte sizes. This changes only provenance validation.
