@@ -13,7 +13,8 @@ import torch
 import transformers
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-from prompts import ALL_PACKS, SYSTEM_PROMPT, output_regex, output_schema, render_user_prompt
+from chat_rendering import render_chat
+from prompts import ALL_PACKS, output_regex, output_schema, render_user_prompt
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -38,20 +39,6 @@ def stable_hash(value) -> str:
     if not isinstance(value, str):
         value = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
-
-
-def render_chat(tokenizer, user_prompt: str, template_mode: str) -> str:
-    if template_mode == "plain":
-        return f"System: {SYSTEM_PROMPT}\n\nUser: {user_prompt}\n\nAssistant:"
-    messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": user_prompt},
-    ]
-    kwargs = {"tokenize": False, "add_generation_prompt": True}
-    try:
-        return tokenizer.apply_chat_template(messages, enable_thinking=False, **kwargs)
-    except TypeError:
-        return tokenizer.apply_chat_template(messages, **kwargs)
 
 
 def load_model(path: str):

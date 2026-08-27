@@ -17,3 +17,7 @@ Before confirmatory inference, the manifest freezer was strengthened to record t
 ## Redundant Mistral artifact exclusion
 
 The Mistral repository publishes both the three indexed `model-*.safetensors` shards used by Transformers and a redundant `consolidated.safetensors`. Before model freezing or confirmatory inference, the acquisition script was changed to exclude the redundant file. The three indexed shards, config, tokenizer, and Hub revision remain the frozen checkpoint.
+
+## Native templates without a system role
+
+The Gemma 2 native chat template rejects messages with a `system` role. Before confirmatory inference, chat rendering was changed to preserve the same system instruction by prepending it to the sole user message only when the native template explicitly reports that the system role is unsupported. Models whose templates accept a system role keep the original two-message rendering. The plain-template diagnostic is unchanged.
