@@ -449,7 +449,8 @@ def write_report(summary: pd.DataFrame, contrasts: pd.DataFrame, process: pd.Dat
         try:
             return frame.to_markdown(index=False, floatfmt=".3f")
         except ImportError:
-            return "```csv\n" + frame.to_csv(index=False, float_format="%.6g").rstrip() + "\n```"
+            csv = frame.to_csv(index=False, float_format="%.6g", lineterminator="\n")
+            return "```csv\n" + csv.rstrip() + "\n```"
 
     lines = [
         "# Competing-Operator Interference Smoke Test",

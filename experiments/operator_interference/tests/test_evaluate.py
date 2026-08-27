@@ -104,6 +104,7 @@ class EvaluateTests(unittest.TestCase):
             text = output.read_text(encoding="utf-8")
         self.assertIn("# Competing-Operator Interference Smoke Test", text)
         self.assertIn("toy", text)
+        self.assertNotIn("\n\n\ntoy", text)
 
 
 if __name__ == "__main__":
