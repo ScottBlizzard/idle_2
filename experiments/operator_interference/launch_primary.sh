@@ -9,6 +9,12 @@ if [[ ! -f "${ROOT}/data/confirmatory.jsonl" ]]; then
   echo "Confirmatory data are absent. Commit the preregistration before generating them." >&2
   exit 2
 fi
+EXPECTED_DATA_SHA256="0270bf2c1f8dbe1a791a9935b08b9751a698902837452108cdc75fb1e804a688"
+ACTUAL_DATA_SHA256="$(sha256sum "${ROOT}/data/confirmatory.jsonl" | awk '{print $1}')"
+if [[ "${ACTUAL_DATA_SHA256}" != "${EXPECTED_DATA_SHA256}" ]]; then
+  echo "Refusing launch: confirmatory data hash is ${ACTUAL_DATA_SHA256}, expected ${EXPECTED_DATA_SHA256}." >&2
+  exit 2
+fi
 if [[ ! -x "${PYTHON}" ]]; then
   echo "Run setup_remote.sh first." >&2
   exit 2

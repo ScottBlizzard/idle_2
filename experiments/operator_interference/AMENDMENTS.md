@@ -26,6 +26,6 @@ The Gemma 2 native chat template rejects messages with a `system` role. Before c
 
 A pre-inference Mistral engineering probe produced valid completions on 10 of 12 items but used the unbounded numeric regex to repeat zero digits until the 192-token cap on two items. The output grammar and matching JSON schema now bound integer numerators to six digits and nonzero rational denominators to six digits; the intervention grammar uses the same bound. All benchmark candidates and exact oracle values are far inside this range. The 192-token cap, parser, correctness rule, prompts, benchmark, contrasts, and thresholds are unchanged.
 
-## Server shell line endings
+## Server archive line endings
 
-Before confirmatory inference, whole-commit deployment from the Windows workstation exposed that archived shell launchers could acquire CRLF line endings. The repository now declares LF endings for every `.sh` file, and server-side `bash -n` is a required launch preflight. This changes only cross-platform execution packaging; no benchmark, prompt, model, output, analysis, or threshold is changed.
+Before confirmatory inference, whole-commit deployment from the Windows workstation exposed that archived text files could acquire CRLF line endings. This both invalidated shell launchers and changed the byte-level hash of the otherwise identical confirmatory JSONL. The repository now declares LF endings for all auto-detected text, and server-side launch preflight requires both valid shell syntax and the preregistered confirmatory-data hash. This changes only cross-platform execution packaging; no benchmark, prompt, model, output, analysis, or threshold is changed.
