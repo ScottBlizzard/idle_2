@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -11,7 +12,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from evaluate import make_contrasts, pair_frame, parse_and_score, process_metrics, summarize  # noqa: E402
+from evaluate import make_contrasts, pair_frame, parse_and_score, process_metrics, summarize, write_report  # noqa: E402
 from generate_benchmark import make_records  # noqa: E402
 
 
@@ -93,6 +94,16 @@ class EvaluateTests(unittest.TestCase):
         self.assertEqual(len(contrasts), 4)
         self.assertEqual(len(process), 1)
         self.assertTrue((summary["pair_accuracy"] == 1).all())
+
+    def test_report_writer_has_no_optional_dependency_requirement(self) -> None:
+        frame = pd.DataFrame([{"model_id": "toy", "pair_accuracy": 1.0}])
+        gate = {"status": "TEST", "note": "test report"}
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "REPORT.md"
+            write_report(frame, frame, frame, gate, output)
+            text = output.read_text(encoding="utf-8")
+        self.assertIn("# Competing-Operator Interference Smoke Test", text)
+        self.assertIn("toy", text)
 
 
 if __name__ == "__main__":

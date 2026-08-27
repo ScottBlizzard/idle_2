@@ -443,6 +443,14 @@ def preliminary_gate(summary: pd.DataFrame, contrasts: pd.DataFrame, manifest: d
 
 
 def write_report(summary: pd.DataFrame, contrasts: pd.DataFrame, process: pd.DataFrame, gate: dict, path: Path) -> None:
+    def render(frame: pd.DataFrame) -> str:
+        if frame.empty:
+            return "No complete rows."
+        try:
+            return frame.to_markdown(index=False, floatfmt=".3f")
+        except ImportError:
+            return "```csv\n" + frame.to_csv(index=False, float_format="%.6g").rstrip() + "\n```"
+
     lines = [
         "# Competing-Operator Interference Smoke Test",
         "",
@@ -452,15 +460,15 @@ def write_report(summary: pd.DataFrame, contrasts: pd.DataFrame, process: pd.Dat
         "",
         "## Primary cells",
         "",
-        summary.to_markdown(index=False, floatfmt=".3f"),
+        render(summary),
         "",
         "## Paired contrasts",
         "",
-        contrasts.to_markdown(index=False, floatfmt=".3f") if not contrasts.empty else "No complete contrasts.",
+        render(contrasts),
         "",
         "## Operator-process diagnostics",
         "",
-        process.to_markdown(index=False, floatfmt=".3f") if not process.empty else "No complete process comparison.",
+        render(process),
         "",
         "## Interpretation",
         "",
