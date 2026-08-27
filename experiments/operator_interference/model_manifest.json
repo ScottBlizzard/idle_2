@@ -1,17 +1,145 @@
 {
-  "models": [
-    {"family": "meta_llama", "hub_id": "unsloth/Meta-Llama-3.1-8B-Instruct", "local_dir": "models/llama31_8b", "gpu": 0, "role": "primary"},
-    {"family": "google_gemma", "hub_id": "unsloth/gemma-2-9b-it", "local_dir": "models/gemma2_9b", "gpu": 1, "role": "primary"},
-    {"family": "mistral", "hub_id": "mistralai/Mistral-7B-Instruct-v0.3", "local_dir": "models/mistral7b_v03", "gpu": 2, "role": "primary"},
-    {"family": "microsoft_phi", "hub_id": "microsoft/Phi-4-mini-instruct", "local_dir": "models/phi4_mini", "gpu": 3, "role": "primary"},
-    {"family": "ai2_olmo", "hub_id": "allenai/OLMo-2-1124-7B-Instruct", "local_dir": "models/olmo2_7b", "gpu": 4, "role": "primary"},
-    {"family": "ibm_granite", "hub_id": "ibm-granite/granite-3.1-8b-instruct", "local_dir": "models/granite31_8b", "gpu": 5, "role": "primary"},
-    {"family": "qwen_positive_control", "hub_id": "Qwen/Qwen3.5-9B", "local_dir": "/home/ccj/soccer/ICLR/memories-not-additive/models/Qwen3.5-9B", "gpu": 6, "role": "positive_control"}
-  ],
-  "precision": "bfloat16",
-  "quantization": null,
   "max_context_tokens": 2048,
   "max_new_tokens": 192,
+  "models": [
+    {
+      "config_sha256": "073b48b1c601acd5e592000aaf13131055f26bb22e8fc71befced9b9213b6799",
+      "family": "meta_llama",
+      "gpu": 0,
+      "hub_id": "unsloth/Meta-Llama-3.1-8B-Instruct",
+      "hub_revision": "a2856192dd7c25b842431f39c179a6c2c2f627d1",
+      "local_dir": "models/llama31_8b",
+      "quantized": false,
+      "resolved_local_dir": "/mnt/sdb/ccj/idle_2_runtime/experiments/operator_interference/models/llama31_8b",
+      "revision": "local-tree-07e868d130fa5c390541f4ee236305b9073ae26c771c7e6b00bea3cfe4adf7d4",
+      "role": "primary",
+      "tokenizer_sha256": {
+        "special_tokens_map.json": "94e708c3f5e64acf85bbe5ad01467a1248faadb73e83b41793087ecced586e8f",
+        "tokenizer.json": "6b9e4e7fb171f92fd137b777cc2714bf87d11576700a1dcd7a399e7bbe39537b",
+        "tokenizer_config.json": "4d18eae3017839b17cb3598f589b62ec212652d183582ee0fc33a4f1e8b3da67"
+      },
+      "weight_bytes": 16060556376,
+      "weight_files": 4
+    },
+    {
+      "config_sha256": "7b881c1a317cc0ff34d36efdbd3668c10a2e7e6d5acae600a07f62bdd74d2cf8",
+      "family": "google_gemma",
+      "gpu": 1,
+      "hub_id": "unsloth/gemma-2-9b-it",
+      "hub_revision": "fc7d4737cda11c3a19af2b722319e846670b4d89",
+      "local_dir": "models/gemma2_9b",
+      "quantized": false,
+      "resolved_local_dir": "/mnt/sdb/ccj/idle_2_runtime/experiments/operator_interference/models/gemma2_9b",
+      "revision": "local-tree-c4429aafa092479ea1af0faf2b9be090d6fe2f214d3a31c9003b95a0aeca3ddd",
+      "role": "primary",
+      "tokenizer_sha256": {
+        "special_tokens_map.json": "baec30ea10906f16adb8c18af7a34023002c1746542612b8b41c9f09e1351351",
+        "tokenizer.json": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922",
+        "tokenizer.model": "61a7b147390c64585d6c3543dd6fc636906c9af3865a5548f27f31aee1d4c8e2",
+        "tokenizer_config.json": "e5ac0f1cfb5f450763d368edacbb2448a3c02c8d8f7f98d963a820751fb0ddc3"
+      },
+      "weight_bytes": 18483466448,
+      "weight_files": 4
+    },
+    {
+      "config_sha256": "affafc6478ec0fd07a32f0ca57aa2fc57743f4d17d6730f86a96ac24d1507f99",
+      "family": "mistral",
+      "gpu": 2,
+      "hub_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "hub_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "local_dir": "models/mistral7b_v03",
+      "quantized": false,
+      "resolved_local_dir": "/mnt/sdb/ccj/idle_2_runtime/experiments/operator_interference/models/mistral7b_v03",
+      "revision": "local-tree-0e666db570cdc02b55e6f64a1d7673689757f007b6c5b9a42a3b42797512be43",
+      "role": "primary",
+      "tokenizer_sha256": {
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "e553af6fff7d7ad76e830608b218c5c0b0822998d5a1a96099a74cd3c1cb1a49",
+        "tokenizer.model": "37f00374dea48658ee8f5d0f21895b9bc55cb0103939607c8185bfd1c6ca1f89",
+        "tokenizer_config.json": "0533dec9cfe319163801b6618d0f3ec9cfa126b6288e3df5deca6e32acb09cd2"
+      },
+      "weight_bytes": 14496080928,
+      "weight_files": 3
+    },
+    {
+      "config_sha256": "ac65d86061d3d0d704ee2511fd0eb8713ef19eb6eedba17c3080a4165d5b933b",
+      "family": "microsoft_phi",
+      "gpu": 3,
+      "hub_id": "microsoft/Phi-4-mini-instruct",
+      "hub_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+      "local_dir": "models/phi4_mini",
+      "quantized": false,
+      "resolved_local_dir": "/mnt/sdb/ccj/idle_2_runtime/experiments/operator_interference/models/phi4_mini",
+      "revision": "local-tree-f54c31103050c8c8759110daac84ca910b6cf0f8a6b156594d21dfb29cc8dafd",
+      "role": "primary",
+      "tokenizer_sha256": {
+        "special_tokens_map.json": "aff38493227d813e29fcf8406e8e90062f1f031aa47d589325e9c31d89ac7cc3",
+        "tokenizer.json": "382cc235b56c725945e149cc25f191da667c836655efd0857b004320e90e91ea",
+        "tokenizer_config.json": "9c9b6bc0c94d95f69f826c41069a3e8b387ac3ced89601d201886e99240ac9db"
+      },
+      "weight_bytes": 7672066216,
+      "weight_files": 2
+    },
+    {
+      "config_sha256": "ff8cc8709a229515676797ab6f343a09391041c9a8fbbc78bfec5be4c2e3664e",
+      "family": "ai2_olmo",
+      "gpu": 4,
+      "hub_id": "allenai/OLMo-2-1124-7B-Instruct",
+      "hub_revision": "470b1fba1ae01581f270116362ee4aa1b97f4c84",
+      "local_dir": "models/olmo2_7b",
+      "quantized": false,
+      "resolved_local_dir": "/mnt/sdb/ccj/idle_2_runtime/experiments/operator_interference/models/olmo2_7b",
+      "revision": "local-tree-eb8c3dce0af34c1de12a6d57f0f4a594e0ab8a707ffe43b38836d014a99edda4",
+      "role": "primary",
+      "tokenizer_sha256": {
+        "special_tokens_map.json": "78afb564e81264029b25f9caf24bda2521d5bdaeff5cd3fdbc01d3da2e8ce2f2",
+        "tokenizer.json": "73fd5254624f39a88e3faac6a8e11300fc3c735ed37880d4f4f08db898eaecca",
+        "tokenizer_config.json": "50c412c57d832057a3d5db42064c741f751e570f7c8788f037bfb0d2dd6e5f49"
+      },
+      "weight_bytes": 14597276128,
+      "weight_files": 3
+    },
+    {
+      "config_sha256": "03c19685d37a17a541641fb17fa40ba371d1d892e87334d3068d90e8f296a365",
+      "family": "ibm_granite",
+      "gpu": 5,
+      "hub_id": "ibm-granite/granite-3.1-8b-instruct",
+      "hub_revision": "4009206d5fc95d2e65a7b7633e159d6e97e25d35",
+      "local_dir": "models/granite31_8b",
+      "quantized": false,
+      "resolved_local_dir": "/mnt/sdb/ccj/idle_2_runtime/experiments/operator_interference/models/granite31_8b",
+      "revision": "local-tree-9f747c20cdefdffbd5c06688a43c76a90b4fe23b7a06653b47aa8729baa9c2cc",
+      "role": "primary",
+      "tokenizer_sha256": {
+        "special_tokens_map.json": "596d752bf46f5cace1f6826b52ed7d913347a4eea0ecce8ab2f869471ca40369",
+        "tokenizer.json": "ed944c0b3d71e2d651a5ba0f8e7b350faff30031c8e3353de70b12b9c1bf5654",
+        "tokenizer_config.json": "ab17e0d532ecf47e9d8451939dd81f25dd98c5fba4b6742584549bbf9c1f06b9"
+      },
+      "weight_bytes": 16341738616,
+      "weight_files": 4
+    },
+    {
+      "config_sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+      "family": "qwen_positive_control",
+      "gpu": 6,
+      "hub_id": "Qwen/Qwen3.5-9B",
+      "hub_revision": null,
+      "local_dir": "/home/ccj/soccer/ICLR/memories-not-additive/models/Qwen3.5-9B",
+      "quantized": false,
+      "resolved_local_dir": "/home/ccj/soccer/ICLR/memories-not-additive/models/Qwen3.5-9B",
+      "revision": "local-tree-5faa92c3fe3ae13ee44c37a594e616179a8468b00aa76592408956c215d8c658",
+      "role": "positive_control",
+      "tokenizer_sha256": {
+        "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+        "tokenizer_config.json": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+      },
+      "weight_bytes": 19306310880,
+      "weight_files": 4
+    }
+  ],
+  "precision": "bfloat16",
   "primary_batch_size": 1,
-  "revisions_frozen": false
+  "quantization": null,
+  "revisions_frozen": true,
+  "runner_commit": "880e5367859e72835636040c8f8bdf5626d280f6"
 }
