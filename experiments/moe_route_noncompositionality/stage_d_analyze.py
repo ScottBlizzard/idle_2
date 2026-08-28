@@ -58,7 +58,7 @@ def write_json_new(path: Path, payload: Any) -> None:
 
 
 def load_shards(root: Path) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
-    shards = sorted((root / "shards").glob("*/*.json.gz"))
+    shards = sorted((root / "shards").rglob("*.json.gz"))
     if not shards:
         raise RuntimeError("No acquisition shards found")
     trajectories = []

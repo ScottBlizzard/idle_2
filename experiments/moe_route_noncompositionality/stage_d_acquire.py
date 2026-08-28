@@ -39,6 +39,7 @@ from stage_d_common import (
     select_fragile_token,
     sha256_bytes,
     sha256_file,
+    shard_filename,
     stable_sort_rows,
     verify_gsm8k,
     verify_math500,
@@ -778,7 +779,12 @@ def main() -> int:
                     "selected_token": selected,
                     "interventions": interventions,
                 }
-                shard_path = args.output_dir / "shards" / dataset / f"{row['_stable_id']}.json.gz"
+                shard_path = (
+                    args.output_dir
+                    / "shards"
+                    / dataset
+                    / shard_filename(row["_stable_id"])
+                )
                 json_dump_atomic(shard_path, shard, gzip_output=True)
                 checksum_path = shard_path.with_suffix(shard_path.suffix + ".sha256")
                 json_dump_atomic(checksum_path, {"sha256": sha256_file(shard_path)})

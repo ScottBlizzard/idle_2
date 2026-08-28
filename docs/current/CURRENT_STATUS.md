@@ -79,9 +79,12 @@ This is a feasibility result, not evidence for route non-compositionality. The p
 
 A binding implementation amendment has now authorized code construction and outcome-blind preflight, not scientific discovery. It freezes stable identifiers, answer verification, fragile-token filtering, random streams, matched-null donors, an equal-budget numerical H3, parameter-matched H4 baselines, 10,000 problem-clustered bootstrap resamples, the 32-test BH family, and the six-hour hard stop.
 
-The first preflight attempt was intentionally aborted after an explicit attention-mask warning and remains preserved as an invalid engineering attempt. A corrected v2 preflight is running on physical GPU 4 with an all-ones mask for unpadded generation. Its route outcomes may not be inspected. Only an automatic `STAGE_D_PREFLIGHT_PASS` may authorize one frozen OLMoE discovery run; Stage C and Stage A remain unauthorized.
+The first preflight attempt was intentionally aborted after an explicit attention-mask warning and remains preserved as an invalid engineering attempt. The corrected v2 acquisition then completed with two retained trajectories per dataset, but its automatic gate returned `NO_GO_STAGE_D_PREFLIGHT`. MATH-500 stable IDs contain slash characters; using those opaque IDs directly as shard names created nested directories that the one-level validator glob did not discover. No route-effect value was inspected during diagnosis.
+
+A filesystem-safe SHA-256 shard mapping and recursive validator check are implemented and tested, but v2 remains a binding failure and cannot be reclassified. The pipeline is paused. A new v3 preflight requires explicit resumed authorization; Stage D discovery, Stage C, and Stage A remain unauthorized.
 
 - Stage E report: [`../../experiments/moe_route_noncompositionality/RESULTS_REPORT_ZH.md`](../../experiments/moe_route_noncompositionality/RESULTS_REPORT_ZH.md)
 - Final engineering status: [`../../experiments/moe_route_noncompositionality/STAGE_E_STATUS.md`](../../experiments/moe_route_noncompositionality/STAGE_E_STATUS.md)
 - Stage D execution status: [`../../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md`](../../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md)
 - Binding Stage D amendment: [`../../experiments/moe_route_noncompositionality/STAGE_D_PROTOCOL_AMENDMENT_V1.md`](../../experiments/moe_route_noncompositionality/STAGE_D_PROTOCOL_AMENDMENT_V1.md)
+- v2 preflight failure report: [`../../experiments/moe_route_noncompositionality/STAGE_D_PREFLIGHT_V2_FAILURE.md`](../../experiments/moe_route_noncompositionality/STAGE_D_PREFLIGHT_V2_FAILURE.md)

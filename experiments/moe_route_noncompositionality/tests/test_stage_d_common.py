@@ -25,6 +25,7 @@ from stage_d_common import (  # noqa: E402
     percentile_interval,
     resolve_layer_pairs,
     select_fragile_token,
+    shard_filename,
     stable_sort_rows,
     token_surface_is_eligible,
     verify_gsm8k,
@@ -72,6 +73,12 @@ class IdentifierAndSeedTests(unittest.TestCase):
     def test_seed_mapping(self) -> None:
         self.assertEqual(generation_seed(0, 0, 0), 20260828)
         self.assertNotEqual(generation_seed(0, 1, 0), generation_seed(1, 0, 0))
+
+    def test_shard_filename_is_filesystem_safe(self) -> None:
+        name = shard_filename("test/algebra/1098.json")
+        self.assertTrue(name.endswith(".json.gz"))
+        self.assertNotIn("/", name)
+        self.assertNotIn("\\", name)
 
     def test_layer_mapping(self) -> None:
         self.assertEqual(resolve_layer_pairs(16), OLMOE_LAYER_PAIRS)

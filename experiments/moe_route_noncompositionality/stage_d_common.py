@@ -56,6 +56,11 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def shard_filename(stable_id: str) -> str:
+    """Map an opaque stable ID to a single filesystem-safe shard name."""
+    return hashlib.sha256(stable_id.encode("utf-8")).hexdigest() + ".json.gz"
+
+
 def stable_problem_id(dataset: str, row: Mapping[str, Any]) -> str:
     if dataset == "gsm8k":
         source = str(row["question"])

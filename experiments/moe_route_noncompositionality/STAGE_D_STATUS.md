@@ -1,8 +1,8 @@
 # Stage D Execution Status
 
-Updated: 2026-08-28 19:00 Asia/Hong_Kong
+Updated: 2026-08-28 19:43 Asia/Hong_Kong
 
-Status: **CORRECTED OUTCOME-BLIND PREFLIGHT RUNNING — SCIENTIFIC DISCOVERY NOT YET AUTHORIZED**
+Status: **`NO_GO_STAGE_D_PREFLIGHT` — PIPELINE PAUSED — SCIENTIFIC DISCOVERY NOT AUTHORIZED**
 
 ## Binding state
 
@@ -10,7 +10,9 @@ Stage E passed its engineering gate. A separate authorization audit now permits 
 
 The first preflight attempt (`stage_d_preflight_v1`) was deliberately terminated before producing a gate because Transformers warned that generation did not receive an explicit attention mask while the checkpoint uses the same token ID for padding and end-of-sequence. Its partial directory and log are preserved and cannot support authorization.
 
-The corrected preflight (`stage_d_preflight_v2`) supplies an all-ones attention mask for every unpadded generation, writes to a new directory, and uses physical GPU 4 only after the required 180-second exclusive-idle check. It may validate engineering structure but may not aggregate or interpret H1--H4 route effects.
+The corrected preflight (`stage_d_preflight_v2`) supplied an all-ones attention mask for every unpadded generation and completed its four acquisitions. Its automatic gate returned `NO_GO_STAGE_D_PREFLIGHT`: MATH-500 stable IDs contain slash characters, which created nested shard paths that the one-level validator glob did not discover. The acquisition recorded two MATH-500 trajectories, but the validator correctly observed zero and failed the count gate.
+
+The v2 directory and log are preserved. No H1--H4 value was inspected. [`STAGE_D_PREFLIGHT_V2_FAILURE.md`](STAGE_D_PREFLIGHT_V2_FAILURE.md) contains the binding diagnosis.
 
 ## Frozen implementation
 
@@ -22,4 +24,4 @@ The corrected preflight (`stage_d_preflight_v2`) supplies an all-ones attention 
 
 ## Next automatic transition
 
-Only `PREFLIGHT_GATE.json` with status `STAGE_D_PREFLIGHT_PASS` can create the one-run `STAGE_D_RUN_AUTHORIZATION.json`. The discovery watcher must then select only physical GPUs 4--7, wait for 180 seconds of exclusive idleness, enforce the six-hour cumulative cap, and stop without entering Stage C regardless of the scientific outcome.
+The filesystem-safe correction is implemented and tested locally but has not been rerun. A new v3 preflight requires an explicit resumed authorization. No `STAGE_D_RUN_AUTHORIZATION.json` exists, no discovery watcher was launched, and Stage C/A remain unauthorized.

@@ -96,7 +96,7 @@ def main() -> int:
         for relative, expected in STAGE_E_HASHES.items()
     }
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, cache_dir=args.cache_dir)
-    shards = sorted((args.preflight_dir / "shards").glob("*/*.json.gz"))
+    shards = sorted((args.preflight_dir / "shards").rglob("*.json.gz"))
     counts = {"gsm8k": 0, "math500": 0}
     shard_checks = []
     for shard_path in shards:
