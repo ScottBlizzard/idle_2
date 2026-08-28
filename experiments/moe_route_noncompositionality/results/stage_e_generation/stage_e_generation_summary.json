@@ -1,0 +1,51 @@
+{
+  "status": "ENGINEERING_PASS",
+  "scientific_interpretation_allowed": false,
+  "model": "allenai/OLMoE-1B-7B-0924-Instruct",
+  "environment": {
+    "hostname": "ubuntu",
+    "python": "3.10.20",
+    "torch": "2.6.0+cu118",
+    "transformers": "5.12.1",
+    "gpu": "NVIDIA GeForce RTX 4090"
+  },
+  "frozen_generation_settings": {
+    "samples_per_problem": 4,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "top_k": 0,
+    "max_new_tokens": 768,
+    "seed": 20260828
+  },
+  "counts": {
+    "datasets": 2,
+    "problems_per_dataset": 2,
+    "pilot_problems": 4,
+    "pilot_generations": 16,
+    "projected_target_problems_per_model": 128,
+    "projected_generated_tokens_per_model": 393216
+  },
+  "timing": {
+    "model_load_seconds": 49.807101939979475,
+    "pilot_wall_seconds": 181.53887252399,
+    "pilot_gpu_hours_upper_bound": 0.05042746458999722,
+    "maximum_seconds_per_generated_token": 0.010483557234686575,
+    "projected_intervention_hours_total": 3.392880213643298,
+    "projected_generation_hours_discovery": 1.1450840115540324,
+    "projected_generation_hours_confirmation_proxy": 2.7482016277296775,
+    "projected_model_load_hours_total": 0.04704004072109172,
+    "projected_full_hours_raw": 7.333205893648099,
+    "projection_guardband": 1.25,
+    "projected_full_hours_guarded": 9.166507367060124,
+    "cumulative_stage_e_gpu_hours_upper_bound": 0.0919269465644417
+  },
+  "gates": {
+    "generation_settings_frozen": true,
+    "representative_dataset_prompts": true,
+    "exclusive_gpu_timing": true,
+    "engineering_gpu_hour": true,
+    "full_diagnostic_compute_projection": true
+  },
+  "projection_scope": "Projects four 768-token candidates for each of the 64 target trajectories per dataset and model. It does not estimate extra problems required when none of four candidates is correct; Stage D must enforce its six-hour cumulative cap.",
+  "note": "This is an outcome-blind engineering throughput result. It does not authorize scientific interpretation or any stage beyond the preregistered decision."
+}
