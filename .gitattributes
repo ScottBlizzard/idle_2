@@ -1,1 +1,2 @@
 * text=auto eol=lf
+experiments/moe_route_noncompositionality/results/** -text
