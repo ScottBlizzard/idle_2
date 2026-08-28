@@ -1,8 +1,8 @@
 # Stage D Execution Status
 
-Updated: 2026-08-28 19:43 Asia/Hong_Kong
+Updated: 2026-08-28 19:51 Asia/Hong_Kong
 
-Status: **`NO_GO_STAGE_D_PREFLIGHT` — PIPELINE PAUSED — SCIENTIFIC DISCOVERY NOT AUTHORIZED**
+Status: **PREFLIGHT v3 RUNNING — SCIENTIFIC DISCOVERY NOT YET AUTHORIZED**
 
 ## Binding state
 
@@ -24,4 +24,4 @@ The v2 directory and log are preserved. No H1--H4 value was inspected. [`STAGE_D
 
 ## Next automatic transition
 
-The filesystem-safe correction is implemented and tested locally but has not been rerun. A new v3 preflight requires an explicit resumed authorization. No `STAGE_D_RUN_AUTHORIZATION.json` exists, no discovery watcher was launched, and Stage C/A remain unauthorized.
+The filesystem-safe correction is implemented, synchronized, and covered by 18 tests. Preflight v3 is running in a new result directory on physical GPU 4 after the exclusive-idle check. If its automatic gate passes, the pipeline will create the one-run authorization and queue discovery without another user round trip. No `STAGE_D_RUN_AUTHORIZATION.json` exists yet, and Stage C/A remain unauthorized.

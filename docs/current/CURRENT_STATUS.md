@@ -81,7 +81,7 @@ A binding implementation amendment has now authorized code construction and outc
 
 The first preflight attempt was intentionally aborted after an explicit attention-mask warning and remains preserved as an invalid engineering attempt. The corrected v2 acquisition then completed with two retained trajectories per dataset, but its automatic gate returned `NO_GO_STAGE_D_PREFLIGHT`. MATH-500 stable IDs contain slash characters; using those opaque IDs directly as shard names created nested directories that the one-level validator glob did not discover. No route-effect value was inspected during diagnosis.
 
-A filesystem-safe SHA-256 shard mapping and recursive validator check are implemented and tested, but v2 remains a binding failure and cannot be reclassified. The pipeline is paused. A new v3 preflight requires explicit resumed authorization; Stage D discovery, Stage C, and Stage A remain unauthorized.
+A filesystem-safe SHA-256 shard mapping and recursive validator check are implemented, synchronized, and covered by 18 tests; v2 remains a binding failure and cannot be reclassified. A new outcome-blind v3 preflight is now running on physical GPU 4. If it passes, one frozen Stage D discovery run will be authorized and queued automatically. Stage C and Stage A remain unauthorized.
 
 - Stage E report: [`../../experiments/moe_route_noncompositionality/RESULTS_REPORT_ZH.md`](../../experiments/moe_route_noncompositionality/RESULTS_REPORT_ZH.md)
 - Final engineering status: [`../../experiments/moe_route_noncompositionality/STAGE_E_STATUS.md`](../../experiments/moe_route_noncompositionality/STAGE_E_STATUS.md)
