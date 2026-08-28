@@ -56,6 +56,38 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def response_token_boundaries(
+    tokenizer: Any, response_ids: Sequence[int]
+) -> tuple[str, list[str], list[int]]:
+    """Map generated token IDs to canonical full-sequence character offsets.
+
+    Prefix-by-prefix decoding is not valid for byte-level BPE tokenizers because
+    a later token can complete a multi-byte character and change the preceding
+    decoded prefix.  Fast-tokenizer offsets on the decoded full sequence avoid
+    that mutation while the exact ID round trip guards against normalization.
+    """
+    ids = [int(value) for value in response_ids]
+    response = tokenizer.decode(
+        ids,
+        skip_special_tokens=True,
+        clean_up_tokenization_spaces=False,
+    )
+    encoded = tokenizer(
+        response,
+        add_special_tokens=False,
+        return_offsets_mapping=True,
+    )
+    round_trip_ids = [int(value) for value in encoded["input_ids"]]
+    if round_trip_ids != ids:
+        raise RuntimeError("Decoded response did not re-encode to the generated token IDs")
+    offsets = [(int(start), int(end)) for start, end in encoded["offset_mapping"]]
+    if len(offsets) != len(ids):
+        raise RuntimeError("Tokenizer returned an invalid number of character offsets")
+    surfaces = [response[start:end] for start, end in offsets]
+    ends = [end for _, end in offsets]
+    return response, surfaces, ends
+
+
 def shard_filename(stable_id: str) -> str:
     """Map an opaque stable ID to a single filesystem-safe shard name."""
     return hashlib.sha256(stable_id.encode("utf-8")).hexdigest() + ".json.gz"

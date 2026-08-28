@@ -1,27 +1,27 @@
 # Stage D Execution Status
 
-Updated: 2026-08-28 19:51 Asia/Hong_Kong
+Updated: 2026-08-28 23:51 Asia/Hong_Kong
 
-Status: **PREFLIGHT v3 RUNNING — SCIENTIFIC DISCOVERY NOT YET AUTHORIZED**
+Status: **ENGINEERING RETRY — CORRECTED PREFLIGHT v4 REQUIRED**
 
 ## Binding state
 
-Stage E passed its engineering gate. A separate authorization audit now permits implementation and outcome-blind preflight under [`STAGE_D_PROTOCOL_AMENDMENT_V1.md`](STAGE_D_PROTOCOL_AMENDMENT_V1.md), but it does not yet permit the 64-trajectory discovery acquisition.
+Stage E passed its engineering gate. Outcome-blind preflight v3 subsequently passed every structural check and authorized one Stage D discovery acquisition. No H1--H4 value has been inspected, and Stage C/A remain unauthorized.
 
-The first preflight attempt (`stage_d_preflight_v1`) was deliberately terminated before producing a gate because Transformers warned that generation did not receive an explicit attention mask while the checkpoint uses the same token ID for padding and end-of-sequence. Its partial directory and log are preserved and cannot support authorization.
+The discovery has not reached a scientific gate. Two versioned, preserved startup/acquisition attempts ended for engineering reasons:
 
-The corrected preflight (`stage_d_preflight_v2`) supplied an all-ones attention mask for every unpadded generation and completed its four acquisitions. Its automatic gate returned `NO_GO_STAGE_D_PREFLIGHT`: MATH-500 stable IDs contain slash characters, which created nested shard paths that the one-level validator glob did not discover. The acquisition recorded two MATH-500 trajectories, but the validator correctly observed zero and failed the count gate.
+1. `stage_d_discovery_attempt1_network_timeout` stopped before model loading because the tokenizer attempted a Hugging Face network request. The cached tokenizer was independently verified, so subsequent launches use offline mode.
+2. The offline attempt loaded the model and reached GSM8K problem 22, with 9 retained problems, before strict token-to-character validation rejected a byte-level BPE prefix-decoding mutation. Its 18 sealed shard/checksum files and full log are preserved; no route-effect value was inspected.
 
-The v2 directory and log are preserved. No H1--H4 value was inspected. [`STAGE_D_PREFLIGHT_V2_FAILURE.md`](STAGE_D_PREFLIGHT_V2_FAILURE.md) contains the binding diagnosis.
+The second issue is not a failed scientific hypothesis. Prefix-by-prefix decoding is not a valid character-boundary method when adjacent byte tokens jointly complete a Unicode character. The repair uses the fast tokenizer's full-sequence offset mapping and requires an exact decode/re-encode ID round trip. It changes neither the frozen eligibility rule nor any hypothesis threshold.
 
-## Frozen implementation
+## Validation and transition
 
-- Authorization audit: [`STAGE_D_AUTHORIZATION_AUDIT.md`](STAGE_D_AUTHORIZATION_AUDIT.md)
-- Binding amendment: [`STAGE_D_PROTOCOL_AMENDMENT_V1.md`](STAGE_D_PROTOCOL_AMENDMENT_V1.md)
-- Machine-readable configuration: [`STAGE_D_FROZEN.yaml`](STAGE_D_FROZEN.yaml)
-- Frozen local implementation commit: `cb0b6f2` and its ancestors beginning with `77044e6`
-- Unit tests: 17 remote tests pass, including the pinned MATH-500 equivalence verifier and parameter matching.
+- 19 local tests pass.
+- 19 tests pass in the isolated remote Stage D environment, including the pinned MATH equivalence verifier.
+- The actual cached OLMoE tokenizer passes a multilingual split-token boundary check.
+- Failed outputs and their authorization/log records remain immutable and versioned.
 
-## Next automatic transition
+Because acquisition code changed after preflight v3, a new outcome-blind preflight v4 must pass before a fresh authorization is created. Once v4 passes, discovery will be relaunched on physical GPU 4--7 under the same 180-second exclusivity check and unchanged scientific thresholds.
 
-The filesystem-safe correction is implemented, synchronized, and covered by 18 tests. Preflight v3 is running in a new result directory on physical GPU 4 after the exclusive-idle check. If its automatic gate passes, the pipeline will create the one-run authorization and queue discovery without another user round trip. No `STAGE_D_RUN_AUTHORIZATION.json` exists yet, and Stage C/A remain unauthorized.
+See [`STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md`](STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md) for the incident ledger.

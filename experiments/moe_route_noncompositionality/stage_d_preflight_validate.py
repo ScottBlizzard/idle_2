@@ -13,8 +13,13 @@ from typing import Any
 import numpy as np
 from transformers import AutoTokenizer
 
-from stage_d_acquire import MODEL_ID, response_token_boundaries
-from stage_d_common import h3_for_problem, matched_null_for_problem, sha256_file
+from stage_d_acquire import MODEL_ID
+from stage_d_common import (
+    h3_for_problem,
+    matched_null_for_problem,
+    response_token_boundaries,
+    sha256_file,
+)
 from stage_d_predictors import cross_fitted_joint_predictions, model_factories
 
 

@@ -35,6 +35,7 @@ from stage_d_common import (
     extract_math_prediction,
     generation_seed,
     load_frozen_config,
+    response_token_boundaries,
     resolve_layer_pairs,
     select_fragile_token,
     sha256_bytes,
@@ -262,24 +263,6 @@ def suffix_forward(
     normalized = model.model.norm(state)
     logits = model.lm_head(normalized[:, -1:, :]).detach()
     return logits, final_residual, outputs
-
-
-def response_token_boundaries(tokenizer: Any, response_ids: Sequence[int]) -> tuple[str, list[str], list[int]]:
-    decoded_prefixes = [""]
-    for end in range(1, len(response_ids) + 1):
-        decoded_prefixes.append(
-            tokenizer.decode(
-                response_ids[:end],
-                skip_special_tokens=True,
-                clean_up_tokenization_spaces=False,
-            )
-        )
-    response = decoded_prefixes[-1]
-    surfaces = [decoded_prefixes[index + 1][len(decoded_prefixes[index]) :] for index in range(len(response_ids))]
-    ends = [len(value) for value in decoded_prefixes[1:]]
-    if "".join(surfaces) != response:
-        raise RuntimeError("Token-to-character offset mapping failed to round-trip")
-    return response, surfaces, ends
 
 
 def trim_generated_ids(tokenizer: Any, generated_ids: Sequence[int]) -> list[int]:
