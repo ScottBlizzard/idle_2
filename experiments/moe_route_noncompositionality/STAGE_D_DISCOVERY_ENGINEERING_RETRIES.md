@@ -35,3 +35,9 @@ This ledger records outcome-blind engineering failures before `FINAL_GATE.json`.
 The repair preserves the frozen definition: an eligible token must have a non-whitespace/non-punctuation surface, occur before the final-answer span, and be selected by minimum teacher-forced probability with the frozen tie break. It only replaces invalid character-offset assumptions with monotone surfaces derived from the original generated IDs.
 
 Since acquisition source code changed after preflight v4, the old authorization remains preserved rather than reused. Corrected outcome-blind preflight v5 must pass before a new discovery authorization. Failed partial shards are not merged into the corrected run.
+
+## Queue stabilization after preflight v5
+
+Preflight v5 passed. While GPUs 4--7 were occupied by foreign jobs, two launch attempts observed a momentarily idle GPU 4 and then correctly aborted when the foreign workload returned during the launcher's 180-second exclusivity check. No discovery output directory was created and no foreign process was stopped.
+
+The watcher now requires 18 consecutive ten-second idle observations before it invokes the launcher. The launcher independently repeats its frozen 180-second check, and the runtime monitor still terminates only the Stage D process group if a foreign process later appears. This changes queue safety only; acquisition, analysis, frozen configuration, and scientific thresholds are untouched. The superseded authorization is preserved and a new source-hash-bound authorization is required before retry.

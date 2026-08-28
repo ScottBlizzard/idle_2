@@ -2,7 +2,7 @@
 
 Updated: 2026-08-29 00:11 Asia/Hong_Kong
 
-Status: **ENGINEERING RETRY — CORRECTED PREFLIGHT v5 REQUIRED**
+Status: **PREFLIGHT v5 PASSED — DISCOVERY WAITING FOR STABLE GPU**
 
 ## Binding state
 
@@ -24,6 +24,6 @@ The final repair incrementally decodes the bytes represented by the original gen
 - The actual cached OLMoE tokenizer passes 5,000 deterministic random-ID decoding trials.
 - Failed outputs and their authorization/log records remain immutable and versioned.
 
-Because acquisition code changed after preflight v4, a new outcome-blind preflight v5 must pass before a fresh authorization is created. Once v5 passes, discovery will be relaunched on physical GPU 4--7 under the same 180-second exclusivity check and unchanged scientific thresholds.
+Outcome-blind preflight v5 passed every structural gate. Two discovery launches then safely aborted because GPU 4 was only transiently idle before a foreign workload returned; no discovery directory was created. The watcher now requires its own 180-second continuous-idle window before invoking the launcher's independent 180-second check. A source-hash-bound authorization will be recreated for this queue-only repair, after which discovery will wait on physical GPU 4--7 under unchanged scientific thresholds.
 
 See [`STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md`](STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md) for the incident ledger.

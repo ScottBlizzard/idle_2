@@ -23,11 +23,20 @@ for candidate in "${candidates[@]}"; do
 done
 
 echo WAITING >"${queue_status}"
+declare -A idle_checks=()
+for candidate in "${candidates[@]}"; do
+    idle_checks["${candidate}"]=0
+done
 while true; do
     for candidate in "${candidates[@]}"; do
         used_mib=$(nvidia-smi --id="${candidate}" --query-gpu=memory.used --format=csv,noheader,nounits | tr -d ' ')
         process_count=$(nvidia-smi --id="${candidate}" --query-compute-apps=pid --format=csv,noheader,nounits | sed '/^[[:space:]]*$/d' | wc -l)
         if [[ "${used_mib}" -le 512 && "${process_count}" -eq 0 ]]; then
+            idle_checks["${candidate}"]=$((idle_checks["${candidate}"] + 1))
+        else
+            idle_checks["${candidate}"]=0
+        fi
+        if [[ "${idle_checks["${candidate}"]}" -ge 18 ]]; then
             gpu_id=${candidate}
             break 2
         fi
