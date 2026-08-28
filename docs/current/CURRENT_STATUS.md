@@ -73,4 +73,4 @@ This is no longer a claim about path-dependent capability. It is a proposed fail
 - Binding reset and three-reviewer audit: [`../audits/REAL_ACTUATION_CARRIER_RESET.md`](../audits/REAL_ACTUATION_CARRIER_RESET.md)
 - Draft diagnostic preregistration: [`../../experiments/moe_route_noncompositionality/PREREGISTRATION.md`](../../experiments/moe_route_noncompositionality/PREREGISTRATION.md)
 
-The repository still has no authorized active paper seed; it has one candidate authorized only for preregistration.
+The repository still has no authorized active paper seed. The sole candidate is authorized only for its Stage E engineering gate; Stages D, C, and A remain unauthorized. Stage E is safely queued behind unrelated GPU jobs and has no scientific result yet.

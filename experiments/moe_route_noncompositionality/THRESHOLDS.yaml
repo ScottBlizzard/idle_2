@@ -1,5 +1,5 @@
 protocol_version: 0.1-draft
-status: NOT_AUTHORIZED_TO_RUN
+status: STAGE_E_AUTHORIZED_ONLY
 date_frozen: 2026-08-28
 
 models:

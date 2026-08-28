@@ -1,6 +1,6 @@
 # Preregistration: Counterfactual Route Non-Compositionality in Frozen MoEs
 
-Status: **DRAFT — NOT AUTHORIZED TO RUN**
+Status: **STAGE E AUTHORIZED — STAGES D/C/A NOT AUTHORIZED**
 
 Date frozen: 2026-08-28
 
