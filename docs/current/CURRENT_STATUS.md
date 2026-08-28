@@ -59,3 +59,18 @@ Do not launch the proposed Stage 0. A narrower source-only zero-shot bracket-fea
 - Binding three-reviewer audit: [`../audits/CLOSED_LOOP_BRACKET_STEERING_AUDIT.md`](../audits/CLOSED_LOOP_BRACKET_STEERING_AUDIT.md)
 
 The repository still has no authorized active paper seed.
+
+## Real-actuation carrier reset
+
+A targeted reset searched frozen source controllers, stateful inference and agents, diffusion schedules, memory, compression, low-rank composition, and sparse routing for a carrier with a genuine “cannot hand-place the cue ball” restriction. The broad search is now closed: every generic path/control carrier was either exactly occupied or reduced to dynamic routing, planning, information gain, risk sensitivity, or final-state control.
+
+One much narrower hypothesis advances to **`ADVANCE_TO_PREREGISTRATION_ONLY`**:
+
+> In a frozen MoE, route substitutions that are independently beneficial under single-layer counterfactual evaluation may become harmful when applied jointly, so local route preferences may be invalid credit signals for multi-layer router updates.
+
+This is no longer a claim about path-dependent capability. It is a proposed failure law for an existing counterfactual-routing diagnostic. No GPU experiment is authorized until a frozen implementation-level preregistration passes review.
+
+- Binding reset and three-reviewer audit: [`../audits/REAL_ACTUATION_CARRIER_RESET.md`](../audits/REAL_ACTUATION_CARRIER_RESET.md)
+- Draft diagnostic preregistration: [`../../experiments/moe_route_noncompositionality/PREREGISTRATION.md`](../../experiments/moe_route_noncompositionality/PREREGISTRATION.md)
+
+The repository still has no authorized active paper seed; it has one candidate authorized only for preregistration.

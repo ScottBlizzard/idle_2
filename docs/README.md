@@ -5,6 +5,8 @@ The documentation is organized by role rather than chronology.
 ## Current decision
 
 - [`current/CURRENT_STATUS.md`](current/CURRENT_STATUS.md): short, binding project status.
+- [`audits/REAL_ACTUATION_CARRIER_RESET.md`](audits/REAL_ACTUATION_CARRIER_RESET.md): targeted carrier reset across source controllers, stateful agents, diffusion, compression, and structural routing. All broad path-dependence carriers are closed; one frozen-MoE counterfactual route non-compositionality candidate advances to preregistration only.
+- [`../experiments/moe_route_noncompositionality/PREREGISTRATION.md`](../experiments/moe_route_noncompositionality/PREREGISTRATION.md): draft, non-authorized kill-test protocol for the sole retained candidate; machine-readable gates are in [`THRESHOLDS.yaml`](../experiments/moe_route_noncompositionality/THRESHOLDS.yaml).
 - [`audits/CLOSED_LOOP_BRACKET_STEERING_AUDIT.md`](audits/CLOSED_LOOP_BRACKET_STEERING_AUDIT.md): binding three-reviewer audit of the new divergence report; the closed-loop Lie-bracket steering seed is `NO_GO_AS_CURRENTLY_FORMULATED` because a fixed-layer loop collapses to its final activation displacement, direct bracket injection is missing, and the stated compute/benchmark plan is not credible.
 - [`audits/DECISION_CALIBRATED_UQ_COLLISION_AUDIT.md`](audits/DECISION_CALIBRATED_UQ_COLLISION_AUDIT.md): binding three-agent follow-up audit; the learned-planner boundary-calibration pivot is `NO_GO_BEFORE_EXPERIMENT` because its empirical claim and method components are occupied.
 - [`audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md`](audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md): preceding audit; retained to show how the now-rejected conditional pivot was derived.

@@ -1,0 +1,70 @@
+protocol_version: 0.1-draft
+status: NOT_AUTHORIZED_TO_RUN
+date_frozen: 2026-08-28
+
+models:
+  discovery: allenai/OLMoE-1B-7B-0924-Instruct
+  confirmation: deepseek-ai/DeepSeek-V2-Lite-Chat
+
+datasets:
+  - openai/gsm8k:test
+  - HuggingFaceH4/MATH-500:test
+
+generation:
+  samples_per_problem: 4
+  temperature: 0.7
+  top_p: 0.95
+  top_k: 0
+  max_new_tokens: 768
+  seed_base: 20260828
+
+admissibility:
+  target_correct_trajectories_per_model_dataset: 64
+  minimum_correct_trajectories_per_model_dataset: 48
+  fragile_correct_token_probability_max: 0.50
+  primary_tokens_per_problem: 1
+
+layer_pair_relative_depths:
+  - [0.20, 0.30]
+  - [0.20, 0.55]
+  - [0.20, 0.85]
+  - [0.55, 0.85]
+
+routes:
+  candidate_pool_size: 16
+  alternatives_per_layer: 6
+  gumbel_seed_start: 0
+  maximum_draw_attempts: 100
+  gate_weight_mode_primary: recompute_at_actual_state
+  gate_weight_mode_control: replay_standard_state_weights
+
+numerics:
+  standard_replay_max_logit_abs_error: 0.0001
+  cached_uncached_max_logit_abs_error: 0.0001
+  deterministic_rerun_max_logit_abs_error: 0.000001
+  primary_score: correct_token_logit_margin
+
+scientific_gates:
+  reversal_excess_over_matched_null_pp_min: 10.0
+  bootstrap_resamples: 10000
+  confidence_level: 0.95
+  discovery_layer_pair_regimes_required: 3
+  discovery_datasets_required: 2
+  confirmation_models_required: 1
+  cross_fitted_spearman_rho_min: 0.40
+  primary_effect_must_hold_in_logit_margin: true
+  generic_mlp_baseline_must_be_beaten: true
+  recurrent_baseline_must_be_beaten: true
+  answer_aware_selection_allowed: false
+
+compute_caps:
+  includes_trajectory_generation_and_all_reruns: true
+  engineering_gpu_hours_max: 1
+  discovery_cumulative_gpu_hours_max: 6
+  confirmation_cumulative_gpu_hours_max: 12
+
+decisions:
+  engineering_failure: NO_GO_ENGINEERING
+  discovery_failure: NO_GO_NO_INTERACTION_LAW
+  confirmation_failure: NO_GO_NO_CROSS_MODEL_REPLICATION
+  diagnostic_success: HOLD_PENDING_ALGORITHMIC_AMENDMENT
