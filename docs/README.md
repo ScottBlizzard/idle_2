@@ -5,6 +5,7 @@ The documentation is organized by role rather than chronology.
 ## Current decision
 
 - [`current/CURRENT_STATUS.md`](current/CURRENT_STATUS.md): short, binding project status.
+- [`audits/CLOSED_LOOP_BRACKET_STEERING_AUDIT.md`](audits/CLOSED_LOOP_BRACKET_STEERING_AUDIT.md): binding three-reviewer audit of the new divergence report; the closed-loop Lie-bracket steering seed is `NO_GO_AS_CURRENTLY_FORMULATED` because a fixed-layer loop collapses to its final activation displacement, direct bracket injection is missing, and the stated compute/benchmark plan is not credible.
 - [`audits/DECISION_CALIBRATED_UQ_COLLISION_AUDIT.md`](audits/DECISION_CALIBRATED_UQ_COLLISION_AUDIT.md): binding three-agent follow-up audit; the learned-planner boundary-calibration pivot is `NO_GO_BEFORE_EXPERIMENT` because its empirical claim and method components are occupied.
 - [`audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md`](audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md): preceding audit; retained to show how the now-rejected conditional pivot was derived.
 - [`audits/ALGORITHMIC_PROMPTING_NOVELTY_AUDIT.md`](audits/ALGORITHMIC_PROMPTING_NOVELTY_AUDIT.md): completed Pro audit; verdict `PIVOT` and specification of the only authorized one-day smoke test.
@@ -16,6 +17,10 @@ The documentation is organized by role rather than chronology.
 - [`prompts/PRO_ALGORITHMIC_PROMPTING_AUDIT.md`](prompts/PRO_ALGORITHMIC_PROMPTING_AUDIT.md): completed targeted-audit prompt, retained for provenance.
 - [`prompts/AI_research_idea_scout_prompt.md`](prompts/AI_research_idea_scout_prompt.md): original broad idea-scout prompt; provenance only.
 - [`prompts/AI_research_reabstraction_prompt.md`](prompts/AI_research_reabstraction_prompt.md): original re-abstraction prompt; provenance only.
+
+## New-seed proposals
+
+- [`proposals/AI_RESEARCH_NEW_SEED_DIVERGENCE.md`](proposals/AI_RESEARCH_NEW_SEED_DIVERGENCE.md): complete Pro-generated 17-candidate divergence report; provenance only. Its sole ADVANCE candidate was independently rejected by the binding bracket-steering audit above.
 
 ## Prior audits
 

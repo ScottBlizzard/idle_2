@@ -45,3 +45,17 @@ No Stage 0 benchmark or Safety-Gym/GPUDrive run is authorized for this seed. Com
 - Preceding broad-principle audit: [`../audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md`](../audits/VIABILITY_ALIGNED_PLANNING_INTERNAL_AUDIT.md)
 
 The repository currently has no authorized active paper seed. Any continuation must begin with a new, separately audited theorem or estimator rather than a renamed version of task-relevant uncertainty, boundary risk, or outcome prediction.
+
+## New divergence-seed decision
+
+The Pro-generated **Closed-Loop Bracket Steering / Behavioral Lie Closure** seed is also **`NO_GO_AS_CURRENTLY_FORMULATED`** after independent mathematical, literature, and engineering review.
+
+The exact four-step activation loop appears literally unoccupied, but the central mechanism does not survive causal inspection. At a fixed transformer layer and token position, the suffix observes only the loop's final hidden-state displacement. Exact final-displacement replay must reproduce its logits, while direct injection of the already-computed Lie bracket should recover the second-order effect more simply. Exiting the instantaneous two-vector span is classical Lie closure and does not establish a capability beyond a time-varying nonlinear source-field controller.
+
+The advertised 34–60 GPU-hour protocol is also undercounted: the proposed triple/layer/scale/orientation matrix creates 6,048–23,760 conditions before prompt replication, model-native brackets require transformer-suffix double backward, standard AxBench scoring conflicts with the no-proprietary-API rule, and several mandatory nonlinear baselines require nontrivial ports.
+
+Do not launch the proposed Stage 0. A narrower source-only zero-shot bracket-feature question is retained only as a HOLD and is not an authorized experiment.
+
+- Binding three-reviewer audit: [`../audits/CLOSED_LOOP_BRACKET_STEERING_AUDIT.md`](../audits/CLOSED_LOOP_BRACKET_STEERING_AUDIT.md)
+
+The repository still has no authorized active paper seed.
