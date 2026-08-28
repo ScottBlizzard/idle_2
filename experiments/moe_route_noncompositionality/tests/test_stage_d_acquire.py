@@ -14,6 +14,8 @@ from stage_d_common import response_token_boundaries  # noqa: E402
 class PrefixChangingTokenizer:
     """Minimal fast-tokenizer stand-in for a split UTF-8 character."""
 
+    all_special_ids = []
+
     def decode(self, ids, **_kwargs):
         values = list(ids)
         if values == [1]:
@@ -22,13 +24,8 @@ class PrefixChangingTokenizer:
             return "\u00e9"
         raise AssertionError(values)
 
-    def __call__(self, text, **_kwargs):
-        if text != "\u00e9":
-            raise AssertionError(text)
-        return {
-            "input_ids": [1, 2],
-            "offset_mapping": [(0, 1), (0, 1)],
-        }
+    def convert_ids_to_tokens(self, token_id):
+        return {1: "Ã", 2: "©"}[token_id]
 
 
 class ResponseBoundaryTests(unittest.TestCase):
@@ -37,8 +34,8 @@ class ResponseBoundaryTests(unittest.TestCase):
             PrefixChangingTokenizer(), [1, 2]
         )
         self.assertEqual(response, "\u00e9")
-        self.assertEqual(surfaces, ["\u00e9", "\u00e9"])
-        self.assertEqual(ends, [1, 1])
+        self.assertEqual(surfaces, ["", "\u00e9"])
+        self.assertEqual(ends, [0, 1])
 
 
 if __name__ == "__main__":

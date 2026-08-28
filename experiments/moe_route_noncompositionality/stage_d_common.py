@@ -9,6 +9,7 @@ diverge in identifiers, seeds, answer verification, matching, or inference.
 from __future__ import annotations
 
 import hashlib
+import codecs
 import math
 import re
 import signal
@@ -56,35 +57,66 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _byte_level_decoder() -> dict[str, int]:
+    byte_values = list(range(ord("!"), ord("~") + 1))
+    byte_values += list(range(ord("¡"), ord("¬") + 1))
+    byte_values += list(range(ord("®"), ord("ÿ") + 1))
+    unicode_values = list(byte_values)
+    extra = 0
+    for value in range(256):
+        if value not in byte_values:
+            byte_values.append(value)
+            unicode_values.append(256 + extra)
+            extra += 1
+    return {chr(codepoint): byte for byte, codepoint in zip(byte_values, unicode_values)}
+
+
+BYTE_LEVEL_DECODER = _byte_level_decoder()
+
+
 def response_token_boundaries(
     tokenizer: Any, response_ids: Sequence[int]
 ) -> tuple[str, list[str], list[int]]:
-    """Map generated token IDs to canonical full-sequence character offsets.
+    """Decode original byte-level BPE IDs into monotone character surfaces.
 
-    Prefix-by-prefix decoding is not valid for byte-level BPE tokenizers because
-    a later token can complete a multi-byte character and change the preceding
-    decoded prefix.  Fast-tokenizer offsets on the decoded full sequence avoid
-    that mutation while the exact ID round trip guards against normalization.
+    Individual prefixes are not UTF-8 stable when one character spans multiple
+    BPE tokens.  An incremental decoder assigns that character to the token
+    completing it.  This uses the generated IDs directly, so decoded text need
+    not re-tokenize to the same (potentially non-canonical) BPE segmentation.
     """
     ids = [int(value) for value in response_ids]
-    response = tokenizer.decode(
+    expected = tokenizer.decode(
         ids,
         skip_special_tokens=True,
         clean_up_tokenization_spaces=False,
     )
-    encoded = tokenizer(
-        response,
-        add_special_tokens=False,
-        return_offsets_mapping=True,
-    )
-    round_trip_ids = [int(value) for value in encoded["input_ids"]]
-    if round_trip_ids != ids:
-        raise RuntimeError("Decoded response did not re-encode to the generated token IDs")
-    offsets = [(int(start), int(end)) for start, end in encoded["offset_mapping"]]
-    if len(offsets) != len(ids):
-        raise RuntimeError("Tokenizer returned an invalid number of character offsets")
-    surfaces = [response[start:end] for start, end in offsets]
-    ends = [end for _, end in offsets]
+    special_ids = {int(value) for value in tokenizer.all_special_ids}
+    incremental = codecs.getincrementaldecoder("utf-8")(errors="replace")
+    surfaces: list[str] = []
+    for index, token_id in enumerate(ids):
+        if token_id in special_ids:
+            surfaces.append("")
+            continue
+        token = str(tokenizer.convert_ids_to_tokens(token_id))
+        if all(character in BYTE_LEVEL_DECODER for character in token):
+            payload = bytes(BYTE_LEVEL_DECODER[character] for character in token)
+            surfaces.append(incremental.decode(payload, final=index == len(ids) - 1))
+            continue
+        # Added non-special tokens are literal strings rather than byte-alphabet
+        # symbols. Flush any pending invalid suffix before inserting the literal.
+        flushed = incremental.decode(b"", final=True)
+        surfaces.append(flushed + token)
+        incremental = codecs.getincrementaldecoder("utf-8")(errors="replace")
+    if ids and ids[-1] in special_ids:
+        surfaces[-1] += incremental.decode(b"", final=True)
+    response = "".join(surfaces)
+    if response != expected:
+        raise RuntimeError("Direct byte-level token decoding disagreed with the tokenizer")
+    ends: list[int] = []
+    position = 0
+    for surface in surfaces:
+        position += len(surface)
+        ends.append(position)
     return response, surfaces, ends
 
 

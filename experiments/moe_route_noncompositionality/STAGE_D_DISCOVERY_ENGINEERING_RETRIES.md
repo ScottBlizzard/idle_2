@@ -2,7 +2,7 @@
 
 Date: 2026-08-28
 
-This ledger records outcome-blind engineering failures before `FINAL_GATE.json`. Scientific route-effect fields were not inspected during either diagnosis.
+This ledger records outcome-blind engineering failures before `FINAL_GATE.json`. Scientific route-effect fields were not inspected during diagnosis.
 
 ## Attempt 1: network timeout
 
@@ -19,10 +19,19 @@ This ledger records outcome-blind engineering failures before `FINAL_GATE.json`.
 - Engineering progress before failure: GSM8K problem 22 examined; 9 problems retained; 18 sealed shard/checksum files written.
 - Failure: prefix-by-prefix decoding failed the string-concatenation round trip when a later byte token changed the decoded surface of an earlier prefix.
 - Diagnosis: byte-level BPE prefix decoding is not prefix-stable for split Unicode characters.
-- Repair: decode the complete generated sequence once, request the fast tokenizer's canonical `offset_mapping`, and require the decoded text to re-encode to the exact generated token IDs before using the offsets.
+- Initial repair: decode the complete generated sequence once, request the fast tokenizer's canonical `offset_mapping`, and require the decoded text to re-encode to the exact generated token IDs before using the offsets.
+
+## Attempt 3: preflight v4 non-canonical BPE segmentation
+
+- Preserved remote result: `results/stage_d_preflight_v4`
+- Preserved log: `queue/stage_d_preflight_v4.log`
+- Failure: a generated MATH-500 response decoded successfully but did not re-encode to the identical token-ID segmentation.
+- Diagnosis: valid generated BPE sequences are not guaranteed to be the tokenizer encoder's unique canonical segmentation, so decode/re-encode equality was an invalid engineering invariant.
+- Repair: convert every original token ID to its byte-alphabet token, decode bytes incrementally as UTF-8, assign a split character to its completing token, and verify that joined token surfaces equal the tokenizer's full decode.
+- Validation: 19 tests pass locally and remotely; the cached OLMoE tokenizer also passed 5,000 deterministic random-ID sequences with exact full-decode agreement.
 
 ## Integrity decision
 
-The repair preserves the frozen definition: an eligible token must have a non-whitespace/non-punctuation surface, occur before the final-answer span, and be selected by minimum teacher-forced probability with the frozen tie break. It only replaces an invalid implementation of character offsets with the tokenizer's canonical full-sequence offsets.
+The repair preserves the frozen definition: an eligible token must have a non-whitespace/non-punctuation surface, occur before the final-answer span, and be selected by minimum teacher-forced probability with the frozen tie break. It only replaces invalid character-offset assumptions with monotone surfaces derived from the original generated IDs.
 
-Since acquisition source code changed after preflight v3, the old authorization is preserved rather than reused. Corrected outcome-blind preflight v4 must pass before a new discovery authorization. Failed partial shards are not merged into the corrected run.
+Since acquisition source code changed after preflight v4, the old authorization remains preserved rather than reused. Corrected outcome-blind preflight v5 must pass before a new discovery authorization. Failed partial shards are not merged into the corrected run.
