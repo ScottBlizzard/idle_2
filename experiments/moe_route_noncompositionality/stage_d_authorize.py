@@ -12,8 +12,10 @@ from stage_d_common import sha256_file
 
 
 SOURCE_FILES = (
+    "STAGE_D_PROTOCOL_AMENDMENT_V1.md",
     "STAGE_D_FROZEN.yaml",
     "THRESHOLDS.yaml",
+    "requirements-stage-d.txt",
     "stage_d_common.py",
     "stage_d_predictors.py",
     "stage_d_acquire.py",
