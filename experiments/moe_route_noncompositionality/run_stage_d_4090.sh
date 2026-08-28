@@ -6,6 +6,8 @@ repo_root=${STAGE_D_REPO:-${stage_root}/repo}
 output_root=${STAGE_D_OUTPUT:-${stage_root}/results/stage_d_discovery}
 authorization=${STAGE_D_AUTHORIZATION:-${stage_root}/queue/STAGE_D_RUN_AUTHORIZATION.json}
 gpu_id=${STAGE_D_GPU_ID:-4}
+cache_root=${STAGE_D_CACHE:-/mnt/sdb/ccj/hf_cache_idle_2}
+dataset_cache_root=${STAGE_D_DATASET_CACHE:-${cache_root}/datasets}
 
 [[ "${gpu_id}" =~ ^[4-7]$ ]] || { echo "Only physical GPUs 4-7 are authorized." >&2; exit 2; }
 [[ ! -e "${output_root}" ]] || { echo "Refusing to overwrite ${output_root}." >&2; exit 21; }
@@ -24,4 +26,10 @@ for stable_check in $(seq 1 18); do
 done
 
 export CUDA_VISIBLE_DEVICES="${gpu_id}"
+export HF_HOME="${cache_root}"
+export HF_HUB_CACHE="${cache_root}/hub"
+export HF_DATASETS_CACHE="${dataset_cache_root}"
+export TRANSFORMERS_CACHE="${cache_root}/transformers"
+export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
+export TOKENIZERS_PARALLELISM=false
 exec timeout --signal=TERM 21600 bash "${repo_root}/experiments/moe_route_noncompositionality/stage_d_pipeline.sh"
