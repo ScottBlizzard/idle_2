@@ -75,7 +75,13 @@ This is no longer a claim about path-dependent capability. It is a proposed fail
 
 The repository still has no authorized active paper seed. The sole candidate has now passed its Stage E engineering gate, but Stages D, C, and A remain unauthorized. The route harness achieved zero replay, cache, and deterministic-rerun error across 72 engineering conditions. A separate outcome-blind GSM8K/MATH-500 generation pilot produced a guarded discovery-plus-confirmation projection of `9.16651 GPU h`, below the frozen 12-hour cap; cumulative Stage E use was `0.09193 GPU h`.
 
-This is a feasibility result, not evidence for route non-compositionality. The projection assumes 64 target trajectories per dataset/model and uses a `2.4×` DeepSeek runtime proxy; extra failed generation attempts remain governed by the six-hour Stage D hard stop. A separate binding authorization is required before any discovery execution.
+This is a feasibility result, not evidence for route non-compositionality. The projection assumes 64 target trajectories per dataset/model and uses a `2.4×` DeepSeek runtime proxy; extra failed generation attempts remain governed by the six-hour Stage D hard stop.
+
+A binding implementation amendment has now authorized code construction and outcome-blind preflight, not scientific discovery. It freezes stable identifiers, answer verification, fragile-token filtering, random streams, matched-null donors, an equal-budget numerical H3, parameter-matched H4 baselines, 10,000 problem-clustered bootstrap resamples, the 32-test BH family, and the six-hour hard stop.
+
+The first preflight attempt was intentionally aborted after an explicit attention-mask warning and remains preserved as an invalid engineering attempt. A corrected v2 preflight is running on physical GPU 4 with an all-ones mask for unpadded generation. Its route outcomes may not be inspected. Only an automatic `STAGE_D_PREFLIGHT_PASS` may authorize one frozen OLMoE discovery run; Stage C and Stage A remain unauthorized.
 
 - Stage E report: [`../../experiments/moe_route_noncompositionality/RESULTS_REPORT_ZH.md`](../../experiments/moe_route_noncompositionality/RESULTS_REPORT_ZH.md)
 - Final engineering status: [`../../experiments/moe_route_noncompositionality/STAGE_E_STATUS.md`](../../experiments/moe_route_noncompositionality/STAGE_E_STATUS.md)
+- Stage D execution status: [`../../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md`](../../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md)
+- Binding Stage D amendment: [`../../experiments/moe_route_noncompositionality/STAGE_D_PROTOCOL_AMENDMENT_V1.md`](../../experiments/moe_route_noncompositionality/STAGE_D_PROTOCOL_AMENDMENT_V1.md)
