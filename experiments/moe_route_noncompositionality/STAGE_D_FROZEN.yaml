@@ -1,0 +1,105 @@
+protocol_version: 1.0-stage-d-amendment
+status: IMPLEMENTATION_AND_OUTCOME_BLIND_PREFLIGHT_ONLY
+date_frozen: 2026-08-28
+parent_thresholds: THRESHOLDS.yaml
+
+dataset_codes:
+  gsm8k: 0
+  math500: 1
+stable_ids:
+  gsm8k: sha256_question_utf8
+  math500: unique_id_else_sha256_problem_utf8
+duplicate_policy: fail
+folds:
+  count: 5
+  assignment: stable_sorted_ordinal_mod_5
+
+seeds:
+  base: 20260828
+  dataset_multiplier: 1000003
+  problem_multiplier: 10007
+  layer_multiplier: 101
+  outside_pool_offset: 50000
+
+dependencies:
+  math_verify: 0.8.0
+  sympy: 1.13.1
+  antlr4_python3_runtime: '4.11.*'
+  verification_timeout_seconds: 2
+
+resolved_olmoe_layer_pairs:
+  near_early: [3, 5]
+  medium: [3, 8]
+  far: [3, 13]
+  late: [8, 13]
+
+token_filter:
+  unicode_normalization: NFKC
+  require_unicode_category_prefix: [L, N]
+  probability_max: 0.50
+  tie_tolerance: 1.0e-12
+  select: minimum_probability_then_earliest
+
+controls:
+  fixed_weight_diagonal_pairs: 6
+  same_identity_pairs: 6
+  outside_pool_routes_per_layer: 1
+  cyclic_permutation_shift: 1
+
+matched_null:
+  donors: 3
+  exclude_identical_ordered_pair: true
+  distance: euclidean_standardized_within_problem_layer_pair
+  balance: report_all_coordinates_no_post_hoc_rematching
+  minimum_problem_clusters: 10
+  minimum_eligible_route_pairs: 32
+
+h3:
+  scored_candidate_budget_each: 12
+  direct_joint_pairs: diagonal_plus_cyclic_shift_one
+  success: selected_joint_logit_margin_delta_gt_zero
+  success_rate_advantage_pp_min: 10.0
+  confidence_lower_bound_gt_zero: true
+
+h4:
+  hidden_random_projection_dimensions: 32
+  expert_embedding_dimensions: 8
+  bilinear_rank: 8
+  model_seeds: [20260828, 20260829, 20260830]
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0
+  batch_size: 256
+  maximum_epochs: 200
+  early_stopping_patience: 20
+  training_validation_problem_fraction: 0.10
+  training_validation_assignment: stable_sorted_training_rank_mod_10_equals_0
+  spearman_rho_min: 0.40
+  confidence_lower_bound_rho_min: 0.40
+  baseline_difference_confidence_lower_bound_gt_zero: true
+
+statistics:
+  bootstrap_resamples: 10000
+  confidence_level: 0.95
+  multiple_testing: benjamini_hochberg
+  false_discovery_rate: 0.05
+  family_size: 32
+  missing_cell_p_value: 1.0
+
+discovery_gate:
+  datasets_required: [gsm8k, math500]
+  same_layer_regimes_required: 3
+  hypotheses_required: [H1, H2, H3, H4]
+
+resource:
+  allowed_physical_gpus: [4, 5, 6, 7]
+  exclusive_idle_seconds: 180
+  maximum_memory_mib_for_idle: 512
+  cumulative_wall_gpu_hours_max: 6
+  overwrite_results: false
+
+decisions:
+  preflight_failure: NO_GO_STAGE_D_PREFLIGHT
+  discovery_failure: NO_GO_NO_INTERACTION_LAW
+  discovery_success: GO_STAGE_C_ELIGIBLE
+  infrastructure_failure: FAILED_INFRASTRUCTURE
