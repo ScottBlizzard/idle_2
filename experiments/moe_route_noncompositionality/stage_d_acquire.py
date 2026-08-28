@@ -327,6 +327,7 @@ def generate_candidates(
         torch.cuda.manual_seed_all(seed)
         generated = model.generate(
             input_ids=input_ids,
+            attention_mask=torch.ones_like(input_ids),
             do_sample=True,
             temperature=0.7,
             top_p=0.95,

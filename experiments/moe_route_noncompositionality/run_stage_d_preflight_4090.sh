@@ -3,7 +3,7 @@ set -euo pipefail
 
 stage_root=${STAGE_D_ROOT:-/mnt/sdb/ccj/idle_2/moe_route_noncompositionality}
 repo_root=${STAGE_D_REPO:-${stage_root}/repo}
-output_root=${STAGE_D_PREFLIGHT_OUTPUT:-${stage_root}/results/stage_d_preflight_v1}
+output_root=${STAGE_D_PREFLIGHT_OUTPUT:-${stage_root}/results/stage_d_preflight_v2}
 cache_root=${STAGE_D_CACHE:-/mnt/sdb/ccj/hf_cache_idle_2}
 dataset_cache_root=${STAGE_D_DATASET_CACHE:-${cache_root}/datasets}
 gpu_id=${STAGE_D_GPU_ID:-4}
