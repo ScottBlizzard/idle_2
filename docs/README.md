@@ -13,12 +13,20 @@ Everything below is evidence or provenance. A new Pro session should not read it
 ## Current decision
 
 - [`current/CURRENT_STATUS.md`](current/CURRENT_STATUS.md): short, binding project status.
+- [`audits/CONTRADICTION_FIRST_SEED_RESET_2026-08-30.md`](audits/CONTRADICTION_FIRST_SEED_RESET_2026-08-30.md): contradiction-first reset and superseding decision; trajectory fault gain and redundancy-conditioned dose are now killed, leaving one endogenous-failure falsifier.
+- [`theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md`](theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md): selection-induced inverse-scaling construction, crossed generator-by-corrector protocol, and relational-error-depth Oral gate.
+- [`../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL.md`](../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL.md): frozen 4×4 crossed-repair kill design using the public ICLR 2026 verification-trajectory bundle; no run while SSH is unavailable.
+- [`theory/TRAJECTORY_FAULT_GAIN_NOTE.md`](theory/TRAJECTORY_FAULT_GAIN_NOTE.md): archived four-way separation; superseded and killed by direct collision audit.
 - [`audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md`](audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md): latest contradiction-first search over the remaining snooker-derived mechanisms. All eight translations were occupied; decision `NO_ORAL_SEED_FOUND` and zero GPU authorization.
 - [`audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md`](audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md): three-track correction that preserves fifteen concrete snooker reversals, three native discussion targets, and one theory-first workflow-propagation HOLD. It authorizes no GPU experiment.
 - [`../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md`](../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md): completed Stage D boundary. The automatic gate is `NO_GO_NO_INTERACTION_LAW`; zero regimes passed on both datasets and Stage C/A remain unauthorized.
 - [`../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md): Chinese Stage D evidence report, claim--evidence audit, and binding stop decision.
 
-There is no authorized paper seed. Transient shortcut catalysis failed the generality/novelty gate, and the subsequent negative-space search found no experiment-ready mechanism. A deeper reassessment shows that the snooker source itself is not exhausted, but retains only one theory-first workflow-propagation HOLD and no GPU authorization.
+There is still no authorized active paper seed. Transient shortcut catalysis and the MoE
+route-interaction study failed their binding gates. The current sole theory-first
+falsifier is endogenous failure conditioning with relational error depth; its frozen
+4×4 crossed pilot may be launched only after resource preflight, and selection reversal
+without a relational interaction remains audit-only evidence.
 
 ## Latest experiment protocol and provenance
 

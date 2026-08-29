@@ -2,6 +2,31 @@
 
 Last updated: 2026-08-30
 
+## Endogenous-failure reset — 2026-08-30
+
+The project still has **no authorized active paper seed**, but the search is no longer an
+undifferentiated hold. The earlier trajectory-fault-gain candidate is now killed by direct
+collisions in controlled deletion-versus-replacement intervention, reasoning-trajectory
+selection, and agent fault injection. The redundancy-conditioned edit-dose candidate is
+also killed before experiment because redundancy and entanglement do not identify the
+claimed signs without specifying aggregation structure.
+
+The sole current `THEORY-FIRST FALSIFIER` is **endogenous failure conditioning**. Published
+self-correction comparisons commonly report each model's repair rate on that model's own
+failure cohort. This is a valid deployment statistic but does not identify correction
+capability: stronger models leave a harder selected error tail. A deterministic construction
+shows correction skill increasing at every fixed difficulty while own-failure correction
+falls from 27% to 13%; on a common error bank it rises from 37% to 57%.
+
+The only potential Oral-level residual is **relational error depth**: after fixing the exact
+error and role, a weaker but complementary model may repair errors that a stronger related
+model cannot because model families share blind spots. The next gate is a small complete
+generator-by-corrector matrix. Selection-bias reversal alone is insufficient; a stable
+family interaction and an equal-budget complementarity-routing gain are required.
+
+- Binding reset: [`../audits/CONTRADICTION_FIRST_SEED_RESET_2026-08-30.md`](../audits/CONTRADICTION_FIRST_SEED_RESET_2026-08-30.md)
+- Theory and kill design: [`../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md`](../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md)
+
 ## Binding decision
 
 The **conditionally irrelevant competing-operator interference** confirmatory seed is a **NO-GO**.

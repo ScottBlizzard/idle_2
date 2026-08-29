@@ -3,7 +3,7 @@
 **Repository:** [ScottBlizzard/idle_2](https://github.com/ScottBlizzard/idle_2)  
 **Brief date:** 30 August 2026
 
-**Project state:** no authorized active seed
+**Project state:** one theory-first falsifier; no authorized active paper seed
 
 ## 1. Mission
 
@@ -48,7 +48,38 @@ The latest negative-space search additionally closes continuation-family scoring
 
 A later three-track reassessment does not reopen those broad claims, but corrects the stronger statement that the snooker source is exhausted. It retains one theory-first question: under matched tools, model, tokens, and verification budget, can extra locally verifiable workflow nodes reverse the usual horizon penalty by removing a high-coupling error-propagation bottleneck? This is `ONE_THEORY_FIRST_HOLD`, not an active seed. It requires a prospectively estimable propagation gain and a separation theorem beyond AgentEval/CoT2Graph features before any GPU work. See [`../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md`](../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md).
 
-## 4. Latest experiment: what it actually teaches
+## 4. Current sole falsifier: the diagonal is not a scaling law
+
+The current candidate did not come from another direct snooker mapping. It begins from a
+published inverse-scaling claim in self-correction. Existing comparisons often report
+
+\[
+P(\mathrm{repair}\mid\text{generator}=\text{corrector}=m,
+\text{ model }m\text{ initially failed}).
+\]
+
+This diagonal statistic mixes repair competence, the difficulty distribution of errors
+that survive each generator, and self/other role gating. A deterministic model in
+[`../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md`](../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md)
+constructs strict positive scaling at every fixed difficulty while own-failure correction
+strictly decreases. The common-error-bank ranking has the opposite sign.
+
+Selection bias alone is not an Oral contribution. The only high-ceiling residual is
+**relational error depth**: after holding the exact error and wrapper fixed, error
+repairability may depend on the generator--corrector pairing because related models share
+blind spots. A weaker complementary corrector may then repair an error that a stronger
+related corrector cannot. This must survive direct comparison with ICLR 2026 *Variation in
+Verification*, COLM 2026 *Self-Correction Bench*, controlled role-label studies, and ICML
+2025 *Correlated Errors in Large Language Models*.
+
+The public `YefanZhou98/LLMVerify-Generator` bundle already supplies about 619,000 labeled
+trajectories from 15 generators. A frozen 4×4 crossed-repair pilot is specified in
+[`../../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL.md`](../../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL.md).
+Promotion requires a stable generator-family-by-corrector-family interaction and a
+held-out equal-call-budget complementarity router gain. A standardized ranking reversal
+without those results is only an audit.
+
+## 5. Latest completed experiment: what it actually teaches
 
 The frozen-MoE Stage D study completed successfully on 64 retained GSM8K and 64 retained MATH-500 trajectories. It tested four layer-pair regimes and four registered hypotheses:
 
@@ -66,7 +97,7 @@ The automatic result was `NO_GO_NO_INTERACTION_LAW`:
 
 Therefore the failure is scientific, not a lack of compute or engineering completion. The useful meta-lesson is that a visually appealing analogy can produce a precise intervention yet still lack a stable population-level law. The next seed must earn its mechanism before receiving more scale.
 
-## 5. Source intuitions that remain available—but are not claims
+## 6. Source intuitions that remain available—but are not claims
 
 The snooker discussion generated several useful question forms. They may inspire candidates but confer no novelty:
 
@@ -80,7 +111,7 @@ The snooker discussion generated several useful question forms. They may inspire
 
 Each of these is already adjacent to mature literatures. A candidate is valuable only if it exposes a narrower contradiction, missing law, identifiable failure mode, or algorithmic consequence that current formalisms and direct baselines do not absorb.
 
-## 6. Required idea bar
+## 7. Required idea bar
 
 A candidate should be rejected unless it can answer all of the following:
 
@@ -95,7 +126,7 @@ A candidate should be rejected unless it can answer all of the following:
 
 An idea that is merely publishable, fashionable, or easy to run should still be rejected. Conversely, a risky idea is acceptable if the first test is cheap and the upside is genuinely high.
 
-## 7. Desired output from the next scout
+## 8. Desired output from the next scout
 
 The scout should first diverge across multiple AI subfields, then independently kill weak candidates through current literature, theory, and baseline analysis. It should recommend **at most one** seed for experiment. `NO_GO_NEED_NEW_SEED` is a valid and preferred answer if nothing clears the bar.
 
