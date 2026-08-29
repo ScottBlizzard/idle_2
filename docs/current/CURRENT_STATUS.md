@@ -138,3 +138,13 @@ None clears the Oral-level novelty gate. The first seven reduce to direct or mat
 The binding decision is **`NO_ORAL_SEED_FOUND`**. No Pro task and no GPU run are authorized. The next search must begin from a concrete contradiction between existing results, identify the hidden regime variable, and specify a separating intervention and one-day kill test before any experiment.
 
 - Binding search report: [`../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md`](../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md)
+
+## Deeper snooker-mechanism reassessment
+
+A three-track reassessment corrected an overly broad interpretation of the preceding stop. The snooker source is not exhausted: preserving the exact game state and rules exposes fifteen concrete reversals, especially asymmetric legal-target handoff, object-identity changes near terminal scoring conditions, and stronger K-ball intervention under greater substitute-ball redundancy. These are retained as sources for matched expert-choice counterfactuals, not as AI claims.
+
+Only one AI translation remains at `ONE_THEORY_FIRST_HOLD`: matched agent workflows may exhibit a sign reversal in the usual horizon penalty when extra locally verifiable nodes remove a high-coupling error-propagation bottleneck. AgentEval and CoT2Graph are strong adjacent work. The candidate must first provide a prospectively estimable propagation gain and a separation theorem beyond step count, token count, node accuracy, indegree, and existing propagation features.
+
+This amendment does not authorize an active seed or GPU run. The current state is **`NO_ACTIVE_SEED — ONE_THEORY_FIRST_HOLD`**. A low-prior fail-stop compilation idea is retained only for red-team comparison against validators, abstention, postconditions, rollback, and AFT.
+
+- Binding deeper reassessment: [`../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md`](../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md)

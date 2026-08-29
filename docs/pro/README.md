@@ -4,7 +4,7 @@ This directory is the **single entry point** for a new Pro research-scout sessio
 
 ## Current task status
 
-The transient-shortcut theory/novelty audit is complete and its general-law attempt collided directly with level-set/null-space teleportation. A subsequent local negative-space search also closed the remaining snooker-derived translations; read [`../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md`](../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md) before proposing another seed. There is no current Pro task and no authorized experiment.
+The transient-shortcut theory/novelty audit is complete and its general-law attempt collided directly with level-set/null-space teleportation. A subsequent negative-space search closed eight broad translations, while a three-track deeper reassessment retained one theory-first workflow-propagation HOLD and three concrete snooker discussion targets. Read [`../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md`](../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md) before proposing another seed. There is no current Pro task and no authorized experiment.
 
 ## Latest post-Pro decision
 
@@ -25,4 +25,4 @@ Files under [`../prompts/`](../prompts/) and [`../archive/`](../archive/) are pr
 
 ## Current state in one sentence
 
-There is no active seed. The remaining continuation, recoverability, adaptive-intervention, interface, verifier, and future-editability translations are occupied; the next search must start from a new collision pair and separating intervention.
+There is no active seed. The snooker source is not exhausted, but its sole AI residual is a theory-first question about workflow error-propagation topology; no experiment is authorized before a separation theorem and matched counterexample exist.

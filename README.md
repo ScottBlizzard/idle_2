@@ -8,7 +8,7 @@ This repository records a falsification-first search for an ICLR-level research 
 2. For the binding project record, read [`docs/current/CURRENT_STATUS.md`](docs/current/CURRENT_STATUS.md).
 3. For the latest completed scientific result, read [`experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md).
 
-There is currently **no authorized paper seed**. The frozen-MoE route-non-compositionality discovery ended at **`NO_GO_NO_INTERACTION_LAW`**. The later transient-shortcut candidate reduced directly to existing level-set and null-space teleportation. A subsequent negative-space search translated the remaining snooker mechanisms into continuation robustness, recoverability, adaptive branching, interface operability, verifier legibility, and future code editability; every candidate was already occupied, including a direct controlled dependent-PR collision for the strongest code-maintainability residual. The latest binding result is **`NO_ORAL_SEED_FOUND`**; no GPU experiment is authorized.
+There is currently **no authorized paper seed**. The frozen-MoE route-non-compositionality discovery ended at **`NO_GO_NO_INTERACTION_LAW`**, and transient-shortcut catalysis reduced to existing teleportation theory. A later negative-space search closed eight broad translations. A three-track deeper reassessment then showed that the snooker source itself is not exhausted, but retained only one theory-first HOLD: whether lowering workflow error-propagation coupling can reverse the usual penalty of adding steps under strictly matched compute and tools. The current state is **`NO_ACTIVE_SEED — ONE_THEORY_FIRST_HOLD`**; no GPU experiment is authorized.
 
 ## Repository layout
 

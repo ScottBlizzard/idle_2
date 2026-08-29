@@ -46,6 +46,8 @@ Other heavily occupied regions already audited include retrieval redundancy/dive
 
 The latest negative-space search additionally closes continuation-family scoring, diagnosable tool interfaces, failure-conditioned action value, redundancy-conditioned intervention strength, verifier-burden transfer, incumbent/insurance preservation, and downstream maintainability of currently successful patches as standalone headlines. See [`../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md`](../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md). These mechanisms may appear as components, but not as the claimed novelty without a distinct separating law.
 
+A later three-track reassessment does not reopen those broad claims, but corrects the stronger statement that the snooker source is exhausted. It retains one theory-first question: under matched tools, model, tokens, and verification budget, can extra locally verifiable workflow nodes reverse the usual horizon penalty by removing a high-coupling error-propagation bottleneck? This is `ONE_THEORY_FIRST_HOLD`, not an active seed. It requires a prospectively estimable propagation gain and a separation theorem beyond AgentEval/CoT2Graph features before any GPU work. See [`../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md`](../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md).
+
 ## 4. Latest experiment: what it actually teaches
 
 The frozen-MoE Stage D study completed successfully on 64 retained GSM8K and 64 retained MATH-500 trajectories. It tested four layer-pair regimes and four registered hypotheses:
