@@ -1,6 +1,6 @@
 # Current Research Status
 
-Last updated: 2026-08-29
+Last updated: 2026-08-30
 
 ## Binding decision
 
@@ -128,3 +128,13 @@ The binding decision is therefore **`NO_GO_TRANSIENT_SHORTCUT_ORAL_SEED`**. The 
 - Active theory note: [`../theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md`](../theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md)
 - Hostile Pro audit: [`../audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](../audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md)
 - General-law attempt and binding collision: [`../theory/DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md`](../theory/DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md)
+
+## Negative-space search after transient-shortcut closure
+
+A new local search re-derived candidate mechanisms from the complete snooker discussion instead of preserving the previous AI carriers. It tested eight translations: continuation-family robustness, diagnosable action interfaces, failure-conditioned value, redundancy-conditioned intervention strength, macro self-averaging, verifier-burden transfer, insurance-before-exploration, and future editability of present-equivalent code patches.
+
+None clears the Oral-level novelty gate. The first seven reduce to direct or mature work in continuation transfer, semantic coverage, agent-interface operability, recoverability, adaptive branching, pruning/concentration, prover-verifier legibility, or incumbent-preserving search. The strongest apparent residual—currently correct patches with different downstream editability—was also closed after finding a 2026 controlled two-step dependent-PR study that directly measures downstream failures caused by the initial implementation.
+
+The binding decision is **`NO_ORAL_SEED_FOUND`**. No Pro task and no GPU run are authorized. The next search must begin from a concrete contradiction between existing results, identify the hidden regime variable, and specify a separating intervention and one-day kill test before any experiment.
+
+- Binding search report: [`../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md`](../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md)

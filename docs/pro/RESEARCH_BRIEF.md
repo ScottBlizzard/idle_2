@@ -1,7 +1,8 @@
 # Research Brief for the Next ICLR Seed
 
 **Repository:** [ScottBlizzard/idle_2](https://github.com/ScottBlizzard/idle_2)  
-**Brief date:** 29 August 2026  
+**Brief date:** 30 August 2026
+
 **Project state:** no authorized active seed
 
 ## 1. Mission
@@ -42,6 +43,8 @@ The following families are closed for this project unless a proposed claim is de
 | Counterfactual route non-compositionality in frozen MoEs | The complete registered Stage D experiment found no reproducible interaction law and no deployable compatibility predictor | rescuing selected H3 cells, changing layer bins, relaxing multiplicity, or adding models after the NO-GO |
 
 Other heavily occupied regions already audited include retrieval redundancy/diversity, reasoning-sample genealogy, raw-versus-compressed agent memory, masked-diffusion commitment order, output-path diversity and SFT conflict, recoverability-weighted failed traces, ordinary model editing interference, and generic multi-agent critique.
+
+The latest negative-space search additionally closes continuation-family scoring, diagnosable tool interfaces, failure-conditioned action value, redundancy-conditioned intervention strength, verifier-burden transfer, incumbent/insurance preservation, and downstream maintainability of currently successful patches as standalone headlines. See [`../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md`](../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md). These mechanisms may appear as components, but not as the claimed novelty without a distinct separating law.
 
 ## 4. Latest experiment: what it actually teaches
 

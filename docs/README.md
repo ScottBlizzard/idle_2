@@ -13,10 +13,11 @@ Everything below is evidence or provenance. A new Pro session should not read it
 ## Current decision
 
 - [`current/CURRENT_STATUS.md`](current/CURRENT_STATUS.md): short, binding project status.
+- [`audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md`](audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md): latest contradiction-first search over the remaining snooker-derived mechanisms. All eight translations were occupied; decision `NO_ORAL_SEED_FOUND` and zero GPU authorization.
 - [`../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md`](../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md): completed Stage D boundary. The automatic gate is `NO_GO_NO_INTERACTION_LAW`; zero regimes passed on both datasets and Stage C/A remain unauthorized.
 - [`../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md): Chinese Stage D evidence report, claim--evidence audit, and binding stop decision.
 
-There is no authorized paper seed. Transient shortcut catalysis passed a stylized mathematical feasibility check but failed the subsequent generality/novelty gate: the repaired scalar theorem lacks an intrinsic help-to-harm transition, and the local clean-rate generalization is directly occupied by level-set/null-space teleportation. No GPU experiment is authorized.
+There is no authorized paper seed. Transient shortcut catalysis failed the generality/novelty gate, and the subsequent negative-space search found no distinct surviving mechanism. The apparent future-code-editability residual is directly challenged by a controlled two-step dependent-PR study. No GPU experiment is authorized.
 
 ## Latest experiment protocol and provenance
 

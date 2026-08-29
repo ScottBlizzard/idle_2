@@ -4,7 +4,7 @@ This directory is the **single entry point** for a new Pro research-scout sessio
 
 ## Current task status
 
-The transient-shortcut theory/novelty audit is complete and archived at [`../audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](../audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md). Its required general-law attempt was subsequently completed but collided directly with level-set/null-space teleportation. There is no current Pro task and no authorized experiment.
+The transient-shortcut theory/novelty audit is complete and its general-law attempt collided directly with level-set/null-space teleportation. A subsequent local negative-space search also closed the remaining snooker-derived translations; read [`../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md`](../audits/NEGATIVE_SPACE_ORAL_SEED_SEARCH.md) before proposing another seed. There is no current Pro task and no authorized experiment.
 
 ## Latest post-Pro decision
 
@@ -25,4 +25,4 @@ Files under [`../prompts/`](../prompts/) and [`../archive/`](../archive/) are pr
 
 ## Current state in one sentence
 
-There is no active seed. Transient shortcut catalysis is closed as an Oral candidate after its general-law attempt reduced to existing teleportation theory.
+There is no active seed. The remaining continuation, recoverability, adaptive-intervention, interface, verifier, and future-editability translations are occupied; the next search must start from a new collision pair and separating intervention.
