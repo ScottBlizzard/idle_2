@@ -110,9 +110,21 @@ The initial deterministic CPU existence check found no beneficial regime in a de
 
 A sharper three-parameter gradient-flow model now supplies a proved stylized separation. The shortcut phase obeys two exact identities, including `u = epsilon * exp(2(v - epsilon))`. They imply that clean-only and permanent-shortcut training both retain order-one core loss on a logarithmic horizon, while withdrawing at a fixed shortcut-state threshold and continuing on the core objective reaches arbitrarily small fixed loss in logarithmic time. Deterministic integration across five initialization scales placed the best withdrawal time within roughly 10% of `log(1/epsilon)`.
 
-The state-triggered form also transferred qualitatively to the nonlinear XOR probe. One common shortcut-aligned margin threshold (`0.40`) automatically selected withdrawal steps `55`, `22`, `17`, and `17` as shortcut correlation increased from `0.70` to `1.00`; every condition improved final clean loss, with 8--9 of 10 paired seeds winning. The threshold is exploratory and the gain is small with saturated accuracy. The internal theory-feasibility gate is therefore passed, but proof novelty, natural-model relevance, and Oral-level significance remain unresolved. No GPU-scale experiment is yet authorized; the next binding action is a fresh adversarial theory/literature audit.
+The state-triggered form also transferred qualitatively to the nonlinear XOR probe. One common shortcut-aligned margin threshold (`0.40`) automatically selected withdrawal steps `55`, `22`, `17`, and `17` as shortcut correlation increased from `0.70` to `1.00`; every condition improved final clean loss, with 8--9 of 10 paired seeds winning. The threshold is exploratory and the gain is small with saturated accuracy.
+
+The subsequent hostile Pro audit returned `HOLD_REQUIRES_GENERAL_LAW`. It repaired the theorem but showed that the scalar system has no intrinsic upper withdrawal boundary: continued shortcut exposure preserves the warm start, the formal trigger is far from shortcut saturation, and permanent exposure is not worse than clean-only at the matched logarithmic horizon.
+
+A local generalization was then derived at exactly matched Relative Transfer. For a shortcut excess direction `A` satisfying `g^T A = 0`, the matched-time endpoint gap is
+
+`-eta * s * D_A ||g||^2 + O(eta*s^2 + eta^2)`.
+
+Under the function-null condition `J A = 0`, the coefficient becomes `r^T (D_A K) r`, yielding explicit positive, neutral, and harmful examples. This result is mathematically valid but directly occupied by level-set teleportation, which maximizes gradient norm on a constant-loss level set, and by null-space teleportation, which implements the function-preserving version for neural networks. Long-horizon auxiliary weighting, good/bad/neutral decomposition, implicit auxiliary learning, and NTK alignment further occupy the surrounding interpretation.
+
+The binding decision is therefore **`NO_GO_TRANSIENT_SHORTCUT_ORAL_SEED`**. The scalar theorem and local rate-shaping lemma remain technical notes, not an authorized paper seed. No GPU experiment is authorized.
 
 - Pro divergence report: [`../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md`](../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md)
 - Binding literature-role re-audit: [`../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md`](../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md)
 - Exploratory existence checks: [`../../analysis/transient_shortcut_phase_transition/README.md`](../../analysis/transient_shortcut_phase_transition/README.md)
 - Active theory note: [`../theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md`](../theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md)
+- Hostile Pro audit: [`../audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](../audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md)
+- General-law attempt and binding collision: [`../theory/DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md`](../theory/DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md)

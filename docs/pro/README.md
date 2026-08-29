@@ -2,14 +2,14 @@
 
 This directory is the **single entry point** for a new Pro research-scout session. It is intentionally short. Do not begin by reading every audit, prompt, log, or result shard in the repository.
 
-## Current task: theory/novelty audit
+## Current task status
 
-Open a **new Pro conversation** and paste [`PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md). That prompt contains the exact minimal reading order and output contract. The prior broad divergence prompt is no longer current.
+The transient-shortcut theory/novelty audit is complete and archived at [`../audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](../audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md). Its required general-law attempt was subsequently completed but collided directly with level-set/null-space teleportation. There is no current Pro task and no authorized experiment.
 
 ## Latest post-Pro decision
 
 - [`../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md`](../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md): completed 15-candidate Pro search; terminal result `NO_GO_NEED_NEW_SEED`.
-- [`../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md`](../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md): corrected literature-role audit. It keeps most candidates closed, identifies C11 as more directly occupied, and retains only a theory-first question about a predictable transient-shortcut help/harm phase transition. No GPU run is authorized.
+- [`../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md`](../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md): historical literature-role audit that retained the transient-shortcut theory question. That question has since been closed by the completed hostile audit and teleportation collision.
 
 ## Read only on demand
 
@@ -25,4 +25,4 @@ Files under [`../prompts/`](../prompts/) and [`../archive/`](../archive/) are pr
 
 ## Current state in one sentence
 
-Transient shortcut catalysis has passed an internal theory-feasibility gate but is not yet an authorized GPU-scale seed; the next valid action is a hostile proof, collision, generality, and Oral-significance audit.
+There is no active seed. Transient shortcut catalysis is closed as an Oral candidate after its general-law attempt reduced to existing teleportation theory.

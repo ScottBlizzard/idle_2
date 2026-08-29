@@ -6,7 +6,7 @@ The documentation is organized by role rather than chronology.
 
 - [`pro/README.md`](pro/README.md): the single recommended entry point. It gives the exact reading order and separates binding evidence from provenance.
 - [`pro/RESEARCH_BRIEF.md`](pro/RESEARCH_BRIEF.md): concise standalone statement of the mission, constraints, negative-space map, latest experimental result, and the oral-level selection bar.
-- [`pro/PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](pro/PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md): current English prompt to paste into a **new** Pro conversation for proof, collision, generality, and Oral-significance audit.
+- [`pro/PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](pro/PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md): completed theory-audit prompt retained as provenance; it is not a current instruction.
 
 Everything below is evidence or provenance. A new Pro session should not read it indiscriminately before reading the curated packet above.
 
@@ -16,7 +16,7 @@ Everything below is evidence or provenance. A new Pro session should not read it
 - [`../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md`](../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md): completed Stage D boundary. The automatic gate is `NO_GO_NO_INTERACTION_LAW`; zero regimes passed on both datasets and Stage C/A remain unauthorized.
 - [`../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md): Chinese Stage D evidence report, claim--evidence audit, and binding stop decision.
 
-There is no authorized GPU-scale seed. A theory-feasibility gate has passed for transient shortcut catalysis; the next action is a fresh proof/novelty/significance audit through the curated Pro packet, not a broad experiment.
+There is no authorized paper seed. Transient shortcut catalysis passed a stylized mathematical feasibility check but failed the subsequent generality/novelty gate: the repaired scalar theorem lacks an intrinsic help-to-harm transition, and the local clean-rate generalization is directly occupied by level-set/null-space teleportation. No GPU experiment is authorized.
 
 ## Latest experiment protocol and provenance
 
@@ -53,7 +53,9 @@ There is no authorized GPU-scale seed. A theory-feasibility gate has passed for 
 
 ## Active theory note
 
-- [`theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md`](theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md): minimal gradient-flow construction, exact identities, proved stylized three-way time-scale separation, state-triggered nonlinear XOR transfer check, literature confrontation, and remaining collapse risks. Status: internal theory-feasibility pass; novelty and natural relevance unresolved; no GPU authorization.
+- [`theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md`](theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md): minimal gradient-flow construction, exact identities, proved stylized three-way time-scale separation, and state-triggered nonlinear XOR check. The theorem remains valid but has been superseded as a paper seed by the hostile audit and teleportation collision.
+- [`audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](audits/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md): exact archived Pro report; verdict `HOLD_REQUIRES_GENERAL_LAW`, with a repaired matched-horizon theorem and the proof that the scalar model lacks an intrinsic upper withdrawal boundary.
+- [`theory/DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md`](theory/DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md): matched-Relative-Transfer local positive/zero/negative theorem, explicit examples, numerical check, and binding direct-collision analysis against level-set and null-space teleportation. Final status: `NO_GO_AS_ORAL_SEED`.
 
 ## Prior audits
 

@@ -64,12 +64,19 @@ At the trigger, the mean extra-gradient/core-gradient cosine ranged from approxi
 
 The threshold was selected after inspecting this toy system, so it remains outcome-exploratory. A valid next-stage test must freeze either the margin threshold or a theoretically normalized analogue before changing width, initialization, optimizer, shortcut construction, and task.
 
+### Subsequent binding outcome
+
+The hostile theory audit showed that the scalar construction does not contain an intrinsic upper withdrawal boundary. A later matched-Relative-Transfer generalization proved that function-null auxiliary directions can positively or negatively change subsequent clean learning through `D_A ||grad L||^2`, but this quantity is exactly the local objective of existing level-set teleportation; the null-space implementation is also occupied. The C08/transient-shortcut direction is therefore closed as an Oral seed, and the exploratory XOR pattern does not authorize further sweeps.
+
+- General-law proof and collision: [`../../docs/theory/DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md`](../../docs/theory/DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md)
+
 ## Binding conclusion
 
 ```text
 DEEP_LINEAR: NO_BENEFICIAL_REGIME_OBSERVED
 NONLINEAR_XOR: WEAK_EXISTENCE_SIGNAL_WITH_HELP_TO_HARM_REVERSAL
-THEORY_GATE: STYLIZED_PASS_WITH_STATE_RULE
+THEORY_GATE: STYLIZED_PASS_BUT_GENERAL_LAW_COLLIDED
+ORAL_SEED: NO_GO
 GPU_AUTHORIZATION: 0
 ```
 

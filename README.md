@@ -8,7 +8,7 @@ This repository records a falsification-first search for an ICLR-level research 
 2. For the binding project record, read [`docs/current/CURRENT_STATUS.md`](docs/current/CURRENT_STATUS.md).
 3. For the latest completed scientific result, read [`experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md).
 
-There is currently **no authorized GPU-scale paper seed**. The latest frozen-MoE route-non-compositionality discovery ended at **`NO_GO_NO_INTERACTION_LAW`**, and a subsequent 15-candidate Pro search returned `NO_GO_NEED_NEW_SEED`. A re-audited theory-first candidate—**transient shortcut catalysis**—has now passed an internal feasibility gate: a stylized model proves a clean/permanent/transient time-scale separation, and one state-triggered rule transfers across four nonlinear XOR shortcut strengths. Novelty, natural-model generality, and Oral-level significance remain unresolved, so the next task is an adversarial theory/literature audit rather than a broad GPU experiment.
+There is currently **no authorized paper seed**. The frozen-MoE route-non-compositionality discovery ended at **`NO_GO_NO_INTERACTION_LAW`**. The later transient-shortcut candidate produced a valid scalar time-scale separation, but hostile review showed that it does not prove an intrinsic help-to-harm phase transition. Its attempted general law—function-preserving movement that increases future clean gradient norm—reduces directly to existing level-set and null-space teleportation. The binding result is **`NO_GO_TRANSIENT_SHORTCUT_ORAL_SEED`**; no GPU experiment is authorized.
 
 ## Repository layout
 

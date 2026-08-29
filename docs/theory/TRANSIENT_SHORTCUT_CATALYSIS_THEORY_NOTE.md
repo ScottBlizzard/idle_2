@@ -2,9 +2,11 @@
 
 **Date:** 29 August 2026
 
-**Status:** **`THEORY_FEASIBILITY_PASS — NOVELTY/GENERALITY AUDIT REQUIRED`**
+**Status:** **`VALID_STYLIZED_RESULT — SUPERSEDED AS PAPER SEED`**
 
 **Experiment authorization:** **0 GPU-hours**
+
+> **Subsequent binding decision (30 August 2026):** the hostile audit repaired this theorem but showed that it does not establish an intrinsic help-to-harm boundary. The required general-law attempt reduced directly to existing level-set/null-space teleportation. See [`DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md`](DURABLE_CLEAN_RATE_AMPLIFICATION_NOTE.md). The transient-shortcut Oral seed is closed.
 
 ## 1. Sharpened question
 
@@ -330,12 +332,13 @@ This condition must predict both positive and negative cases. An independent sho
 ## 10. Current decision
 
 ```text
-THEORY_FEASIBILITY_PASS
+STYLIZED_THEOREM_VALID
 STYLIZED_THREE_WAY_SEPARATION_PROVED
 ONE_STATE_RULE_TRANSFERS_ACROSS_FOUR_XOR_CORRELATIONS
 NATURAL_MODEL_PREDICTION_NOT_ESTABLISHED
-NOVELTY_AND_ORAL_SIGNIFICANCE_REQUIRE_FRESH_ADVERSARIAL_AUDIT
+GENERAL_LAW_DIRECTLY_COLLIDES_WITH_LEVEL_SET_TELEPORTATION
+ORAL_SEED_NO_GO
 GPU_RUN_NOT_AUTHORIZED
 ```
 
-The internal theory-feasibility gate is passed: there is now both an exact three-way separation and a state-triggered nonlinear existence check. The next valid work is a fresh, adversarial Pro audit of proof correctness, direct theorem collisions, generality, and Oral-level significance. GPU-scale natural-task work remains premature until that audit survives.
+The scalar construction remains a valid technical example. It is not an active paper seed. The subsequent audit and general-law collision close GPU-scale continuation of this direction.
