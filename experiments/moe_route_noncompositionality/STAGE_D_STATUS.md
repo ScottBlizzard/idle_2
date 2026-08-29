@@ -1,29 +1,45 @@
 # Stage D Execution Status
 
-Updated: 2026-08-29 00:11 Asia/Hong_Kong
+Updated: 2026-08-29 Asia/Hong_Kong
 
-Status: **PREFLIGHT v5 PASSED — DISCOVERY WAITING FOR STABLE GPU**
+Status: **COMPLETE — `NO_GO_NO_INTERACTION_LAW`**
 
-## Binding state
+## Binding decision
 
-Stage E passed its engineering gate. Outcome-blind preflight v3 subsequently passed every structural check and authorized one Stage D discovery acquisition. No H1--H4 value has been inspected, and Stage C/A remain unauthorized.
+Stage D discovery is complete. The automatic gate found zero layer-pair regimes that passed H1--H4 on both GSM8K and MATH-500; the frozen requirement was at least three of four. `FINAL_GATE.json` therefore sets:
 
-The discovery has not reached a scientific gate. Two versioned, preserved startup/acquisition attempts ended for engineering reasons:
+- `status = NO_GO_NO_INTERACTION_LAW`;
+- `scientific_interpretation_allowed = true`;
+- `stage_c_authorized = false`;
+- `compute_pass = true`.
 
-1. `stage_d_discovery_attempt1_network_timeout` stopped before model loading because the tokenizer attempted a Hugging Face network request. The cached tokenizer was independently verified, so subsequent launches use offline mode.
-2. The offline attempt loaded the model and reached GSM8K problem 22, with 9 retained problems, before strict token-to-character validation rejected a byte-level BPE prefix-decoding mutation. Its 18 sealed shard/checksum files and full log are preserved; no route-effect value was inspected.
+Stage C and Stage A must not run. The current seed is closed and may not be rescued by adding models, changing thresholds, selecting subgroups, or redefining layer regimes.
 
-Corrected preflight v4 then exposed a second boundary assumption: decoded text need not re-encode to the same non-canonical BPE segmentation. Its failed output and log are preserved. This is also an engineering failure, not a scientific gate.
+## Completion and integrity
 
-The final repair incrementally decodes the bytes represented by the original generated token IDs. A character spanning multiple BPE tokens is assigned to the token that completes it, producing monotone surfaces without re-tokenization. It changes neither the frozen eligibility rule nor any hypothesis threshold.
+- GSM8K: 64 retained trajectories from 109 examined.
+- MATH-500: 64 retained trajectories from 315 examined.
+- Acquisition: `10884.35 s`.
+- Successful analysis: `384.20 s`.
+- Automatic cumulative compute: `11268.55 s / 21600 s`.
+- Downloaded compressed shards: 128; every paired checksum passes.
+- Four final artifact hashes: all match `FINAL_GATE.json`.
+- Three independently written route-effect Parquet files are byte-identical.
 
-## Validation and transition
+## Result synopsis
 
-- 19 local tests pass.
-- 19 tests pass in the isolated remote Stage D environment, including the pinned MATH equivalence verifier.
-- The actual cached OLMoE tokenizer passes 5,000 deterministic random-ID decoding trials.
-- Failed outputs and their authorization/log records remain immutable and versioned.
+H1/H2 reversal excesses were generally near zero and did not reach their frozen `0.10` effect requirements. A few H3 cells had positive point estimates above `0.10`, but none survived the full 32-test Benjamini--Hochberg family. H4 compatibility correlations ranged from `-0.063` to `0.040`, far below the required `0.40`. No cell passed all four hypotheses.
 
-Outcome-blind preflight v5 passed every structural gate. Two discovery launches then safely aborted because GPU 4 was only transiently idle before a foreign workload returned; no discovery directory was created. The watcher now requires its own 180-second continuous-idle window before invoking the launcher's independent 180-second check. A source-hash-bound authorization will be recreated for this queue-only repair, after which discovery will wait on physical GPU 4--7 under unchanged scientific thresholds.
+## Engineering disclosure
 
-See [`STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md`](STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md) for the incident ledger.
+The first full pipeline timed out during CPU analysis after completing acquisition because tiny neural predictors were oversubscribed across CPU threads. A single-thread retry completed the frozen computation in minutes. That retry then encountered a JSON-only NumPy scalar serialization error; the serialization adapter changed no statistic or decision. All failed outputs and logs remain preserved.
+
+The automatic compute field includes the successful acquisition and successful analysis, as implemented by the evaluator; failed engineering-attempt CPU time is disclosed separately and excluded from that field.
+
+## Canonical documents
+
+- [`STAGE_D_RESULTS_REPORT_ZH.md`](STAGE_D_RESULTS_REPORT_ZH.md)
+- [`STAGE_D_ANALYSIS_ENGINEERING_AMENDMENT.md`](STAGE_D_ANALYSIS_ENGINEERING_AMENDMENT.md)
+- [`STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md`](STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md)
+- [`STAGE_D_PROTOCOL_AMENDMENT_V1.md`](STAGE_D_PROTOCOL_AMENDMENT_V1.md)
+- [`results/stage_d_discovery/FINAL_GATE.json`](results/stage_d_discovery/FINAL_GATE.json)

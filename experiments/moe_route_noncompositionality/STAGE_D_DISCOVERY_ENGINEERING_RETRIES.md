@@ -41,3 +41,11 @@ Since acquisition source code changed after preflight v4, the old authorization 
 Preflight v5 passed. While GPUs 4--7 were occupied by foreign jobs, two launch attempts observed a momentarily idle GPU 4 and then correctly aborted when the foreign workload returned during the launcher's 180-second exclusivity check. No discovery output directory was created and no foreign process was stopped.
 
 The watcher now requires 18 consecutive ten-second idle observations before it invokes the launcher. The launcher independently repeats its frozen 180-second check, and the runtime monitor still terminates only the Stage D process group if a foreign process later appears. This changes queue safety only; acquisition, analysis, frozen configuration, and scientific thresholds are untouched. The superseded authorization is preserved and a new source-hash-bound authorization is required before retry.
+
+## Completed discovery and analysis retries
+
+The stabilized launch completed all 64 GSM8K and 64 MATH-500 trajectories. The outer six-hour process then returned code `124` during CPU analysis because tiny neural predictors were severely oversubscribed across CPU threads. A single-thread environment completed the same frozen analysis in minutes.
+
+The first single-thread retry stopped only while JSON-serializing a NumPy boolean after numerical analysis had completed. Its route, prediction, summary, and temporary JSON files are preserved under `analysis_retry1` names. A serialization-only adapter converted NumPy scalars and arrays to equivalent Python JSON values. The final retry generated `FINAL_GATE.json`; all artifact and shard hashes passed, and all three route-effect tables are byte-identical.
+
+See [`STAGE_D_ANALYSIS_ENGINEERING_AMENDMENT.md`](STAGE_D_ANALYSIS_ENGINEERING_AMENDMENT.md) for the binding audit.

@@ -1,0 +1,14 @@
+{
+  "artifact_sha256": {
+    "gates.json": "6140f9c0e60f5a9ace2460c66aa2abf505d7411b7d575f0f83e672e688e1586d",
+    "h4_predictions.parquet": "eaced9b543c931897ad94af9744c6f9584e769115ea1f730dab84a3cd2713315",
+    "problem_summary.csv": "f95573303083b78b95adbd288a4c16a126d9f5988565484f5f2e37c40e4e7eff",
+    "route_effects.parquet": "98d4ac49cdde50129e3c2cb404dbe377e3b2b1c2b1d7f1104ef7eb955ef13deb"
+  },
+  "compute_pass": true,
+  "passing_regimes_on_both_datasets": [],
+  "required_passing_regimes": 3,
+  "scientific_interpretation_allowed": true,
+  "stage_c_authorized": false,
+  "status": "NO_GO_NO_INTERACTION_LAW"
+}

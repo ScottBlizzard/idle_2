@@ -44,6 +44,14 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def json_default(value: Any) -> Any:
+    if isinstance(value, np.generic):
+        return value.item()
+    if isinstance(value, np.ndarray):
+        return value.tolist()
+    raise TypeError(f"Object of type {value.__class__.__name__} is not JSON serializable")
+
+
 def write_json_new(path: Path, payload: Any) -> None:
     if path.exists():
         raise FileExistsError(f"Refusing to overwrite result: {path}")
@@ -51,7 +59,14 @@ def write_json_new(path: Path, payload: Any) -> None:
     with tempfile.NamedTemporaryFile(
         mode="w", encoding="utf-8", dir=path.parent, delete=False, suffix=".tmp"
     ) as handle:
-        json.dump(payload, handle, ensure_ascii=False, indent=2, sort_keys=True)
+        json.dump(
+            payload,
+            handle,
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+            default=json_default,
+        )
         handle.flush()
         temporary = Path(handle.name)
     temporary.replace(path)
