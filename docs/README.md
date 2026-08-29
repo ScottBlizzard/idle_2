@@ -6,7 +6,7 @@ The documentation is organized by role rather than chronology.
 
 - [`pro/README.md`](pro/README.md): the single recommended entry point. It gives the exact reading order and separates binding evidence from provenance.
 - [`pro/RESEARCH_BRIEF.md`](pro/RESEARCH_BRIEF.md): concise standalone statement of the mission, constraints, negative-space map, latest experimental result, and the oral-level selection bar.
-- [`pro/PRO_NEXT_ORAL_SEED_DIVERGENCE.md`](pro/PRO_NEXT_ORAL_SEED_DIVERGENCE.md): current English prompt to paste into a **new** Pro conversation.
+- [`pro/PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](pro/PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md): current English prompt to paste into a **new** Pro conversation for proof, collision, generality, and Oral-significance audit.
 
 Everything below is evidence or provenance. A new Pro session should not read it indiscriminately before reading the curated packet above.
 
@@ -16,7 +16,7 @@ Everything below is evidence or provenance. A new Pro session should not read it
 - [`../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md`](../experiments/moe_route_noncompositionality/STAGE_D_STATUS.md): completed Stage D boundary. The automatic gate is `NO_GO_NO_INTERACTION_LAW`; zero regimes passed on both datasets and Stage C/A remain unauthorized.
 - [`../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md): Chinese Stage D evidence report, claim--evidence audit, and binding stop decision.
 
-There is no authorized active seed. The next action is literature-grounded divergence through the curated Pro packet, not a rescue experiment.
+There is no authorized GPU-scale seed. A theory-feasibility gate has passed for transient shortcut catalysis; the next action is a fresh proof/novelty/significance audit through the curated Pro packet, not a broad experiment.
 
 ## Latest experiment protocol and provenance
 
@@ -50,6 +50,10 @@ There is no authorized active seed. The next action is literature-grounded diver
 ## Latest literature-role re-audit
 
 - [`audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md`](audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md): reclassifies nearby papers as direct collisions, positive adversaries, foundations, baselines, or unexplained anomalies. It authorizes no experiment and retains one theory-first HOLD: a predicted help-to-harm phase transition for temporary shortcuts.
+
+## Active theory note
+
+- [`theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md`](theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md): minimal gradient-flow construction, exact identities, proved stylized three-way time-scale separation, state-triggered nonlinear XOR transfer check, literature confrontation, and remaining collapse risks. Status: internal theory-feasibility pass; novelty and natural relevance unresolved; no GPU authorization.
 
 ## Prior audits
 

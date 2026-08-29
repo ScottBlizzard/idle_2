@@ -2,12 +2,9 @@
 
 This directory is the **single entry point** for a new Pro research-scout session. It is intentionally short. Do not begin by reading every audit, prompt, log, or result shard in the repository.
 
-## Required reading order
+## Current task: theory/novelty audit
 
-1. [`RESEARCH_BRIEF.md`](RESEARCH_BRIEF.md) — the standalone mission, hard constraints, binding negative space, and idea-selection bar.
-2. [`PRO_NEXT_ORAL_SEED_DIVERGENCE.md`](PRO_NEXT_ORAL_SEED_DIVERGENCE.md) — the current task prompt.
-3. [`../current/CURRENT_STATUS.md`](../current/CURRENT_STATUS.md) — verify the binding project status.
-4. [`../../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](../../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md) — inspect the latest scientific NO-GO only if more evidence is needed.
+Open a **new Pro conversation** and paste [`PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md). That prompt contains the exact minimal reading order and output contract. The prior broad divergence prompt is no longer current.
 
 ## Latest post-Pro decision
 
@@ -28,4 +25,4 @@ Files under [`../prompts/`](../prompts/) and [`../archive/`](../archive/) are pr
 
 ## Current state in one sentence
 
-There is no active seed: the next valid action is a broad, primary-literature-grounded search for one sharply falsifiable and genuinely surprising mechanism, not a rescue of any previous result.
+Transient shortcut catalysis has passed an internal theory-feasibility gate but is not yet an authorized GPU-scale seed; the next valid action is a hostile proof, collision, generality, and Oral-significance audit.

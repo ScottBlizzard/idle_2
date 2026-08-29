@@ -8,7 +8,7 @@ This repository records a falsification-first search for an ICLR-level research 
 2. For the binding project record, read [`docs/current/CURRENT_STATUS.md`](docs/current/CURRENT_STATUS.md).
 3. For the latest completed scientific result, read [`experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md).
 
-There is currently **no authorized active paper seed**. The latest frozen-MoE route-non-compositionality discovery completed within budget but ended at **`NO_GO_NO_INTERACTION_LAW`**. A subsequent 15-candidate Pro search also returned `NO_GO_NEED_NEW_SEED`. A literature-role re-audit retains one **theory-first HOLD**—a possible transient-shortcut help/harm phase transition—but authorizes no GPU run. The next task is analytical mechanism validation, not another broad experiment or a rescue of a failed seed.
+There is currently **no authorized GPU-scale paper seed**. The latest frozen-MoE route-non-compositionality discovery ended at **`NO_GO_NO_INTERACTION_LAW`**, and a subsequent 15-candidate Pro search returned `NO_GO_NEED_NEW_SEED`. A re-audited theory-first candidate—**transient shortcut catalysis**—has now passed an internal feasibility gate: a stylized model proves a clean/permanent/transient time-scale separation, and one state-triggered rule transfers across four nonlinear XOR shortcut strengths. Novelty, natural-model generality, and Oral-level significance remain unresolved, so the next task is an adversarial theory/literature audit rather than a broad GPU experiment.
 
 ## Repository layout
 

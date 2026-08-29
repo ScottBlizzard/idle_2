@@ -1,6 +1,6 @@
 # Current Research Status
 
-Last updated: 2026-08-28
+Last updated: 2026-08-29
 
 ## Binding decision
 
@@ -106,8 +106,13 @@ Most candidates remain closed. The logical-token-clock idea is more directly occ
 
 No GPU run is authorized. The next binding gate is analytical: demonstrate a non-empty beneficial regime, predict the sign transition and its location, distinguish it from privileged information/curriculum/hinting/bias amplification, and derive a consequence beyond validation-tuning a withdrawal schedule.
 
-An initial deterministic CPU existence check found no beneficial regime in a deep linear factorization. A nonlinear XOR MLP produced a weak long-horizon loss signal: short shortcut exposure slightly improved final core-distribution loss, while longer exposure became increasingly harmful; however, accuracy was saturated and a shorter training horizon did not yield a stable benefit. This keeps the question alive for theory but does not pass the theory gate.
+The initial deterministic CPU existence check found no beneficial regime in a deep linear factorization. A nonlinear XOR MLP then produced a weak long-horizon loss signal: short shortcut exposure slightly improved final core-distribution loss, while longer exposure became increasingly harmful; however, accuracy was saturated and a shorter training horizon did not yield a stable benefit. At that checkpoint the theory gate remained unpassed; the sharper construction below supersedes that interim status.
+
+A sharper three-parameter gradient-flow model now supplies a proved stylized separation. The shortcut phase obeys two exact identities, including `u = epsilon * exp(2(v - epsilon))`. They imply that clean-only and permanent-shortcut training both retain order-one core loss on a logarithmic horizon, while withdrawing at a fixed shortcut-state threshold and continuing on the core objective reaches arbitrarily small fixed loss in logarithmic time. Deterministic integration across five initialization scales placed the best withdrawal time within roughly 10% of `log(1/epsilon)`.
+
+The state-triggered form also transferred qualitatively to the nonlinear XOR probe. One common shortcut-aligned margin threshold (`0.40`) automatically selected withdrawal steps `55`, `22`, `17`, and `17` as shortcut correlation increased from `0.70` to `1.00`; every condition improved final clean loss, with 8--9 of 10 paired seeds winning. The threshold is exploratory and the gain is small with saturated accuracy. The internal theory-feasibility gate is therefore passed, but proof novelty, natural-model relevance, and Oral-level significance remain unresolved. No GPU-scale experiment is yet authorized; the next binding action is a fresh adversarial theory/literature audit.
 
 - Pro divergence report: [`../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md`](../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md)
 - Binding literature-role re-audit: [`../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md`](../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md)
 - Exploratory existence checks: [`../../analysis/transient_shortcut_phase_transition/README.md`](../../analysis/transient_shortcut_phase_transition/README.md)
+- Active theory note: [`../theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md`](../theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md)

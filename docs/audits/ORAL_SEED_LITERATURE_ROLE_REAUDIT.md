@@ -180,9 +180,18 @@ Two deterministic CPU checks were performed after fixing the theory-first questi
 1. **Deep linear factorization:** no beneficial shortcut-exposure interval was observed across five correlation strengths. Zero exposure always minimized the final core-distribution loss. This rules out the idea that a positive phase follows generically from faster norm growth or factorized optimization.
 2. **Nonlinear XOR feature learning:** a width-8 tanh MLP trained on exact full-batch distributions showed a small long-horizon loss improvement for short exposure and a clear loss penalty for longer exposure. For shortcut correlations `0.90--1.00`, the best observed exposure was approximately 20 of 1,000 updates; exposure through 160 or more updates was harmful. The early benefit appeared in 8--9 of 10 paired seeds, but accuracy was already saturated. At a 200-update horizon, benefits were inconsistent across loss and accuracy.
 
-The nonlinear result is a **weak existence signal**, not a discovered law. It suggests that a sign transition may exist in nonlinear representation dynamics, but it does not establish invariant-feature improvement, a prospective location predictor, or external validity. The theory gate remains unpassed and GPU authorization remains zero.
+The nonlinear result was initially a **weak existence signal**, not a discovered law. At this checkpoint it suggested that a sign transition might exist in nonlinear representation dynamics, but did not establish invariant-feature improvement, a prospective location predictor, or external validity. The subsequent theory result below supersedes only the statement that the analytical gate was unpassed; GPU authorization remains zero.
 
 - Exploratory code and exact summary: [`../../analysis/transient_shortcut_phase_transition/README.md`](../../analysis/transient_shortcut_phase_transition/README.md)
+
+### Subsequent analytical resolution — 29 August 2026
+
+A three-parameter gradient-flow construction now proves a matched-horizon asymptotic separation: clean-only and permanent-shortcut learning retain order-one core loss on a logarithmic horizon, whereas state-triggered shortcut withdrawal reaches an arbitrarily small fixed core loss in logarithmic time. The construction has exact invariants and an exact shortcut-phase relation `u = epsilon * exp(2(v - epsilon))`.
+
+The nonlinear XOR probe was also instrumented with training-state diagnostics. One common shortcut-aligned margin threshold (`0.40`) adapted the withdrawal step across four shortcut correlations and improved final clean loss in every condition, with 8--9 of 10 paired seeds improving. This makes T1/T2/T4 plausible in a stylized sense; T3 and external generality remain unresolved.
+
+- Formal note: [`../theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md`](../theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md)
+- Current Pro audit prompt: [`../pro/PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md`](../pro/PRO_TRANSIENT_SHORTCUT_CATALYSIS_THEORY_AUDIT.md)
 
 ## 8. Decisions for the other near-misses
 
@@ -205,4 +214,4 @@ NO_GPU_RUN
 ONE_THEORY_FIRST_HOLD: TRANSIENT_SHORTCUT_PHASE_TRANSITION
 ```
 
-The current project still has no authorized experimental seed. The immediate next action is a mathematical/mechanistic feasibility analysis of the retained phase-transition claim, accompanied by a narrower literature search on transient feature exposure, privileged-information transfer, shortcut-margin dynamics, and schedule-independent stopping rules.
+The project still has no authorized GPU-scale experimental seed. Mathematical feasibility is now established for a stylized construction, so the immediate next action is a fresh hostile audit of proof correctness, direct literature collisions, general-law potential, and Oral-level significance. Only a positive audit may authorize a separately preregistered Stage 0.

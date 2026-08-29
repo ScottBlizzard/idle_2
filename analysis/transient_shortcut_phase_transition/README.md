@@ -47,13 +47,37 @@ The clean-only mean loss was `0.59861882` and mean accuracy `0.7375`. Early-expo
 
 **Interpretation:** the long-horizon sign reversal is a genuine optimization-dynamics clue, but it is not yet a robust task-level benefit. It may reflect convergence speed, parameterization, or loss-tail effects rather than better invariant representation.
 
+### Training-state withdrawal probe
+
+The fixed-step sweep was then instrumented at the withdrawal boundary. As exposure increased, the gradient contributed by the shortcut distribution became progressively more anti-aligned with the clean/core gradient. The best fixed withdrawals occurred before that conflict became nearly complete. A simpler statistic—the mean signed margin on shortcut-aligned examples—was therefore used as a state trigger.
+
+One common threshold, `aligned_margin >= 0.40`, selected a different withdrawal step for each shortcut strength without observing final clean loss:
+
+| Shortcut correlation | Triggered step | Final clean loss | Change from clean | Paired-seed wins |
+|---:|---:|---:|---:|---:|
+| 0.70 | 55 | 0.02590560 | -0.00063165 | 8/10 |
+| 0.90 | 22 | 0.02580067 | -0.00073658 | 9/10 |
+| 0.99 | 17 | 0.02578684 | -0.00075041 | 9/10 |
+| 1.00 | 17 | 0.02577905 | -0.00075820 | 9/10 |
+
+At the trigger, the mean extra-gradient/core-gradient cosine ranged from approximately `-0.64` to `-0.77`. A later margin threshold of `0.60` weakened the gain and was already slightly harmful at correlation `0.70`; fixed schedules whose margin had reached roughly `0.75--1.1` were harmful. This is a cross-correlation transfer check for a training-state rule rather than a claim that `0.40` is universal.
+
+The threshold was selected after inspecting this toy system, so it remains outcome-exploratory. A valid next-stage test must freeze either the margin threshold or a theoretically normalized analogue before changing width, initialization, optimizer, shortcut construction, and task.
+
 ## Binding conclusion
 
 ```text
 DEEP_LINEAR: NO_BENEFICIAL_REGIME_OBSERVED
 NONLINEAR_XOR: WEAK_EXISTENCE_SIGNAL_WITH_HELP_TO_HARM_REVERSAL
-THEORY_GATE: NOT_PASSED
+THEORY_GATE: STYLIZED_PASS_WITH_STATE_RULE
 GPU_AUTHORIZATION: 0
 ```
 
 The next valid step is analytical. We need to determine which nonlinear state variable makes the early exposure helpful, derive a prospective transition statistic, and show that the effect is not ordinary privileged information or curriculum tuning. No additional hyperparameter sweep should be interpreted as evidence before that mechanism is specified.
+
+## Sharpened catalytic model
+
+A subsequent three-parameter gradient-flow construction identifies one sufficient mechanism: the shortcut can exponentially amplify a shared readout needed by a higher-order core path, while permanent shortcut saturation starves that core path of gradient. Withdrawal near `log(1 / initialization_scale)` converts the amplified shared state into rapid core learning. Across initialization scales from `0.1` to `0.005`, the best numerical withdrawal time stayed within roughly 10% of this prediction.
+
+- Theory derivation and theorem target: [`../../docs/theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md`](../../docs/theory/TRANSIENT_SHORTCUT_CATALYSIS_THEORY_NOTE.md)
+- Deterministic ODE check: [`explore_catalytic_ode.py`](explore_catalytic_ode.py)
