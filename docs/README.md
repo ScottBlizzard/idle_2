@@ -45,6 +45,11 @@ There is no authorized active seed. The next action is literature-grounded diver
 ## New-seed proposals
 
 - [`proposals/AI_RESEARCH_NEW_SEED_DIVERGENCE.md`](proposals/AI_RESEARCH_NEW_SEED_DIVERGENCE.md): complete Pro-generated 17-candidate divergence report; provenance only. Its sole ADVANCE candidate was independently rejected by the binding bracket-steering audit above.
+- [`proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md`](proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md): completed 15-candidate clean search; terminal decision `NO_GO_NEED_NEW_SEED`.
+
+## Latest literature-role re-audit
+
+- [`audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md`](audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md): reclassifies nearby papers as direct collisions, positive adversaries, foundations, baselines, or unexplained anomalies. It authorizes no experiment and retains one theory-first HOLD: a predicted help-to-harm phase transition for temporary shortcuts.
 
 ## Prior audits
 

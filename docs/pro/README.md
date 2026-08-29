@@ -9,6 +9,11 @@ This directory is the **single entry point** for a new Pro research-scout sessio
 3. [`../current/CURRENT_STATUS.md`](../current/CURRENT_STATUS.md) — verify the binding project status.
 4. [`../../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](../../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md) — inspect the latest scientific NO-GO only if more evidence is needed.
 
+## Latest post-Pro decision
+
+- [`../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md`](../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md): completed 15-candidate Pro search; terminal result `NO_GO_NEED_NEW_SEED`.
+- [`../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md`](../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md): corrected literature-role audit. It keeps most candidates closed, identifies C11 as more directly occupied, and retains only a theory-first question about a predictable transient-shortcut help/harm phase transition. No GPU run is authorized.
+
 ## Read only on demand
 
 - [`../current/BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md`](../current/BILLIARDS_TO_AI_RESEARCH_SYNTHESIS.md): rich source-mechanism discussion. Use it as an intuition generator, not as a required ontology.

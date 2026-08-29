@@ -8,7 +8,7 @@ This repository records a falsification-first search for an ICLR-level research 
 2. For the binding project record, read [`docs/current/CURRENT_STATUS.md`](docs/current/CURRENT_STATUS.md).
 3. For the latest completed scientific result, read [`experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md).
 
-There is currently **no authorized active paper seed**. The latest frozen-MoE route-non-compositionality discovery completed within budget but ended at **`NO_GO_NO_INTERACTION_LAW`**: zero of four regimes passed the full cross-dataset H1--H4 gate. Earlier planning, uncertainty, operator-interference, and bracket-steering seeds are also closed. The next task is a clean, literature-grounded divergence search, not another rescue experiment.
+There is currently **no authorized active paper seed**. The latest frozen-MoE route-non-compositionality discovery completed within budget but ended at **`NO_GO_NO_INTERACTION_LAW`**. A subsequent 15-candidate Pro search also returned `NO_GO_NEED_NEW_SEED`. A literature-role re-audit retains one **theory-first HOLD**—a possible transient-shortcut help/harm phase transition—but authorizes no GPU run. The next task is analytical mechanism validation, not another broad experiment or a rescue of a failed seed.
 
 ## Repository layout
 
@@ -20,6 +20,8 @@ docs/
   audits/       Prior adversarial literature/research audits
   proposals/    Historical generated proposals and their audit trail
   archive/      Early provenance material
+analysis/
+  transient_shortcut_phase_transition/ Exploratory CPU existence checks for the theory-first HOLD
 experiments/
   control_flip/ Reproducible benchmark, inference code, raw outputs, and analysis
   operator_interference/ Completed confirmatory experiment, diagnostics, interventions, and final gate

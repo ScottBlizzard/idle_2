@@ -95,3 +95,19 @@ All 128 shard checksums and four final artifact hashes pass locally. Engineering
 - Discovery engineering retry ledger: [`../../experiments/moe_route_noncompositionality/STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md`](../../experiments/moe_route_noncompositionality/STAGE_D_DISCOVERY_ENGINEERING_RETRIES.md)
 - Stage D Chinese report: [`../../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](../../experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md)
 - Analysis engineering amendment: [`../../experiments/moe_route_noncompositionality/STAGE_D_ANALYSIS_ENGINEERING_AMENDMENT.md`](../../experiments/moe_route_noncompositionality/STAGE_D_ANALYSIS_ENGINEERING_AMENDMENT.md)
+
+## Post-divergence literature-role re-audit
+
+The subsequent 15-candidate Pro divergence returned `NO_GO_NEED_NEW_SEED` and authorized no GPU work. A local re-audit corrected its overly binary use of neighboring literature: papers may be direct collisions, positive adversaries, mechanism foundations, mandatory baselines, or unexplained-anomaly sources.
+
+Most candidates remain closed. The logical-token-clock idea is more directly occupied than initially reported because structure-aware shared position IDs and their length-generalization benefit are already established. One question is retained at **`ONE_THEORY_FIRST_HOLD`** rather than as an experiment:
+
+> Does temporary exposure to a shortcut exhibit a prospectively predictable help-to-harm phase transition—initially scaffolding invariant feature learning through gradient alignment, then suppressing it after shortcut-margin saturation?
+
+No GPU run is authorized. The next binding gate is analytical: demonstrate a non-empty beneficial regime, predict the sign transition and its location, distinguish it from privileged information/curriculum/hinting/bias amplification, and derive a consequence beyond validation-tuning a withdrawal schedule.
+
+An initial deterministic CPU existence check found no beneficial regime in a deep linear factorization. A nonlinear XOR MLP produced a weak long-horizon loss signal: short shortcut exposure slightly improved final core-distribution loss, while longer exposure became increasingly harmful; however, accuracy was saturated and a shorter training horizon did not yield a stable benefit. This keeps the question alive for theory but does not pass the theory gate.
+
+- Pro divergence report: [`../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md`](../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md)
+- Binding literature-role re-audit: [`../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md`](../audits/ORAL_SEED_LITERATURE_ROLE_REAUDIT.md)
+- Exploratory existence checks: [`../../analysis/transient_shortcut_phase_transition/README.md`](../../analysis/transient_shortcut_phase_transition/README.md)
