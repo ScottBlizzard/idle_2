@@ -64,7 +64,7 @@ The repository still has no authorized active paper seed.
 
 A targeted reset searched frozen source controllers, stateful inference and agents, diffusion schedules, memory, compression, low-rank composition, and sparse routing for a carrier with a genuine “cannot hand-place the cue ball” restriction. The broad search is now closed: every generic path/control carrier was either exactly occupied or reduced to dynamic routing, planning, information gain, risk sensitivity, or final-state control.
 
-One much narrower hypothesis advances to **`ADVANCE_TO_PREREGISTRATION_ONLY`**:
+At that checkpoint, one much narrower hypothesis advanced to **`ADVANCE_TO_PREREGISTRATION_ONLY`**:
 
 > In a frozen MoE, route substitutions that are independently beneficial under single-layer counterfactual evaluation may become harmful when applied jointly, so local route preferences may be invalid credit signals for multi-layer router updates.
 
@@ -73,7 +73,7 @@ This is no longer a claim about path-dependent capability. It is a proposed fail
 - Binding reset and three-reviewer audit: [`../audits/REAL_ACTUATION_CARRIER_RESET.md`](../audits/REAL_ACTUATION_CARRIER_RESET.md)
 - Draft diagnostic preregistration: [`../../experiments/moe_route_noncompositionality/PREREGISTRATION.md`](../../experiments/moe_route_noncompositionality/PREREGISTRATION.md)
 
-The repository still has no authorized active paper seed. The sole candidate has now passed its Stage E engineering gate, but Stages D, C, and A remain unauthorized. The route harness achieved zero replay, cache, and deterministic-rerun error across 72 engineering conditions. A separate outcome-blind GSM8K/MATH-500 generation pilot produced a guarded discovery-plus-confirmation projection of `9.16651 GPU h`, below the frozen 12-hour cap; cumulative Stage E use was `0.09193 GPU h`.
+At the intermediate Stage E checkpoint, the sole candidate passed its engineering gate while Stages D, C, and A remained unauthorized. The route harness achieved zero replay, cache, and deterministic-rerun error across 72 engineering conditions. A separate outcome-blind GSM8K/MATH-500 generation pilot produced a guarded discovery-plus-confirmation projection of `9.16651 GPU h`, below the frozen 12-hour cap; cumulative Stage E use was `0.09193 GPU h`.
 
 This is a feasibility result, not evidence for route non-compositionality. The projection assumes 64 target trajectories per dataset/model and uses a `2.4×` DeepSeek runtime proxy; extra failed generation attempts remain governed by the six-hour Stage D hard stop.
 
