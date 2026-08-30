@@ -1,0 +1,40 @@
+{
+  "discordance": {
+    "discordant_pairs": 63,
+    "high_native_only_retains": 33,
+    "low_native_only_retains": 30,
+    "net_discordance": 3,
+    "same_outcome": 417
+  },
+  "gap_dose_model": {
+    "median_nll_gap": 0.10684219747781704,
+    "ols_slope_per_nat_token": 0.3994905362663902,
+    "problem_cluster_ci95": [
+      -0.11705918360376266,
+      0.916040256136543
+    ],
+    "quartiles": [
+      {
+        "interval": "(0.006849999999999999, 0.0656]",
+        "mean_retention_difference": 0.016666666666666666,
+        "pairs": 120
+      },
+      {
+        "interval": "(0.0656, 0.107]",
+        "mean_retention_difference": -0.016666666666666666,
+        "pairs": 120
+      },
+      {
+        "interval": "(0.107, 0.152]",
+        "mean_retention_difference": -0.025,
+        "pairs": 120
+      },
+      {
+        "interval": "(0.152, 0.401]",
+        "mean_retention_difference": 0.05,
+        "pairs": 120
+      }
+    ]
+  },
+  "status": "POST_HOC_DOES_NOT_CHANGE_BINDING_GATE"
+}

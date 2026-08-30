@@ -245,3 +245,33 @@ realization. Cross-provider scaling is unauthorized until that intervention pass
 - Frozen diagnostic: [`../../analysis/native_likelihood_error_gain/DIAGNOSTIC_PROTOCOL.md`](../../analysis/native_likelihood_error_gain/DIAGNOSTIC_PROTOCOL.md)
 - Chinese results report: [`../../analysis/native_likelihood_error_gain/RESULTS_REPORT_ZH.md`](../../analysis/native_likelihood_error_gain/RESULTS_REPORT_ZH.md)
 - Machine-readable result: [`../../analysis/native_likelihood_error_gain/results/v1/DIAGNOSTIC_RESULT.json`](../../analysis/native_likelihood_error_gain/results/v1/DIAGNOSTIC_RESULT.json)
+
+## Receiver-native error-gain causal kill test
+
+The authorized whitespace-only causal test is complete and bindingly returns
+**`KILL_NO_CAUSAL_ERROR_GAIN`**. Its outcome-blind manipulation gate passed: all 480
+trace-receiver cells had a pair whose receiver token counts differed by at most two, the
+median NLL gap was `0.10684` nats/token against a `0.10` threshold, and `83.33%` exceeded
+the `0.05` gap threshold. Every selected pair preserved the exact ordered sequence of all
+non-whitespace characters.
+
+All 960 correction calls completed with only `0.625%` parser-or-truncation failure. The
+paired source-error-retention effect was only `+0.00625` (problem-cluster 95% CI
+`[-0.01875, 0.03333]`) against a preregistered `+0.08` requirement. Corrector-specific
+effects were `+0.01667`, `-0.01667`, `0`, and `+0.025`. Accuracy changed by `-0.0125`
+(95% CI `[-0.0375, 0.0125]`).
+
+Continuous receiver NLL remains strongly predictive across different source traces, but
+the successful within-trace NLL intervention produced essentially no effect. The current
+interpretation is therefore prognostic confounding by semantic/error structure, not a
+surface-native causal channel. A post-hoc discordance audit found 33 high-native-only and
+30 low-native-only retention cases among 480 pairs, with no stable NLL-gap dose response.
+
+Do not scale this whitespace mechanism. A semantic-rewrite continuation is unauthorized
+until a theory/literature gate defines verifiable computational-graph equivalence and a
+novel prediction beyond student-aligned rationale distillation, explanation transfer,
+error-space correlation, and answer anchoring.
+
+- Frozen protocol: [`../../experiments/receiver_native_error_gain_causal/PREREGISTRATION.md`](../../experiments/receiver_native_error_gain_causal/PREREGISTRATION.md)
+- Chinese results report: [`../../experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md`](../../experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md)
+- Automatic final gate: [`../../experiments/receiver_native_error_gain_causal/results/v1/final_analysis/FINAL_GATE.json`](../../experiments/receiver_native_error_gain_causal/results/v1/final_analysis/FINAL_GATE.json)

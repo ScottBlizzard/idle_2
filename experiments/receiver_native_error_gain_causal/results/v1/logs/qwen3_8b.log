@@ -1,0 +1,69 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.6.0+cu118).
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<04:25,  1.50it/s]Loading weights:   1%|          | 2/399 [00:00<02:57,  2.24it/s]Loading weights:   4%|▍         | 16/399 [00:01<00:16, 23.60it/s]Loading weights:   7%|▋         | 26/399 [00:01<00:10, 36.91it/s]Loading weights:   9%|▊         | 34/399 [00:01<00:08, 43.94it/s]Loading weights:  11%|█         | 43/399 [00:01<00:07, 48.04it/s]Loading weights:  14%|█▎        | 54/399 [00:01<00:05, 60.93it/s]Loading weights:  16%|█▌        | 62/399 [00:01<00:05, 61.43it/s]Loading weights:  18%|█▊        | 71/399 [00:01<00:04, 67.46it/s]Loading weights:  21%|██        | 82/399 [00:01<00:04, 74.91it/s]Loading weights:  23%|██▎       | 93/399 [00:02<00:03, 81.30it/s]Loading weights:  26%|██▌       | 103/399 [00:02<00:04, 73.29it/s]Loading weights:  29%|██▊       | 114/399 [00:02<00:03, 78.61it/s]Loading weights:  31%|███       | 123/399 [00:02<00:03, 75.85it/s]Loading weights:  33%|███▎      | 133/399 [00:02<00:03, 80.24it/s]Loading weights:  36%|███▌      | 144/399 [00:02<00:03, 84.54it/s]Loading weights:  39%|███▉      | 155/399 [00:02<00:02, 85.89it/s]Loading weights:  41%|████      | 164/399 [00:02<00:02, 84.62it/s]Loading weights:  43%|████▎     | 173/399 [00:03<00:02, 78.42it/s]Loading weights:  47%|████▋     | 186/399 [00:03<00:02, 90.19it/s]Loading weights:  49%|████▉     | 196/399 [00:03<00:02, 90.20it/s]Loading weights:  52%|█████▏    | 206/399 [00:03<00:02, 87.41it/s]Loading weights:  54%|█████▍    | 215/399 [00:03<00:02, 86.82it/s]Loading weights:  56%|█████▌    | 224/399 [00:03<00:02, 84.82it/s]Loading weights:  59%|█████▉    | 235/399 [00:03<00:01, 89.85it/s]Loading weights:  62%|██████▏   | 246/399 [00:03<00:01, 90.82it/s]Loading weights:  64%|██████▍   | 257/399 [00:03<00:01, 86.93it/s]Loading weights:  67%|██████▋   | 268/399 [00:04<00:01, 82.87it/s]Loading weights:  70%|██████▉   | 279/399 [00:04<00:01, 84.26it/s]Loading weights:  73%|███████▎  | 290/399 [00:04<00:01, 89.23it/s]Loading weights:  75%|███████▌  | 301/399 [00:04<00:01, 86.25it/s]Loading weights:  78%|███████▊  | 312/399 [00:04<00:00, 89.35it/s]Loading weights:  81%|████████  | 322/399 [00:04<00:00, 89.21it/s]Loading weights:  83%|████████▎ | 331/399 [00:04<00:00, 80.03it/s]Loading weights:  86%|████████▌ | 342/399 [00:04<00:00, 81.53it/s]Loading weights:  88%|████████▊ | 353/399 [00:05<00:00, 85.46it/s]Loading weights:  91%|█████████ | 364/399 [00:05<00:00, 86.33it/s]Loading weights:  93%|█████████▎| 373/399 [00:05<00:00, 73.01it/s]Loading weights:  96%|█████████▌| 384/399 [00:05<00:00, 81.46it/s]Loading weights:  98%|█████████▊| 393/399 [00:05<00:00, 80.51it/s]Loading weights: 100%|██████████| 399/399 [00:05<00:00, 70.88it/s]
+progress model=qwen3_8b completed=25/1337
+progress model=qwen3_8b completed=50/1337
+progress model=qwen3_8b completed=75/1337
+progress model=qwen3_8b completed=100/1337
+progress model=qwen3_8b completed=125/1337
+progress model=qwen3_8b completed=150/1337
+progress model=qwen3_8b completed=175/1337
+progress model=qwen3_8b completed=200/1337
+progress model=qwen3_8b completed=225/1337
+progress model=qwen3_8b completed=250/1337
+progress model=qwen3_8b completed=275/1337
+progress model=qwen3_8b completed=300/1337
+progress model=qwen3_8b completed=325/1337
+progress model=qwen3_8b completed=350/1337
+progress model=qwen3_8b completed=375/1337
+progress model=qwen3_8b completed=400/1337
+progress model=qwen3_8b completed=425/1337
+progress model=qwen3_8b completed=450/1337
+progress model=qwen3_8b completed=475/1337
+progress model=qwen3_8b completed=500/1337
+progress model=qwen3_8b completed=525/1337
+progress model=qwen3_8b completed=550/1337
+progress model=qwen3_8b completed=575/1337
+progress model=qwen3_8b completed=600/1337
+progress model=qwen3_8b completed=625/1337
+progress model=qwen3_8b completed=650/1337
+progress model=qwen3_8b completed=675/1337
+progress model=qwen3_8b completed=700/1337
+progress model=qwen3_8b completed=725/1337
+progress model=qwen3_8b completed=750/1337
+progress model=qwen3_8b completed=775/1337
+progress model=qwen3_8b completed=800/1337
+progress model=qwen3_8b completed=825/1337
+progress model=qwen3_8b completed=850/1337
+progress model=qwen3_8b completed=875/1337
+progress model=qwen3_8b completed=900/1337
+progress model=qwen3_8b completed=925/1337
+progress model=qwen3_8b completed=950/1337
+progress model=qwen3_8b completed=975/1337
+progress model=qwen3_8b completed=1000/1337
+progress model=qwen3_8b completed=1025/1337
+progress model=qwen3_8b completed=1050/1337
+progress model=qwen3_8b completed=1075/1337
+progress model=qwen3_8b completed=1100/1337
+progress model=qwen3_8b completed=1125/1337
+progress model=qwen3_8b completed=1150/1337
+progress model=qwen3_8b completed=1175/1337
+progress model=qwen3_8b completed=1200/1337
+progress model=qwen3_8b completed=1225/1337
+progress model=qwen3_8b completed=1250/1337
+progress model=qwen3_8b completed=1275/1337
+progress model=qwen3_8b completed=1300/1337
+progress model=qwen3_8b completed=1325/1337
+progress model=qwen3_8b completed=1337/1337
+{
+  "cuda_visible_devices": "7",
+  "elapsed_seconds": 124.28680682182312,
+  "hostname": "ubuntu",
+  "library_sha256": "7c7e6c9326e68695abfe427dd45d5293a66b4fb85fad8a324ca6b8cb2d1cca55",
+  "model_hf_id": "Qwen/Qwen3-8B",
+  "model_key": "qwen3_8b",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "output_sha256": "1282ccf9f559a669c40d2a95e849cd39eec5ffff74c97c77ac87ab0e79e5781d",
+  "rows": 1337,
+  "status": "CANDIDATE_LIKELIHOOD_MODEL_COMPLETE"
+}

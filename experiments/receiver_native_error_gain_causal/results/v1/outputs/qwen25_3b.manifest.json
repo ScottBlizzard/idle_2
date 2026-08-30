@@ -1,0 +1,12 @@
+{
+  "cuda_visible_devices": "4",
+  "elapsed_seconds": 76.36816263198853,
+  "hostname": "ubuntu",
+  "library_sha256": "7c7e6c9326e68695abfe427dd45d5293a66b4fb85fad8a324ca6b8cb2d1cca55",
+  "model_hf_id": "Qwen/Qwen2.5-3B-Instruct",
+  "model_key": "qwen25_3b",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "output_sha256": "94aa8184d8876341dd4d4f040b99704be65cbc309213efb1b102653519f0622b",
+  "rows": 1337,
+  "status": "CANDIDATE_LIKELIHOOD_MODEL_COMPLETE"
+}

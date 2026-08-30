@@ -1,0 +1,28 @@
+{
+  "conditions": {
+    "all_cells_selected": true,
+    "candidate_minimum_pass": true,
+    "fraction_gap_pass": true,
+    "median_gap_pass": true,
+    "no_missing_pairs": true,
+    "token_delta_pass": true
+  },
+  "fraction_gap_at_least_005": 0.8333333333333334,
+  "input_hashes": {
+    "frozen": "a36378fcf7f10b1c13344a712f647443b839bfb6fe2fb9ff837dee9c8fbca513",
+    "library": "7c7e6c9326e68695abfe427dd45d5293a66b4fb85fad8a324ca6b8cb2d1cca55",
+    "score_outputs": {
+      "qwen25_3b": "94aa8184d8876341dd4d4f040b99704be65cbc309213efb1b102653519f0622b",
+      "qwen25_7b": "883adcc56d090ba1ea22ca8bdf9e93c24d49abeaf83e3c9dc9d4587e22d5708e",
+      "qwen3_4b": "efe14d96386b3bc0082e1e4f03dcc336d24786963671e1a027d73592b0d988c3",
+      "qwen3_8b": "1282ccf9f559a669c40d2a95e849cd39eec5ffff74c97c77ac87ab0e79e5781d"
+    }
+  },
+  "maximum_nll_gap": 0.4009271264076233,
+  "median_nll_gap": 0.10684219747781754,
+  "minimum_nll_gap": 0.007853761315345764,
+  "missing_pairs": [],
+  "selected_cells": 480,
+  "selected_sha256": "26c37fb7a055d4cf3b33d8f549e8cf57c75c3dceda36a6f851d1cdcb6cfc2f06",
+  "status": "MANIPULATION_PASS_AUTHORIZE_CORRECTION"
+}

@@ -1,0 +1,136 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.6.0+cu118).
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<03:58,  1.67it/s]Loading weights:   1%|          | 2/399 [00:00<03:05,  2.14it/s]Loading weights:   4%|▍         | 15/399 [00:01<00:20, 18.91it/s]Loading weights:   7%|▋         | 26/399 [00:01<00:11, 31.50it/s]Loading weights:   9%|▉         | 36/399 [00:01<00:08, 42.49it/s]Loading weights:  11%|█         | 43/399 [00:01<00:08, 43.26it/s]Loading weights:  12%|█▏        | 49/399 [00:01<00:08, 43.02it/s]Loading weights:  15%|█▍        | 59/399 [00:01<00:06, 51.77it/s]Loading weights:  18%|█▊        | 70/399 [00:01<00:05, 60.10it/s]Loading weights:  20%|██        | 81/399 [00:02<00:04, 66.91it/s]Loading weights:  22%|██▏       | 89/399 [00:02<00:04, 68.49it/s]Loading weights:  24%|██▍       | 97/399 [00:02<00:04, 65.67it/s]Loading weights:  26%|██▌       | 104/399 [00:02<00:04, 66.06it/s]Loading weights:  29%|██▉       | 115/399 [00:02<00:03, 71.37it/s]Loading weights:  31%|███▏      | 125/399 [00:02<00:04, 67.52it/s]Loading weights:  34%|███▍      | 137/399 [00:02<00:03, 74.16it/s]Loading weights:  37%|███▋      | 147/399 [00:02<00:03, 79.99it/s]Loading weights:  40%|███▉      | 158/399 [00:03<00:03, 78.91it/s]Loading weights:  42%|████▏     | 169/399 [00:03<00:02, 78.44it/s]Loading weights:  45%|████▌     | 181/399 [00:03<00:02, 82.25it/s]Loading weights:  48%|████▊     | 192/399 [00:03<00:02, 88.19it/s]Loading weights:  51%|█████     | 202/399 [00:03<00:02, 87.15it/s]Loading weights:  54%|█████▎    | 214/399 [00:03<00:01, 93.46it/s]Loading weights:  56%|█████▌    | 224/399 [00:03<00:02, 84.55it/s]Loading weights:  59%|█████▉    | 235/399 [00:04<00:02, 81.19it/s]Loading weights:  62%|██████▏   | 246/399 [00:04<00:01, 87.14it/s]Loading weights:  64%|██████▍   | 257/399 [00:04<00:01, 89.75it/s]Loading weights:  67%|██████▋   | 268/399 [00:04<00:01, 92.53it/s]Loading weights:  70%|██████▉   | 278/399 [00:04<00:01, 90.03it/s]Loading weights:  73%|███████▎  | 290/399 [00:04<00:01, 69.42it/s]Loading weights:  76%|███████▌  | 303/399 [00:04<00:01, 79.25it/s]Loading weights:  79%|███████▊  | 314/399 [00:04<00:01, 83.92it/s]Loading weights:  81%|████████▏ | 325/399 [00:05<00:00, 87.19it/s]Loading weights:  84%|████████▍ | 336/399 [00:05<00:00, 84.64it/s]Loading weights:  87%|████████▋ | 347/399 [00:05<00:00, 78.38it/s]Loading weights:  89%|████████▉ | 357/399 [00:05<00:00, 69.26it/s]Loading weights:  92%|█████████▏| 368/399 [00:05<00:00, 77.08it/s]Loading weights:  95%|█████████▍| 378/399 [00:05<00:00, 77.44it/s]Loading weights:  97%|█████████▋| 387/399 [00:06<00:00, 54.24it/s]Loading weights: 100%|██████████| 399/399 [00:06<00:00, 64.27it/s]
+progress model=qwen3_8b completed=2/240
+progress model=qwen3_8b completed=4/240
+progress model=qwen3_8b completed=6/240
+progress model=qwen3_8b completed=8/240
+progress model=qwen3_8b completed=10/240
+progress model=qwen3_8b completed=12/240
+progress model=qwen3_8b completed=14/240
+progress model=qwen3_8b completed=16/240
+progress model=qwen3_8b completed=18/240
+progress model=qwen3_8b completed=20/240
+progress model=qwen3_8b completed=22/240
+progress model=qwen3_8b completed=24/240
+progress model=qwen3_8b completed=26/240
+progress model=qwen3_8b completed=28/240
+progress model=qwen3_8b completed=30/240
+progress model=qwen3_8b completed=32/240
+progress model=qwen3_8b completed=34/240
+progress model=qwen3_8b completed=36/240
+progress model=qwen3_8b completed=38/240
+progress model=qwen3_8b completed=40/240
+progress model=qwen3_8b completed=42/240
+progress model=qwen3_8b completed=44/240
+progress model=qwen3_8b completed=46/240
+progress model=qwen3_8b completed=48/240
+progress model=qwen3_8b completed=50/240
+progress model=qwen3_8b completed=52/240
+progress model=qwen3_8b completed=54/240
+progress model=qwen3_8b completed=56/240
+progress model=qwen3_8b completed=58/240
+progress model=qwen3_8b completed=60/240
+progress model=qwen3_8b completed=62/240
+progress model=qwen3_8b completed=64/240
+progress model=qwen3_8b completed=66/240
+progress model=qwen3_8b completed=68/240
+progress model=qwen3_8b completed=70/240
+progress model=qwen3_8b completed=72/240
+progress model=qwen3_8b completed=74/240
+progress model=qwen3_8b completed=76/240
+progress model=qwen3_8b completed=78/240
+progress model=qwen3_8b completed=80/240
+progress model=qwen3_8b completed=82/240
+progress model=qwen3_8b completed=84/240
+progress model=qwen3_8b completed=86/240
+progress model=qwen3_8b completed=88/240
+progress model=qwen3_8b completed=90/240
+progress model=qwen3_8b completed=92/240
+progress model=qwen3_8b completed=94/240
+progress model=qwen3_8b completed=96/240
+progress model=qwen3_8b completed=98/240
+progress model=qwen3_8b completed=100/240
+progress model=qwen3_8b completed=102/240
+progress model=qwen3_8b completed=104/240
+progress model=qwen3_8b completed=106/240
+progress model=qwen3_8b completed=108/240
+progress model=qwen3_8b completed=110/240
+progress model=qwen3_8b completed=112/240
+progress model=qwen3_8b completed=114/240
+progress model=qwen3_8b completed=116/240
+progress model=qwen3_8b completed=118/240
+progress model=qwen3_8b completed=120/240
+progress model=qwen3_8b completed=122/240
+progress model=qwen3_8b completed=124/240
+progress model=qwen3_8b completed=126/240
+progress model=qwen3_8b completed=128/240
+progress model=qwen3_8b completed=130/240
+progress model=qwen3_8b completed=132/240
+progress model=qwen3_8b completed=134/240
+progress model=qwen3_8b completed=136/240
+progress model=qwen3_8b completed=138/240
+progress model=qwen3_8b completed=140/240
+progress model=qwen3_8b completed=142/240
+progress model=qwen3_8b completed=144/240
+progress model=qwen3_8b completed=146/240
+progress model=qwen3_8b completed=148/240
+progress model=qwen3_8b completed=150/240
+progress model=qwen3_8b completed=152/240
+progress model=qwen3_8b completed=154/240
+progress model=qwen3_8b completed=156/240
+progress model=qwen3_8b completed=158/240
+progress model=qwen3_8b completed=160/240
+progress model=qwen3_8b completed=162/240
+progress model=qwen3_8b completed=164/240
+progress model=qwen3_8b completed=166/240
+progress model=qwen3_8b completed=168/240
+progress model=qwen3_8b completed=170/240
+progress model=qwen3_8b completed=172/240
+progress model=qwen3_8b completed=174/240
+progress model=qwen3_8b completed=176/240
+progress model=qwen3_8b completed=178/240
+progress model=qwen3_8b completed=180/240
+progress model=qwen3_8b completed=182/240
+progress model=qwen3_8b completed=184/240
+progress model=qwen3_8b completed=186/240
+progress model=qwen3_8b completed=188/240
+progress model=qwen3_8b completed=190/240
+progress model=qwen3_8b completed=192/240
+progress model=qwen3_8b completed=194/240
+progress model=qwen3_8b completed=196/240
+progress model=qwen3_8b completed=198/240
+progress model=qwen3_8b completed=200/240
+progress model=qwen3_8b completed=202/240
+progress model=qwen3_8b completed=204/240
+progress model=qwen3_8b completed=206/240
+progress model=qwen3_8b completed=208/240
+progress model=qwen3_8b completed=210/240
+progress model=qwen3_8b completed=212/240
+progress model=qwen3_8b completed=214/240
+progress model=qwen3_8b completed=216/240
+progress model=qwen3_8b completed=218/240
+progress model=qwen3_8b completed=220/240
+progress model=qwen3_8b completed=222/240
+progress model=qwen3_8b completed=224/240
+progress model=qwen3_8b completed=226/240
+progress model=qwen3_8b completed=228/240
+progress model=qwen3_8b completed=230/240
+progress model=qwen3_8b completed=232/240
+progress model=qwen3_8b completed=234/240
+progress model=qwen3_8b completed=236/240
+progress model=qwen3_8b completed=238/240
+progress model=qwen3_8b completed=240/240
+{
+  "cuda_visible_devices": "7",
+  "elapsed_seconds": 1798.5760798454285,
+  "hostname": "ubuntu",
+  "model_hf_id": "Qwen/Qwen3-8B",
+  "model_key": "qwen3_8b",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "new_cases": 240,
+  "output_sha256": "16c535236a43dcc56147e5cfe6829bc41726e85cf49fa8d4c7ee048624977e7e",
+  "selected_sha256": "26c37fb7a055d4cf3b33d8f549e8cf57c75c3dceda36a6f851d1cdcb6cfc2f06",
+  "status": "CAUSAL_CORRECTION_MODEL_COMPLETE",
+  "total_cases": 240
+}

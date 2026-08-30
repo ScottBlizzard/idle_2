@@ -1,0 +1,62 @@
+{
+  "continuous_nll_model": {
+    "ci95": [
+      -0.9371734889841725,
+      -0.39587793600420734
+    ],
+    "cluster_problem_se": 0.13808560024999111,
+    "coefficient": -0.6665257124941899
+  },
+  "correctors_with_positive_retention_contrast": 2,
+  "input_hashes": {
+    "correction_outputs": {
+      "qwen25_3b": "aab5fa59c2950bdacd887f9c90884c95f08f892bb25476408381b5168c88ed8a",
+      "qwen25_7b": "7ce47833a84e0ea118d60ab2efbe871a86a0e4b8dc81b62279d9be1808161bf5",
+      "qwen3_4b": "1664dbbe984ca02d686e431296116fe0bc38065041873b745142b9d46deec475",
+      "qwen3_8b": "16c535236a43dcc56147e5cfe6829bc41726e85cf49fa8d4c7ee048624977e7e"
+    },
+    "frozen": "a36378fcf7f10b1c13344a712f647443b839bfb6fe2fb9ff837dee9c8fbca513",
+    "manipulation_gate": "73897c1244fa8e682043331b657ccda3f7c5db105e2c7867d3fbc26640907207",
+    "selected": "26c37fb7a055d4cf3b33d8f549e8cf57c75c3dceda36a6f851d1cdcb6cfc2f06"
+  },
+  "outcomes": {
+    "correct": {
+      "by_corrector": {
+        "qwen25_3b": -0.008333333333333333,
+        "qwen25_7b": -0.025,
+        "qwen3_4b": 0.016666666666666666,
+        "qwen3_8b": -0.03333333333333333
+      },
+      "overall": {
+        "ci95": [
+          -0.0375,
+          0.0125
+        ],
+        "high_native_minus_low_native": -0.0125,
+        "pairs": 480,
+        "problem_clusters": 30
+      }
+    },
+    "retained_source_error": {
+      "by_corrector": {
+        "qwen25_3b": 0.016666666666666666,
+        "qwen25_7b": -0.016666666666666666,
+        "qwen3_4b": 0.0,
+        "qwen3_8b": 0.025
+      },
+      "overall": {
+        "ci95": [
+          -0.01875,
+          0.03333333333333333
+        ],
+        "high_native_minus_low_native": 0.00625,
+        "pairs": 480,
+        "problem_clusters": 30
+      }
+    }
+  },
+  "parser_or_truncation_rate": 0.00625,
+  "rows": 960,
+  "scope": "WHITESPACE_ONLY_CAUSAL_KILL_TEST",
+  "status": "KILL_NO_CAUSAL_ERROR_GAIN"
+}

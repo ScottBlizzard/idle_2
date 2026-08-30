@@ -1,0 +1,69 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.6.0+cu118).
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<02:16,  3.16it/s]Loading weights:   9%|▉         | 39/434 [00:00<00:03, 109.46it/s]Loading weights:  14%|█▎        | 59/434 [00:00<00:02, 134.47it/s]Loading weights:  18%|█▊        | 78/434 [00:00<00:02, 134.27it/s]Loading weights:  23%|██▎       | 100/434 [00:00<00:02, 154.28it/s]Loading weights:  27%|██▋       | 118/434 [00:00<00:01, 160.50it/s]Loading weights:  31%|███▏      | 136/434 [00:01<00:02, 130.40it/s]Loading weights:  37%|███▋      | 161/434 [00:01<00:01, 154.46it/s]Loading weights:  42%|████▏     | 183/434 [00:01<00:01, 164.53it/s]Loading weights:  48%|████▊     | 207/434 [00:01<00:01, 176.40it/s]Loading weights:  52%|█████▏    | 226/434 [00:01<00:01, 176.03it/s]Loading weights:  56%|█████▋    | 245/434 [00:01<00:01, 153.87it/s]Loading weights:  64%|██████▍   | 277/434 [00:01<00:00, 192.96it/s]Loading weights:  69%|██████▊   | 298/434 [00:01<00:00, 183.55it/s]Loading weights:  73%|███████▎  | 318/434 [00:02<00:00, 154.69it/s]Loading weights:  78%|███████▊  | 340/434 [00:02<00:00, 162.70it/s]Loading weights:  84%|████████▎ | 363/434 [00:02<00:00, 176.63it/s]Loading weights:  88%|████████▊ | 382/434 [00:02<00:00, 179.01it/s]Loading weights:  92%|█████████▏| 401/434 [00:02<00:00, 152.08it/s]Loading weights:  98%|█████████▊| 424/434 [00:02<00:00, 166.85it/s]Loading weights: 100%|██████████| 434/434 [00:02<00:00, 156.58it/s]
+progress model=qwen25_3b completed=25/1337
+progress model=qwen25_3b completed=50/1337
+progress model=qwen25_3b completed=75/1337
+progress model=qwen25_3b completed=100/1337
+progress model=qwen25_3b completed=125/1337
+progress model=qwen25_3b completed=150/1337
+progress model=qwen25_3b completed=175/1337
+progress model=qwen25_3b completed=200/1337
+progress model=qwen25_3b completed=225/1337
+progress model=qwen25_3b completed=250/1337
+progress model=qwen25_3b completed=275/1337
+progress model=qwen25_3b completed=300/1337
+progress model=qwen25_3b completed=325/1337
+progress model=qwen25_3b completed=350/1337
+progress model=qwen25_3b completed=375/1337
+progress model=qwen25_3b completed=400/1337
+progress model=qwen25_3b completed=425/1337
+progress model=qwen25_3b completed=450/1337
+progress model=qwen25_3b completed=475/1337
+progress model=qwen25_3b completed=500/1337
+progress model=qwen25_3b completed=525/1337
+progress model=qwen25_3b completed=550/1337
+progress model=qwen25_3b completed=575/1337
+progress model=qwen25_3b completed=600/1337
+progress model=qwen25_3b completed=625/1337
+progress model=qwen25_3b completed=650/1337
+progress model=qwen25_3b completed=675/1337
+progress model=qwen25_3b completed=700/1337
+progress model=qwen25_3b completed=725/1337
+progress model=qwen25_3b completed=750/1337
+progress model=qwen25_3b completed=775/1337
+progress model=qwen25_3b completed=800/1337
+progress model=qwen25_3b completed=825/1337
+progress model=qwen25_3b completed=850/1337
+progress model=qwen25_3b completed=875/1337
+progress model=qwen25_3b completed=900/1337
+progress model=qwen25_3b completed=925/1337
+progress model=qwen25_3b completed=950/1337
+progress model=qwen25_3b completed=975/1337
+progress model=qwen25_3b completed=1000/1337
+progress model=qwen25_3b completed=1025/1337
+progress model=qwen25_3b completed=1050/1337
+progress model=qwen25_3b completed=1075/1337
+progress model=qwen25_3b completed=1100/1337
+progress model=qwen25_3b completed=1125/1337
+progress model=qwen25_3b completed=1150/1337
+progress model=qwen25_3b completed=1175/1337
+progress model=qwen25_3b completed=1200/1337
+progress model=qwen25_3b completed=1225/1337
+progress model=qwen25_3b completed=1250/1337
+progress model=qwen25_3b completed=1275/1337
+progress model=qwen25_3b completed=1300/1337
+progress model=qwen25_3b completed=1325/1337
+progress model=qwen25_3b completed=1337/1337
+{
+  "cuda_visible_devices": "4",
+  "elapsed_seconds": 76.36816263198853,
+  "hostname": "ubuntu",
+  "library_sha256": "7c7e6c9326e68695abfe427dd45d5293a66b4fb85fad8a324ca6b8cb2d1cca55",
+  "model_hf_id": "Qwen/Qwen2.5-3B-Instruct",
+  "model_key": "qwen25_3b",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "output_sha256": "94aa8184d8876341dd4d4f040b99704be65cbc309213efb1b102653519f0622b",
+  "rows": 1337,
+  "status": "CANDIDATE_LIKELIHOOD_MODEL_COMPLETE"
+}

@@ -1,0 +1,136 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.6.0+cu118).
+Loading weights:   0%|          | 0/339 [00:00<?, ?it/s]Loading weights:   0%|          | 1/339 [00:00<03:10,  1.77it/s]Loading weights:   1%|          | 2/339 [00:00<02:14,  2.50it/s]Loading weights:   5%|▍         | 16/339 [00:00<00:12, 26.12it/s]Loading weights:   8%|▊         | 28/339 [00:01<00:08, 36.39it/s]Loading weights:  12%|█▏        | 39/339 [00:01<00:06, 46.64it/s]Loading weights:  14%|█▎        | 46/339 [00:01<00:06, 47.13it/s]Loading weights:  16%|█▌        | 53/339 [00:01<00:05, 49.30it/s]Loading weights:  19%|█▉        | 65/339 [00:01<00:04, 55.44it/s]Loading weights:  22%|██▏       | 76/339 [00:01<00:04, 60.59it/s]Loading weights:  26%|██▌       | 88/339 [00:02<00:04, 60.09it/s]Loading weights:  29%|██▉       | 100/339 [00:02<00:04, 54.18it/s]Loading weights:  33%|███▎      | 112/339 [00:02<00:03, 62.66it/s]Loading weights:  37%|███▋      | 124/339 [00:02<00:03, 66.87it/s]Loading weights:  39%|███▉      | 132/339 [00:02<00:03, 68.35it/s]Loading weights:  41%|████▏     | 140/339 [00:02<00:03, 56.00it/s]Loading weights:  44%|████▎     | 148/339 [00:03<00:03, 55.04it/s]Loading weights:  47%|████▋     | 160/339 [00:03<00:02, 63.01it/s]Loading weights:  51%|█████     | 172/339 [00:03<00:02, 61.15it/s]Loading weights:  54%|█████▍    | 184/339 [00:03<00:02, 71.14it/s]Loading weights:  57%|█████▋    | 192/339 [00:03<00:02, 70.52it/s]Loading weights:  59%|█████▉    | 200/339 [00:03<00:02, 66.39it/s]Loading weights:  61%|██████▏   | 208/339 [00:03<00:02, 65.14it/s]Loading weights:  65%|██████▍   | 220/339 [00:04<00:01, 63.50it/s]Loading weights:  69%|██████▊   | 233/339 [00:04<00:01, 75.30it/s]Loading weights:  72%|███████▏  | 244/339 [00:04<00:01, 78.61it/s]Loading weights:  76%|███████▌  | 256/339 [00:04<00:01, 77.76it/s]Loading weights:  79%|███████▉  | 268/339 [00:04<00:00, 80.29it/s]Loading weights:  83%|████████▎ | 280/339 [00:04<00:00, 82.40it/s]Loading weights:  86%|████████▌ | 290/339 [00:04<00:00, 83.45it/s]Loading weights:  88%|████████▊ | 299/339 [00:05<00:00, 83.89it/s]Loading weights:  91%|█████████ | 308/339 [00:05<00:00, 73.97it/s]Loading weights:  94%|█████████▎| 317/339 [00:05<00:00, 77.70it/s]Loading weights:  97%|█████████▋| 328/339 [00:05<00:00, 78.08it/s]Loading weights: 100%|██████████| 339/339 [00:05<00:00, 61.40it/s]
+progress model=qwen25_7b completed=2/240
+progress model=qwen25_7b completed=4/240
+progress model=qwen25_7b completed=6/240
+progress model=qwen25_7b completed=8/240
+progress model=qwen25_7b completed=10/240
+progress model=qwen25_7b completed=12/240
+progress model=qwen25_7b completed=14/240
+progress model=qwen25_7b completed=16/240
+progress model=qwen25_7b completed=18/240
+progress model=qwen25_7b completed=20/240
+progress model=qwen25_7b completed=22/240
+progress model=qwen25_7b completed=24/240
+progress model=qwen25_7b completed=26/240
+progress model=qwen25_7b completed=28/240
+progress model=qwen25_7b completed=30/240
+progress model=qwen25_7b completed=32/240
+progress model=qwen25_7b completed=34/240
+progress model=qwen25_7b completed=36/240
+progress model=qwen25_7b completed=38/240
+progress model=qwen25_7b completed=40/240
+progress model=qwen25_7b completed=42/240
+progress model=qwen25_7b completed=44/240
+progress model=qwen25_7b completed=46/240
+progress model=qwen25_7b completed=48/240
+progress model=qwen25_7b completed=50/240
+progress model=qwen25_7b completed=52/240
+progress model=qwen25_7b completed=54/240
+progress model=qwen25_7b completed=56/240
+progress model=qwen25_7b completed=58/240
+progress model=qwen25_7b completed=60/240
+progress model=qwen25_7b completed=62/240
+progress model=qwen25_7b completed=64/240
+progress model=qwen25_7b completed=66/240
+progress model=qwen25_7b completed=68/240
+progress model=qwen25_7b completed=70/240
+progress model=qwen25_7b completed=72/240
+progress model=qwen25_7b completed=74/240
+progress model=qwen25_7b completed=76/240
+progress model=qwen25_7b completed=78/240
+progress model=qwen25_7b completed=80/240
+progress model=qwen25_7b completed=82/240
+progress model=qwen25_7b completed=84/240
+progress model=qwen25_7b completed=86/240
+progress model=qwen25_7b completed=88/240
+progress model=qwen25_7b completed=90/240
+progress model=qwen25_7b completed=92/240
+progress model=qwen25_7b completed=94/240
+progress model=qwen25_7b completed=96/240
+progress model=qwen25_7b completed=98/240
+progress model=qwen25_7b completed=100/240
+progress model=qwen25_7b completed=102/240
+progress model=qwen25_7b completed=104/240
+progress model=qwen25_7b completed=106/240
+progress model=qwen25_7b completed=108/240
+progress model=qwen25_7b completed=110/240
+progress model=qwen25_7b completed=112/240
+progress model=qwen25_7b completed=114/240
+progress model=qwen25_7b completed=116/240
+progress model=qwen25_7b completed=118/240
+progress model=qwen25_7b completed=120/240
+progress model=qwen25_7b completed=122/240
+progress model=qwen25_7b completed=124/240
+progress model=qwen25_7b completed=126/240
+progress model=qwen25_7b completed=128/240
+progress model=qwen25_7b completed=130/240
+progress model=qwen25_7b completed=132/240
+progress model=qwen25_7b completed=134/240
+progress model=qwen25_7b completed=136/240
+progress model=qwen25_7b completed=138/240
+progress model=qwen25_7b completed=140/240
+progress model=qwen25_7b completed=142/240
+progress model=qwen25_7b completed=144/240
+progress model=qwen25_7b completed=146/240
+progress model=qwen25_7b completed=148/240
+progress model=qwen25_7b completed=150/240
+progress model=qwen25_7b completed=152/240
+progress model=qwen25_7b completed=154/240
+progress model=qwen25_7b completed=156/240
+progress model=qwen25_7b completed=158/240
+progress model=qwen25_7b completed=160/240
+progress model=qwen25_7b completed=162/240
+progress model=qwen25_7b completed=164/240
+progress model=qwen25_7b completed=166/240
+progress model=qwen25_7b completed=168/240
+progress model=qwen25_7b completed=170/240
+progress model=qwen25_7b completed=172/240
+progress model=qwen25_7b completed=174/240
+progress model=qwen25_7b completed=176/240
+progress model=qwen25_7b completed=178/240
+progress model=qwen25_7b completed=180/240
+progress model=qwen25_7b completed=182/240
+progress model=qwen25_7b completed=184/240
+progress model=qwen25_7b completed=186/240
+progress model=qwen25_7b completed=188/240
+progress model=qwen25_7b completed=190/240
+progress model=qwen25_7b completed=192/240
+progress model=qwen25_7b completed=194/240
+progress model=qwen25_7b completed=196/240
+progress model=qwen25_7b completed=198/240
+progress model=qwen25_7b completed=200/240
+progress model=qwen25_7b completed=202/240
+progress model=qwen25_7b completed=204/240
+progress model=qwen25_7b completed=206/240
+progress model=qwen25_7b completed=208/240
+progress model=qwen25_7b completed=210/240
+progress model=qwen25_7b completed=212/240
+progress model=qwen25_7b completed=214/240
+progress model=qwen25_7b completed=216/240
+progress model=qwen25_7b completed=218/240
+progress model=qwen25_7b completed=220/240
+progress model=qwen25_7b completed=222/240
+progress model=qwen25_7b completed=224/240
+progress model=qwen25_7b completed=226/240
+progress model=qwen25_7b completed=228/240
+progress model=qwen25_7b completed=230/240
+progress model=qwen25_7b completed=232/240
+progress model=qwen25_7b completed=234/240
+progress model=qwen25_7b completed=236/240
+progress model=qwen25_7b completed=238/240
+progress model=qwen25_7b completed=240/240
+{
+  "cuda_visible_devices": "5",
+  "elapsed_seconds": 1022.6208374500275,
+  "hostname": "ubuntu",
+  "model_hf_id": "Qwen/Qwen2.5-7B-Instruct",
+  "model_key": "qwen25_7b",
+  "model_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "new_cases": 240,
+  "output_sha256": "7ce47833a84e0ea118d60ab2efbe871a86a0e4b8dc81b62279d9be1808161bf5",
+  "selected_sha256": "26c37fb7a055d4cf3b33d8f549e8cf57c75c3dceda36a6f851d1cdcb6cfc2f06",
+  "status": "CAUSAL_CORRECTION_MODEL_COMPLETE",
+  "total_cases": 240
+}
