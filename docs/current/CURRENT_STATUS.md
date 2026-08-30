@@ -275,3 +275,18 @@ error-space correlation, and answer anchoring.
 - Frozen protocol: [`../../experiments/receiver_native_error_gain_causal/PREREGISTRATION.md`](../../experiments/receiver_native_error_gain_causal/PREREGISTRATION.md)
 - Chinese results report: [`../../experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md`](../../experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md)
 - Automatic final gate: [`../../experiments/receiver_native_error_gain_causal/results/v1/final_analysis/FINAL_GATE.json`](../../experiments/receiver_native_error_gain_causal/results/v1/final_analysis/FINAL_GATE.json)
+
+The immediate semantic-rewrite continuation has now been collision-audited and is
+**`NO_GO_SEMANTIC_REWRITE_AS_ORAL_SEED`**. Meaning-preserving paraphrase instability,
+cross-model explanation-induced agreement (including wrong agreement), style-only
+distillation with wrong traces, receiver-specific rationale generation, and structured
+error localization collectively occupy the obvious claim and baseline space. More
+importantly, a wrong-trace paraphrase cannot currently preserve the first-error location
+and executable state-transition graph well enough to identify receiver NLL as the cause.
+
+One theory-first mechanism audit is retained: separate token-surprise reduction from the
+semantic-path changes induced by student participation in student-friendly rationale
+methods. It is not an authorized GPU experiment. No provider expansion or semantic
+rewrite sweep should begin until a graph-equivalent, NLL-matched intervention exists.
+
+- Binding continuation audit: [`../audits/RECEIVER_NATIVE_ERROR_GAIN_CONTINUATION_AUDIT.md`](../audits/RECEIVER_NATIVE_ERROR_GAIN_CONTINUATION_AUDIT.md)
