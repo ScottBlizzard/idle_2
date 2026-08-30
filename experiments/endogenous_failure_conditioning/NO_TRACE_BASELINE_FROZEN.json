@@ -1,0 +1,19 @@
+{
+  "protocol_version": "1.0-no-trace-baseline-kill-test",
+  "parent_pilot_version": "v2.1-qwen-lineages-no-thinking",
+  "seed": 20260830,
+  "domain": "gsm8k",
+  "problem_count": 60,
+  "call_count": 240,
+  "error_bank_sha256": "ae0fcf6d04ed7c3374fa37bb5d1a7874d8eefddbca77056598bd79c95a26e57b",
+  "parent_scored_matrix_sha256": "39b921b734b55864a0a53468740837784d38b0b17c49de505cee3cdd9b44b7e1",
+  "max_new_tokens": 768,
+  "bootstrap_repetitions": 10000,
+  "minimum_baseline_solvable_pairs": 80,
+  "maximum_parser_or_truncation_rate": 0.02,
+  "minimum_excess_damage": 0.05,
+  "minimum_excess_retention": 0.05,
+  "system_prompt": "You are a careful mathematical reasoner. Check the supplied solution rather than trusting it. Return a corrected derivation and end with exactly Final answer: \\boxed{ANSWER}.",
+  "user_template": "Problem:\n{question}\n\nNo proposed solution is supplied. Solve the problem independently, show a careful derivation, and give the final answer in the required format.",
+  "models_from": "FROZEN_CONFIG_V2_QWEN_LINEAGES.json"
+}
