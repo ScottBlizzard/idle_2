@@ -4,7 +4,16 @@ This directory is the **single entry point** for a new Pro research-scout sessio
 
 ## Current task status
 
-The latest endogenous-failure-conditioning pilot is complete. Its frozen decision is `KILL_NO_SELECTION_REVERSAL`: the model-size ordering did not reverse, and MATH-500 suffered severe output truncation. A strong Qwen2.5×Qwen3 cross-lineage correction interaction remains as an unexplained anomaly, not an authorized continuation. Read [`../../experiments/endogenous_failure_conditioning/RESULTS_REPORT_ZH.md`](../../experiments/endogenous_failure_conditioning/RESULTS_REPORT_ZH.md) and [`../current/CURRENT_STATUS.md`](../current/CURRENT_STATUS.md) before proposing another seed. There is no current Pro task and no authorized experiment.
+The Qwen2.5×Qwen3 anomaly has now been followed through two additional gates. Receiver
+NLL strongly predicted source-error retention across traces, but a preregistered intervention
+that changed NLL using strictly whitespace-only, character-preserving renderings produced
+only a `+0.625pp` paired retention effect with a confidence interval spanning zero. The
+binding decision is `KILL_NO_CAUSAL_ERROR_GAIN`; a subsequent collision audit also closes
+the obvious semantic-rewrite continuation as an Oral seed. Read
+[`../../experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md`](../../experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md),
+[`../audits/RECEIVER_NATIVE_ERROR_GAIN_CONTINUATION_AUDIT.md`](../audits/RECEIVER_NATIVE_ERROR_GAIN_CONTINUATION_AUDIT.md),
+and [`../current/CURRENT_STATUS.md`](../current/CURRENT_STATUS.md) before proposing another
+seed. There is no authorized active experiment.
 
 ## Latest post-Pro decision
 
@@ -25,4 +34,6 @@ Files under [`../prompts/`](../prompts/) and [`../archive/`](../archive/) are pr
 
 ## Current state in one sentence
 
-There is no active seed. The newest anomaly is cross-lineage repair asymmetry without the preregistered ability-ordering reversal; it may seed a future contradiction-first search but does not authorize extending the completed matrix.
+There is no active seed: whole-trace likelihood is a strong prognostic marker but failed as
+a surface-level causal lever, and the next seed must define a matched intervention that
+does not merely optimize or rename an observational predictor.

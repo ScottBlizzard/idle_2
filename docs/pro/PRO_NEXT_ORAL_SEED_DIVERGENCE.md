@@ -13,7 +13,8 @@ Start by reading only these files, in this order:
 1. `docs/pro/README.md`
 2. `docs/pro/RESEARCH_BRIEF.md`
 3. `docs/current/CURRENT_STATUS.md`
-4. `experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md` only when you need the latest experiment's detailed evidence
+4. `experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md`
+5. `docs/audits/RECEIVER_NATIVE_ERROR_GAIN_CONTINUATION_AUDIT.md`
 
 Do not indiscriminately read every historical prompt, failed engineering log, or raw result shard. Use the on-demand links in `docs/pro/README.md` only to verify a possible collision or avoid repeating an old seed.
 
@@ -25,15 +26,20 @@ Do not assume that the next direction must involve billiards, robotics, planning
 
 ## Hard constraints
 
-- Current date and literature cutoff: use the latest literature available through **29 August 2026** and continue searching while you reason.
+- Current date and literature cutoff: use the latest literature available through **31 August 2026** and continue searching while you reason.
 - Prefer primary sources: OpenReview, arXiv, PMLR, ACL Anthology, official proceedings, and author/project repositories. Verify titles, dates, claims, experimental settings, and links.
-- Hardware: the server has 8 RTX 4090 GPUs, but this project is currently restricted to physical GPUs 4--7—at most four 24 GB GPUs concurrently.
+- Hardware: the server has 8 RTX 4090 GPUs. Any card with enough currently free VRAM may
+  be used or safely shared, but foreign workloads must never be stopped or modified.
 - The core experiment must be GPU-only and must not require a physical robot.
 - Prefer open-weight models, public datasets, official evaluators, and reproducible strong baselines.
 - The first decisive falsification should normally fit within 4 GPU-hours. A credible discovery package should normally fit within roughly 40 GPU-hours unless you explicitly justify more.
 - Do not make closed APIs, proprietary data, massive human annotation, or unavailable frontier checkpoints necessary for the central result.
 - Treat every repository-level NO-GO as binding. Do not rescue a failed seed by changing terminology, domains, layer bins, prompts, thresholds, model families, or post-hoc subgroups.
 - In particular, do not elevate the few positive MoE H3 point estimates into a new seed: they failed the registered multiplicity family and lacked H1/H2/H4 support.
+- Do not revive receiver-native error gain by running semantic paraphrase or provider
+  sweeps. Whole-trace NLL was predictive, but the passed whitespace-only NLL manipulation
+  had essentially zero paired effect. Any related proposal must isolate a different causal
+  coordinate, not relabel likelihood or semantic compatibility.
 
 ## Required search process
 
@@ -51,6 +57,7 @@ Generate at least 12 candidate mechanisms across at least 6 materially different
 4. the decisive observation that would distinguish the new mechanism;
 5. the cheapest kill test;
 6. the likely broad audience if true.
+7. the matched equivalence class in which the claimed variable can be actuated before outcomes.
 
 Do not pad the list with carrier swaps or renamed versions of the same abstraction. At least half of the candidates should not descend directly from the billiards vocabulary or the prior MoE/steering work.
 
@@ -96,7 +103,7 @@ If none survives, make the final decision `NO_GO_NEED_NEW_SEED` and explain what
 
 Write a single self-contained Markdown document named:
 
-`AI_RESEARCH_ORAL_SEED_DIVERGENCE.md`
+`AI_RESEARCH_POST_INTERVENTION_DIVERGENCE.md`
 
 It must contain:
 

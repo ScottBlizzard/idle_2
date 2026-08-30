@@ -1,9 +1,9 @@
 # Research Brief for the Next ICLR Seed
 
 **Repository:** [ScottBlizzard/idle_2](https://github.com/ScottBlizzard/idle_2)  
-**Brief date:** 30 August 2026
+**Brief date:** 31 August 2026
 
-**Project state:** one theory-first falsifier; no authorized active paper seed
+**Project state:** no authorized active paper seed; latest matched intervention is a scientific NO-GO
 
 ## 1. Mission
 
@@ -20,7 +20,9 @@ We do **not** need to preserve the billiards carrier, MoE routing, planning, age
 ## 2. Hard operating constraints
 
 - Target venue: ICLR; a narrow incremental benchmark or tuning trick is insufficient.
-- Hardware: an 8× RTX 4090 server exists, but the project is currently authorized to use only physical GPUs 4--7: at most four independent 24 GB cards concurrently.
+- Hardware: an 8× RTX 4090 server exists. Any physical GPU with sufficient free VRAM may
+  be used, including sharing a partially occupied card when safe. Never stop or modify a
+  foreign workload; select cards from live memory/process inspection.
 - No physical robot dependency. GPU-only simulation is allowed only if it is fast, standardized, and scientifically necessary.
 - Prefer open-weight models, public datasets, official evaluators, and strong reproducible baselines.
 - The first kill test should normally fit within 4 GPU-hours. A serious discovery package should normally fit within roughly 40 GPU-hours unless a stronger justification is explicit.
@@ -41,6 +43,7 @@ The following families are closed for this project unless a proposed claim is de
 | Generic error shaping into task-tolerant directions | Invariance, equivariance, covariance shaping, tangent geometry, and robust control already capture the broad principle | applying the same geometry to a fashionable carrier without a new law |
 | Closed-loop bracket activation steering | At a fixed layer the proposed loop collapses to its final displacement; the operational intervention, theorem, and matched baseline case were missing, while neighboring commutator and nonlinear-steering work is occupied | demonstrating only order sensitivity, noncommutativity, quadratic scaling, or nonlinear steering |
 | Counterfactual route non-compositionality in frozen MoEs | The complete registered Stage D experiment found no reproducible interaction law and no deployable compatibility predictor | rescuing selected H3 cells, changing layer bins, relaxing multiplicity, or adding models after the NO-GO |
+| Receiver-native error gain from surface realization | Receiver NLL predicted wrong-answer retention across traces, but a successful whitespace-only NLL intervention changed retention by only `+0.625pp` with CI spanning zero | semantic paraphrase sweeps, provider scaling, treating NLL as a causal mediator, or relabeling predictive likelihood as compatibility |
 
 Other heavily occupied regions already audited include retrieval redundancy/diversity, reasoning-sample genealogy, raw-versus-compressed agent memory, masked-diffusion commitment order, output-path diversity and SFT conflict, recoverability-weighted failed traces, ordinary model editing interference, and generic multi-agent critique.
 
@@ -48,36 +51,29 @@ The latest negative-space search additionally closes continuation-family scoring
 
 A later three-track reassessment does not reopen those broad claims, but corrects the stronger statement that the snooker source is exhausted. It retains one theory-first question: under matched tools, model, tokens, and verification budget, can extra locally verifiable workflow nodes reverse the usual horizon penalty by removing a high-coupling error-propagation bottleneck? This is `ONE_THEORY_FIRST_HOLD`, not an active seed. It requires a prospectively estimable propagation gain and a separation theorem beyond AgentEval/CoT2Graph features before any GPU work. See [`../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md`](../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md).
 
-## 4. Current sole falsifier: the diagonal is not a scaling law
+## 4. Latest contradiction: prediction is not actuation
 
-The current candidate did not come from another direct snooker mapping. It begins from a
-published inverse-scaling claim in self-correction. Existing comparisons often report
+The crossed-repair work is now closed through its causal follow-up. On frozen GSM8K wrong
+traces, same-lineage traces were `1.3231` within-receiver standard deviations lower in NLL,
+and lower NLL strongly predicted retention of the same wrong answer. This passed a frozen
+post-hoc mechanism gate.
 
-\[
-P(\mathrm{repair}\mid\text{generator}=\text{corrector}=m,
-\text{ model }m\text{ initially failed}).
-\]
+A new outcome-blind experiment then held every non-whitespace character, character order,
+calculation, wrong answer, source trace, problem, and receiver fixed. It selected
+high-native and low-native natural layouts only after successfully creating a median
+`0.10684` nats/token NLL gap. All 960 paired correction calls completed with `0.625%`
+quality failure. The retention effect was only `+0.00625`, 95% CI
+`[-0.01875, 0.03333]`, versus a frozen `+0.08` requirement.
 
-This diagonal statistic mixes repair competence, the difficulty distribution of errors
-that survive each generator, and self/other role gating. A deterministic model in
-[`../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md`](../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md)
-constructs strict positive scaling at every fixed difficulty while own-failure correction
-strictly decreases. The common-error-bank ranking has the opposite sign.
+This creates a useful exclusion rule: an observational score may be prognostic because it
+tracks semantic structure or source difficulty, yet fail when directly actuated along a
+surface-preserving direction. A new seed must define an equivalence class and an
+intervention coordinate that competing explanations cannot absorb. Generic
+probe-versus-causality, paraphrase instability, explanation transfer, and
+student-friendly rationale claims are already crowded and are not sufficient.
 
-Selection bias alone is not an Oral contribution. The only high-ceiling residual is
-**relational error depth**: after holding the exact error and wrapper fixed, error
-repairability may depend on the generator--corrector pairing because related models share
-blind spots. A weaker complementary corrector may then repair an error that a stronger
-related corrector cannot. This must survive direct comparison with ICLR 2026 *Variation in
-Verification*, COLM 2026 *Self-Correction Bench*, controlled role-label studies, and ICML
-2025 *Correlated Errors in Large Language Models*.
-
-The public `YefanZhou98/LLMVerify-Generator` bundle already supplies about 619,000 labeled
-trajectories from 15 generators. A frozen 4×4 crossed-repair pilot is specified in
-[`../../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL.md`](../../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL.md).
-Promotion requires a stable generator-family-by-corrector-family interaction and a
-held-out equal-call-budget complementarity router gain. A standardized ranking reversal
-without those results is only an audit.
+- Causal report: [`../../experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md`](../../experiments/receiver_native_error_gain_causal/RESULTS_REPORT_ZH.md)
+- Continuation audit: [`../audits/RECEIVER_NATIVE_ERROR_GAIN_CONTINUATION_AUDIT.md`](../audits/RECEIVER_NATIVE_ERROR_GAIN_CONTINUATION_AUDIT.md)
 
 ## 5. Latest completed experiment: what it actually teaches
 
@@ -123,6 +119,8 @@ A candidate should be rejected unless it can answer all of the following:
 6. **Algorithmic consequence:** If the phenomenon is true, what method follows that is not an obvious extra predictor, reweighting rule, search heuristic, or regularizer?
 7. **Breadth:** Why should researchers outside the chosen benchmark care?
 8. **Paper arc:** What are the likely first three figures, and how do they build one argument rather than a benchmark collection?
+9. **Actuation:** Can the proposed causal coordinate be changed inside a matched equivalence
+   class before outcomes, or is it only an observational predictor over naturally different examples?
 
 An idea that is merely publishable, fashionable, or easy to run should still be rejected. Conversely, a risky idea is acceptable if the first test is cheap and the upside is genuinely high.
 
