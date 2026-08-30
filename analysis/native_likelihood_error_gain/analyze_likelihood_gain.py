@@ -11,6 +11,7 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -21,9 +22,17 @@ from experiments.endogenous_failure_conditioning.common import read_jsonl, sha25
 
 
 def logistic(df: pd.DataFrame, formula: str) -> dict[str, Any]:
-    robust = smf.logit(formula, data=df).fit(
-        disp=False, cov_type="cluster", cov_kwds={"groups": df["problem_key"]}
+    robust = smf.glm(
+        formula, data=df, family=sm.families.Binomial()
+    ).fit(
+        maxiter=200,
+        cov_type="cluster",
+        cov_kwds={"groups": df["problem_key"]},
     )
+    if not robust.converged:
+        raise RuntimeError(f"Binomial GLM failed to converge for: {formula}")
+    if not np.isfinite(robust.params).all() or not np.isfinite(robust.bse).all():
+        raise RuntimeError(f"Non-finite GLM inference for: {formula}")
     names = list(robust.params.index)
     params = dict(zip(names, map(float, robust.params)))
     ses = dict(zip(names, map(float, robust.bse)))
