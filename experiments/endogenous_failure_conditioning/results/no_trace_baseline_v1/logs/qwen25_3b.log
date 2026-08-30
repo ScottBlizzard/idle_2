@@ -1,0 +1,23 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.6.0+cu118).
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights:   0%|          | 1/434 [00:00<01:34,  4.59it/s]Loading weights:   6%|▌         | 27/434 [00:00<00:04, 99.96it/s]Loading weights:   9%|▉         | 41/434 [00:00<00:03, 113.39it/s]Loading weights:  15%|█▍        | 63/434 [00:00<00:02, 139.87it/s]Loading weights:  18%|█▊        | 79/434 [00:00<00:02, 130.81it/s]Loading weights:  23%|██▎       | 99/434 [00:00<00:02, 142.27it/s]Loading weights:  28%|██▊       | 121/434 [00:00<00:01, 161.01it/s]Loading weights:  32%|███▏      | 138/434 [00:01<00:02, 145.95it/s]Loading weights:  35%|███▌      | 154/434 [00:01<00:01, 148.01it/s]Loading weights:  39%|███▉      | 171/434 [00:01<00:01, 152.66it/s]Loading weights:  44%|████▍     | 191/434 [00:01<00:01, 162.73it/s]Loading weights:  48%|████▊     | 209/434 [00:01<00:01, 164.79it/s]Loading weights:  52%|█████▏    | 227/434 [00:01<00:01, 166.85it/s]Loading weights:  56%|█████▌    | 244/434 [00:01<00:01, 151.31it/s]Loading weights:  62%|██████▏   | 267/434 [00:01<00:00, 171.97it/s]Loading weights:  66%|██████▋   | 288/434 [00:01<00:00, 180.74it/s]Loading weights:  71%|███████   | 307/434 [00:02<00:00, 175.93it/s]Loading weights:  75%|███████▌  | 327/434 [00:02<00:00, 163.88it/s]Loading weights:  81%|████████  | 351/434 [00:02<00:00, 183.24it/s]Loading weights:  86%|████████▋ | 375/434 [00:02<00:00, 185.36it/s]Loading weights:  91%|█████████ | 394/434 [00:02<00:00, 182.31it/s]Loading weights:  95%|█████████▌| 413/434 [00:02<00:00, 175.91it/s]Loading weights: 100%|██████████| 434/434 [00:02<00:00, 159.72it/s]
+progress model=qwen25_3b completed=8/60
+progress model=qwen25_3b completed=16/60
+progress model=qwen25_3b completed=24/60
+progress model=qwen25_3b completed=32/60
+progress model=qwen25_3b completed=40/60
+progress model=qwen25_3b completed=48/60
+progress model=qwen25_3b completed=56/60
+progress model=qwen25_3b completed=60/60
+{
+  "cuda_visible_devices": "4",
+  "elapsed_seconds": 122.63773512840271,
+  "hostname": "ubuntu",
+  "model_hf_id": "Qwen/Qwen2.5-3B-Instruct",
+  "model_key": "qwen25_3b",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "new_cases": 60,
+  "output_sha256": "86a09b61c094506ea732abbb5f88e8a7d8faf5503383a1f382ef1e1b603b4675",
+  "status": "NO_TRACE_MODEL_COMPLETE",
+  "total_cases": 60
+}

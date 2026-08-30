@@ -1,0 +1,59 @@
+{
+  "baseline_parse_or_truncation_rate": 0.020833333333333332,
+  "baseline_rows": 240,
+  "baseline_solvable_pairs": 124,
+  "by_wrapper": {
+    "assistant_history": {
+      "baseline_solvable_pairs": 124,
+      "damage": {
+        "ci95": [
+          0.13888888888888895,
+          0.2622950819672131
+        ],
+        "cross_lineage": 0.6209677419354839,
+        "same_lineage": 0.8225806451612904,
+        "same_minus_cross": 0.2016129032258065
+      },
+      "n": 496,
+      "retained_source_error": {
+        "ci95": [
+          0.17889908256880738,
+          0.32051282051282054
+        ],
+        "cross_lineage": 0.3870967741935484,
+        "same_lineage": 0.6370967741935484,
+        "same_minus_cross": 0.25
+      }
+    },
+    "external_neutral": {
+      "baseline_solvable_pairs": 124,
+      "damage": {
+        "ci95": [
+          0.11693548387096775,
+          0.2553210622990969
+        ],
+        "cross_lineage": 0.5685483870967742,
+        "same_lineage": 0.7540322580645161,
+        "same_minus_cross": 0.18548387096774188
+      },
+      "n": 496,
+      "retained_source_error": {
+        "ci95": [
+          0.13761467889908252,
+          0.2734391693376068
+        ],
+        "cross_lineage": 0.35080645161290325,
+        "same_lineage": 0.5564516129032258,
+        "same_minus_cross": 0.2056451612903225
+      }
+    }
+  },
+  "input_hashes": {
+    "error_bank": "ae0fcf6d04ed7c3374fa37bb5d1a7874d8eefddbca77056598bd79c95a26e57b",
+    "frozen_protocol": "c07c809b768e4b1224b429741b7d6180c7219833c1a14c86f4633a6d3f5f180d",
+    "parent_scored_matrix": "39b921b734b55864a0a53468740837784d38b0b17c49de505cee3cdd9b44b7e1"
+  },
+  "parent_gate": "KILL_NO_SELECTION_REVERSAL",
+  "scope": "POST_HOC_NEW_EXPERIMENT_DOES_NOT_CHANGE_PARENT_GATE",
+  "status": "NO_GO_ENGINEERING"
+}

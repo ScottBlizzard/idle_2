@@ -1,0 +1,30 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.6.0+cu118).
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:01<06:58,  1.05s/it]Loading weights:   4%|▍         | 15/399 [00:01<00:22, 17.21it/s]Loading weights:   7%|▋         | 26/399 [00:01<00:13, 27.76it/s]Loading weights:   9%|▉         | 37/399 [00:01<00:09, 37.98it/s]Loading weights:  12%|█▏        | 48/399 [00:01<00:07, 47.96it/s]Loading weights:  14%|█▍        | 56/399 [00:01<00:06, 52.57it/s]Loading weights:  16%|█▌        | 64/399 [00:01<00:05, 56.90it/s]Loading weights:  18%|█▊        | 72/399 [00:02<00:06, 53.80it/s]Loading weights:  21%|██        | 82/399 [00:02<00:05, 55.43it/s]Loading weights:  23%|██▎       | 93/399 [00:02<00:04, 64.33it/s]Loading weights:  26%|██▌       | 103/399 [00:02<00:04, 66.44it/s]Loading weights:  28%|██▊       | 111/399 [00:02<00:04, 66.11it/s]Loading weights:  30%|██▉       | 118/399 [00:02<00:04, 65.22it/s]Loading weights:  32%|███▏      | 126/399 [00:02<00:03, 68.85it/s]Loading weights:  34%|███▎      | 134/399 [00:02<00:03, 70.93it/s]Loading weights:  36%|███▌      | 142/399 [00:03<00:04, 60.20it/s]Loading weights:  39%|███▉      | 155/399 [00:03<00:03, 72.14it/s]Loading weights:  41%|████      | 163/399 [00:03<00:03, 69.82it/s]Loading weights:  43%|████▎     | 171/399 [00:03<00:03, 64.68it/s]Loading weights:  45%|████▌     | 181/399 [00:03<00:03, 65.33it/s]Loading weights:  48%|████▊     | 192/399 [00:03<00:02, 72.27it/s]Loading weights:  51%|█████     | 202/399 [00:03<00:02, 71.37it/s]Loading weights:  53%|█████▎    | 213/399 [00:04<00:02, 72.79it/s]Loading weights:  56%|█████▌    | 224/399 [00:04<00:02, 75.00it/s]Loading weights:  58%|█████▊    | 232/399 [00:04<00:02, 74.73it/s]Loading weights:  60%|██████    | 240/399 [00:04<00:02, 70.14it/s]Loading weights:  62%|██████▏   | 248/399 [00:04<00:02, 63.26it/s]Loading weights:  65%|██████▍   | 258/399 [00:04<00:02, 69.35it/s]Loading weights:  67%|██████▋   | 266/399 [00:04<00:01, 68.54it/s]Loading weights:  68%|██████▊   | 273/399 [00:04<00:02, 60.80it/s]Loading weights:  70%|███████   | 280/399 [00:05<00:01, 61.32it/s]Loading weights:  73%|███████▎  | 290/399 [00:05<00:01, 64.87it/s]Loading weights:  75%|███████▍  | 298/399 [00:05<00:01, 67.60it/s]Loading weights:  76%|███████▋  | 305/399 [00:05<00:01, 63.71it/s]Loading weights:  78%|███████▊  | 313/399 [00:05<00:01, 65.24it/s]Loading weights:  81%|████████  | 323/399 [00:05<00:01, 71.40it/s]Loading weights:  84%|████████▎ | 334/399 [00:05<00:00, 75.47it/s]Loading weights:  86%|████████▌ | 343/399 [00:05<00:00, 78.16it/s]Loading weights:  88%|████████▊ | 351/399 [00:06<00:00, 71.01it/s]Loading weights:  90%|████████▉ | 359/399 [00:06<00:00, 65.75it/s]Loading weights:  92%|█████████▏| 368/399 [00:06<00:00, 64.44it/s]Loading weights:  95%|█████████▍| 379/399 [00:06<00:00, 72.54it/s]Loading weights:  98%|█████████▊| 390/399 [00:06<00:00, 77.67it/s]Loading weights: 100%|██████████| 399/399 [00:06<00:00, 60.16it/s]
+progress model=qwen3_8b completed=4/60
+progress model=qwen3_8b completed=8/60
+progress model=qwen3_8b completed=12/60
+progress model=qwen3_8b completed=16/60
+progress model=qwen3_8b completed=20/60
+progress model=qwen3_8b completed=24/60
+progress model=qwen3_8b completed=28/60
+progress model=qwen3_8b completed=32/60
+progress model=qwen3_8b completed=36/60
+progress model=qwen3_8b completed=40/60
+progress model=qwen3_8b completed=44/60
+progress model=qwen3_8b completed=48/60
+progress model=qwen3_8b completed=52/60
+progress model=qwen3_8b completed=56/60
+progress model=qwen3_8b completed=60/60
+{
+  "cuda_visible_devices": "7",
+  "elapsed_seconds": 258.0370924472809,
+  "hostname": "ubuntu",
+  "model_hf_id": "Qwen/Qwen3-8B",
+  "model_key": "qwen3_8b",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "new_cases": 60,
+  "output_sha256": "eb373f7663e8d4e2a99b0d524dfc693093a22ec04d0c4d9a082a66a80b0a519b",
+  "status": "NO_TRACE_MODEL_COMPLETE",
+  "total_cases": 60
+}

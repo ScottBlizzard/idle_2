@@ -1,6 +1,31 @@
 # Current Research Status
 
-Last updated: 2026-08-30
+Last updated: 2026-08-31
+
+## Lineage trace-exposure kill test — 2026-08-31
+
+The post-hoc GSM8K anomaly was converted into a separately frozen 240-call no-trace
+baseline before any new output existed. On corrector-problem pairs that the corrector
+solved independently, externally presented same-lineage wrong traces caused 18.55 points
+more damage than cross-lineage traces (problem-clustered 95% CI 11.69--25.53), and source
+wrong-answer retention was 20.56 points higher (CI 13.76--27.34). Assistant-history
+effects were directionally stronger.
+
+The binding automatic decision is nevertheless **`NO_GO_ENGINEERING`**. Five of 240
+no-trace generations genuinely hit the frozen 768-token limit, producing a 2.083%
+parser-or-truncation rate against a 2% ceiling. This is not a parser bug and the threshold
+will not be weakened after observing the effect. The parent
+`KILL_NO_SELECTION_REVERSAL` decision remains unchanged.
+
+The signal is retained as justification for designing a new clean cross-provider
+confirmation with concise matched outputs and answer/content/style interventions. The
+current run does not authorize style/content separation automatically and is not itself
+an active paper seed.
+
+- Collision audit: [`../audits/LINEAGE_ERROR_ATTRACTOR_COLLISION_AUDIT.md`](../audits/LINEAGE_ERROR_ATTRACTOR_COLLISION_AUDIT.md)
+- Frozen kill test: [`../../experiments/endogenous_failure_conditioning/NO_TRACE_BASELINE_PROTOCOL.md`](../../experiments/endogenous_failure_conditioning/NO_TRACE_BASELINE_PROTOCOL.md)
+- Chinese results report: [`../../experiments/endogenous_failure_conditioning/NO_TRACE_BASELINE_RESULTS_ZH.md`](../../experiments/endogenous_failure_conditioning/NO_TRACE_BASELINE_RESULTS_ZH.md)
+- Automatic gate: [`../../experiments/endogenous_failure_conditioning/results/no_trace_baseline_v1/results/FINAL_GATE.json`](../../experiments/endogenous_failure_conditioning/results/no_trace_baseline_v1/results/FINAL_GATE.json)
 
 ## Endogenous-failure reset — 2026-08-30
 

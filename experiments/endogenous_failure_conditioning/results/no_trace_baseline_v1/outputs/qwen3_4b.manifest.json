@@ -1,0 +1,12 @@
+{
+  "cuda_visible_devices": "6",
+  "elapsed_seconds": 148.21099305152893,
+  "hostname": "ubuntu",
+  "model_hf_id": "Qwen/Qwen3-4B",
+  "model_key": "qwen3_4b",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "new_cases": 60,
+  "output_sha256": "ad54c1874f4bcae276148010ef77abc88b7ffd45915aa3be907f492c1dde3703",
+  "status": "NO_TRACE_MODEL_COMPLETE",
+  "total_cases": 60
+}
