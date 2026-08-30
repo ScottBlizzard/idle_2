@@ -1,0 +1,16 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.6.0+cu118).
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:59<6:34:49, 59.67s/it]Loading weights:  31%|███▏      | 125/398 [01:00<01:34,  2.90it/s]Loading weights:  34%|███▍      | 136/398 [01:15<01:58,  2.22it/s]Loading weights: 100%|██████████| 398/398 [01:15<00:00,  5.30it/s]
+{
+  "backend": "transformers",
+  "cuda_visible_devices": "6",
+  "elapsed_seconds": 7268.576353549957,
+  "hostname": "ubuntu",
+  "model_hf_id": "Qwen/Qwen3-4B",
+  "model_key": "qwen3_4b",
+  "model_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+  "new_cases": 960,
+  "output_sha256": "11771515775ea4a8046a889e5634db4c6e69eb50cc8a530c4f5a6f4d38874c9a",
+  "status": "CORRECTOR_COMPLETE",
+  "total_cases": 960
+}

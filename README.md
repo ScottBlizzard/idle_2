@@ -6,9 +6,9 @@ This repository records a falsification-first search for an ICLR-level research 
 
 1. **For a new research scout or Pro session:** read only [`docs/pro/README.md`](docs/pro/README.md) first.
 2. For the binding project record, read [`docs/current/CURRENT_STATUS.md`](docs/current/CURRENT_STATUS.md).
-3. For the latest completed scientific result, read [`experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md`](experiments/moe_route_noncompositionality/STAGE_D_RESULTS_REPORT_ZH.md).
+3. For the latest completed scientific result, read [`experiments/endogenous_failure_conditioning/RESULTS_REPORT_ZH.md`](experiments/endogenous_failure_conditioning/RESULTS_REPORT_ZH.md).
 
-There is currently **no authorized paper seed**. The frozen-MoE route-non-compositionality discovery ended at **`NO_GO_NO_INTERACTION_LAW`**, and transient-shortcut catalysis reduced to existing teleportation theory. A later negative-space search closed eight broad translations. A three-track deeper reassessment then showed that the snooker source itself is not exhausted, but retained only one theory-first HOLD: whether lowering workflow error-propagation coupling can reverse the usual penalty of adding steps under strictly matched compute and tools. The current state is **`NO_ACTIVE_SEED — ONE_THEORY_FIRST_HOLD`**; no GPU experiment is authorized.
+There is currently **no authorized paper seed**. The latest Qwen2.5×Qwen3 crossed-repair pilot completed all 3,840 cells but ended at **`KILL_NO_SELECTION_REVERSAL`**. It found a strong within-provider lineage interaction, but MATH-500 had severe output truncation and the preregistered ability-ordering reversal did not occur, so no router or expansion is authorized. Earlier MoE route non-compositionality and transient-shortcut seeds also closed. The current state is **`NO_ACTIVE_SEED`**.
 
 ## Repository layout
 
@@ -33,7 +33,7 @@ See [`docs/README.md`](docs/README.md) for the full documentation map and [`expe
 ## Binding constraints
 
 - Target venue: ICLR; oral-level insight is aspirational, never assumed.
-- Compute: one 8× RTX 4090 server, with this project currently restricted to physical GPUs 4--7 (four 24 GB cards concurrently).
+- Compute: one 8× RTX 4090 server. Outcome-blind jobs may share any card with sufficient measured free memory; wall-clock time is not treated as a scientific outcome.
 - No physical robot dependency.
 - Prefer public benchmarks, official evaluators, strong baselines, and open-weight models.
 - Require a cheap falsification gate before authorizing a large experiment.

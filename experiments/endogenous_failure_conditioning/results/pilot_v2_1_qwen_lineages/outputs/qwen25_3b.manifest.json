@@ -1,0 +1,13 @@
+{
+  "backend": "transformers",
+  "cuda_visible_devices": "4",
+  "elapsed_seconds": 5677.800438404083,
+  "hostname": "ubuntu",
+  "model_hf_id": "Qwen/Qwen2.5-3B-Instruct",
+  "model_key": "qwen25_3b",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "new_cases": 960,
+  "output_sha256": "930bc6b45d174f8f6e107e9e7282c5d758d7f086bf01f33ac4629feb064874e0",
+  "status": "CORRECTOR_COMPLETE",
+  "total_cases": 960
+}

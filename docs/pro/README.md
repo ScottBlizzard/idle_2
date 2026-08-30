@@ -4,7 +4,7 @@ This directory is the **single entry point** for a new Pro research-scout sessio
 
 ## Current task status
 
-The transient-shortcut theory/novelty audit is complete and its general-law attempt collided directly with level-set/null-space teleportation. A subsequent negative-space search closed eight broad translations, while a three-track deeper reassessment retained one theory-first workflow-propagation HOLD and three concrete snooker discussion targets. Read [`../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md`](../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md) before proposing another seed. There is no current Pro task and no authorized experiment.
+The latest endogenous-failure-conditioning pilot is complete. Its frozen decision is `KILL_NO_SELECTION_REVERSAL`: the model-size ordering did not reverse, and MATH-500 suffered severe output truncation. A strong Qwen2.5×Qwen3 cross-lineage correction interaction remains as an unexplained anomaly, not an authorized continuation. Read [`../../experiments/endogenous_failure_conditioning/RESULTS_REPORT_ZH.md`](../../experiments/endogenous_failure_conditioning/RESULTS_REPORT_ZH.md) and [`../current/CURRENT_STATUS.md`](../current/CURRENT_STATUS.md) before proposing another seed. There is no current Pro task and no authorized experiment.
 
 ## Latest post-Pro decision
 
@@ -25,4 +25,4 @@ Files under [`../prompts/`](../prompts/) and [`../archive/`](../archive/) are pr
 
 ## Current state in one sentence
 
-There is no active seed. The snooker source is not exhausted, but its sole AI residual is a theory-first question about workflow error-propagation topology; no experiment is authorized before a separation theorem and matched counterexample exist.
+There is no active seed. The newest anomaly is cross-lineage repair asymmetry without the preregistered ability-ordering reversal; it may seed a future contradiction-first search but does not authorize extending the completed matrix.

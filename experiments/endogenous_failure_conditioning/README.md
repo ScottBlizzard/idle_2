@@ -14,10 +14,13 @@ Current executable experiment: outcome-blind v2 Qwen2.5×Qwen3 crossed-repair pi
 6. `run_corrector.py` runs one model and resumes by immutable case ID.
 7. `analyze_pilot.py` scores only a complete 3,840-cell matrix and writes the automatic
    gate.
-8. `wait_and_run_pilot.sh` uses only physical GPUs 4--7 after 18 consecutive ten-second
-   idle observations and an independent last-moment check.
-9. `continue_after_models.sh` connects the CPU-only model download to the safe GPU
-   watcher; a failed model download terminates before GPU allocation.
+8. `launch_shared_pilot.sh` selects distinct physical GPUs 0--7 by measured free-memory
+   floors and can safely resume batch-synced outputs without stopping foreign jobs.
+9. `finalize_existing_pilot.sh` preserves the completed legacy launch, analyzes it after
+   all correctors finish, and invokes the shared launcher only after an engineering failure.
 
 V1 never entered inference because Gemma access was gated; see
 [`V1_ACCESS_FAILURE.md`](V1_ACCESS_FAILURE.md).
+
+V2.1 completed all 3,840 cells. Its binding decision is
+`KILL_NO_SELECTION_REVERSAL`; see [`RESULTS_REPORT_ZH.md`](RESULTS_REPORT_ZH.md).

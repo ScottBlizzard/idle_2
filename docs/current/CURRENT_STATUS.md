@@ -11,23 +11,22 @@ selection, and agent fault injection. The redundancy-conditioned edit-dose candi
 also killed before experiment because redundancy and entanglement do not identify the
 claimed signs without specifying aggregation structure.
 
-The sole current `THEORY-FIRST FALSIFIER` is **endogenous failure conditioning**. Published
-self-correction comparisons commonly report each model's repair rate on that model's own
-failure cohort. This is a valid deployment statistic but does not identify correction
-capability: stronger models leave a harder selected error tail. A deterministic construction
-shows correction skill increasing at every fixed difficulty while own-failure correction
-falls from 27% to 13%; on a common error bank it rises from 37% to 57%.
+The completed `THEORY-FIRST FALSIFIER` for **endogenous failure conditioning** is now
+closed. Published self-correction comparisons can confound correction capability with the
+difficulty of each model's selected failure tail, but the frozen common-bank experiment did
+not produce the preregistered model-size ordering reversal. The automatic decision is
+`KILL_NO_SELECTION_REVERSAL`.
 
-The only potential Oral-level residual is **relational error depth**: after fixing the exact
-error and role, a weaker but complementary model may repair errors that a stronger related
-model cannot because model families share blind spots. The next gate is a small complete
-generator-by-corrector matrix. Selection-bias reversal alone is insufficient; a stable
-family interaction and an equal-budget complementarity-routing gain are required.
+The crossed matrix did reveal a strong negative Qwen2.5×Qwen3 lineage interaction across
+both wrappers and both datasets, consistent with cross-lineage correction outperforming
+same-lineage correction. This is retained only as an anomaly source, not a paper seed:
+MATH-500 suffered 52.71% parser-or-truncation failure under the equal 768-token budget,
+the evidence is within one provider, and no equal-budget router comparison was authorized.
 
 - Binding reset: [`../audits/CONTRADICTION_FIRST_SEED_RESET_2026-08-30.md`](../audits/CONTRADICTION_FIRST_SEED_RESET_2026-08-30.md)
 - Theory and kill design: [`../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md`](../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md)
 
-### Pilot engineering status
+### Pilot final status
 
 The original Qwen2.5×Gemma v1 grid stopped before inference because the frozen Gemma
 repositories are gated and unavailable both locally and on the 4090 host. No correction
@@ -37,15 +36,18 @@ interaction. All scientific thresholds remain unchanged, and a positive result s
 requires cross-provider replication.
 
 The v2.1 public bank is frozen at 480 unique errors over 60 common GSM8K and 60 common
-MATH-500 problems. All source, bank, config, and prompt inputs are hashed. Local
-preflight passed all four exact model revisions, 3,840 rendered prompts, and the 8,192
-token context gate with zero overflow. GPU inference has not started. Physical GPUs 4,
-6, and 7 were occupied by foreign jobs at the latest read-only check; they will not be
-stopped or modified.
+MATH-500 problems. All four exact correctors completed 960 cells each, yielding the full
+3,840-cell matrix with matching local hashes. The frozen gate found no qualifying
+selection reversal. Although all four lineage interactions had the same negative sign and
+95% intervals excluding zero, the global bad parse-or-truncation rate was 27.55% versus a
+2% ceiling; 1,012 of 1,920 MATH-500 cases hit the quality definition, primarily by reaching
+the output-token limit. No router test or cross-provider expansion is authorized.
 
 - Executable amendment: [`../../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL_AMENDMENT_V2.md`](../../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL_AMENDMENT_V2.md)
 - V1 access record: [`../../experiments/endogenous_failure_conditioning/V1_ACCESS_FAILURE.md`](../../experiments/endogenous_failure_conditioning/V1_ACCESS_FAILURE.md)
 - V2.1 preflight: [`../../experiments/endogenous_failure_conditioning/results/error_bank_v2_1_qwen_lineages/PREFLIGHT_LOCAL.json`](../../experiments/endogenous_failure_conditioning/results/error_bank_v2_1_qwen_lineages/PREFLIGHT_LOCAL.json)
+- Chinese final report: [`../../experiments/endogenous_failure_conditioning/RESULTS_REPORT_ZH.md`](../../experiments/endogenous_failure_conditioning/RESULTS_REPORT_ZH.md)
+- Automatic final gate: [`../../experiments/endogenous_failure_conditioning/results/pilot_v2_1_qwen_lineages/results/FINAL_GATE.json`](../../experiments/endogenous_failure_conditioning/results/pilot_v2_1_qwen_lineages/results/FINAL_GATE.json)
 
 ## Binding decision
 

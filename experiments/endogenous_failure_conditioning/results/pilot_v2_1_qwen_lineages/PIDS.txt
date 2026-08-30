@@ -1,0 +1,4 @@
+qwen25_3b gpu=4 pid=2193358
+qwen25_7b gpu=5 pid=2193359
+qwen3_4b gpu=6 pid=2193360
+qwen3_8b gpu=7 pid=2193361
