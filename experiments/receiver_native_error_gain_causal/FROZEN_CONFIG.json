@@ -1,0 +1,23 @@
+{
+  "bootstrap_repetitions": 10000,
+  "diagnostic_result_sha256": "24f35d22f90b04e5c957dbc7ecbc0548cbb6aeb8ab70873d146cf066303d6453",
+  "domain": "gsm8k",
+  "error_bank_sha256": "ae0fcf6d04ed7c3374fa37bb5d1a7874d8eefddbca77056598bd79c95a26e57b",
+  "expected_candidate_variants": 12,
+  "expected_receivers": 4,
+  "expected_selected_cells": 480,
+  "expected_source_traces": 120,
+  "max_new_tokens": 1024,
+  "maximum_parser_or_truncation_rate": 0.02,
+  "maximum_selected_token_delta": 2,
+  "minimum_correctors_positive": 3,
+  "minimum_fraction_gap_005": 0.75,
+  "minimum_median_nll_gap": 0.10,
+  "minimum_primary_retention_contrast": 0.08,
+  "minimum_unique_candidates": 4,
+  "parent_config_sha256": "c3ce5803da434b9d3a6436e06c57814b51f997d27975c65bdd79aa35a9e8103a",
+  "problem_count": 30,
+  "seed": 20260831,
+  "wrapper": "external_neutral"
+}
+
