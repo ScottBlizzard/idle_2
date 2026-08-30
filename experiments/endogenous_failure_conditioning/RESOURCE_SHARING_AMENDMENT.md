@@ -11,8 +11,10 @@ unchanged.
   memory exceeds a model-specific conservative floor.
 - It never stops or modifies another process. Contention may change wall-clock
   time, which is not an experimental outcome in this pilot.
-- Transformer outputs are fsynced after every batch of two. An engineering
+- Transformer outputs are fsynced after every generation batch. An engineering
   failure can therefore resume by immutable `case_id` without regenerating
   completed cells.
+- The 7B corrector uses batch size one when sharing a card. Batch packing is an
+  engineering memory control; decoding remains greedy and deterministic.
 - Allocation decisions are recorded in `RESOURCE_ALLOCATION.tsv` before model
   loading.

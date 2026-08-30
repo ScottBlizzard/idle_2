@@ -55,7 +55,8 @@ fi
 # cache, the batch of two, and several GiB of headroom. Largest models select
 # first from the currently freest distinct GPU.
 MODELS=(qwen3_8b qwen25_7b qwen3_4b qwen25_3b)
-NEEDS=(20000 18000 11500 9500)
+NEEDS=(20000 17000 11500 9500)
+BATCHES=(2 1 2 2)
 declare -A USED
 declare -A ASSIGNED
 declare -A FREE_AT_SELECTION
@@ -86,11 +87,11 @@ for index in "${!MODELS[@]}"; do
 done
 
 allocation="$RUN_DIR/RESOURCE_ALLOCATION.tsv"
-printf 'model\tgpu\tminimum_free_mib\tobserved_free_mib\n' > "$allocation"
+printf 'model\tgpu\tbatch_size\tminimum_free_mib\tobserved_free_mib\n' > "$allocation"
 for index in "${!MODELS[@]}"; do
   model="${MODELS[$index]}"
   [[ -n "${ASSIGNED[$model]:-}" ]] || continue
-  printf '%s\t%s\t%s\t%s\n' "$model" "${ASSIGNED[$model]}" "${NEEDS[$index]}" "${FREE_AT_SELECTION[$model]}" >> "$allocation"
+  printf '%s\t%s\t%s\t%s\t%s\n' "$model" "${ASSIGNED[$model]}" "${BATCHES[$index]}" "${NEEDS[$index]}" "${FREE_AT_SELECTION[$model]}" >> "$allocation"
 done
 
 pids=()
@@ -112,6 +113,7 @@ for index in "${!MODELS[@]}"; do
       --config "$CONFIG" \
       --output "$RUN_DIR/outputs/$model.jsonl" \
       --backend transformers \
+      --batch-size "${BATCHES[$index]}" \
       > "$RUN_DIR/$model.log" 2>&1 &
   pids+=("$!")
   launched+=("$model")
