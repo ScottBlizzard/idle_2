@@ -27,12 +27,27 @@ def main() -> None:
     records = []
     for model_key, model in load_config(args.config)["models"].items():
         started = time.time()
-        try:
-            resolved = snapshot_download(
-                repo_id=model["hf_id"],
-                revision=model["revision"],
-                repo_type="model",
-            )
+        attempts = []
+        resolved = None
+        for attempt in range(1, 5):
+            try:
+                resolved = snapshot_download(
+                    repo_id=model["hf_id"],
+                    revision=model["revision"],
+                    repo_type="model",
+                )
+                break
+            except Exception as exc:
+                attempts.append(
+                    {
+                        "attempt": attempt,
+                        "error_type": type(exc).__name__,
+                        "error": str(exc)[:2000],
+                    }
+                )
+                if attempt < 4:
+                    time.sleep(10)
+        if resolved is not None:
             records.append(
                 {
                     "model_key": model_key,
@@ -41,9 +56,11 @@ def main() -> None:
                     "resolved_path": resolved,
                     "elapsed_seconds": time.time() - started,
                     "status": "READY",
+                    "transient_failures": attempts,
                 }
             )
-        except Exception as exc:
+        else:
+            last = attempts[-1]
             records.append(
                 {
                     "model_key": model_key,
@@ -51,8 +68,9 @@ def main() -> None:
                     "revision": model["revision"],
                     "elapsed_seconds": time.time() - started,
                     "status": "FAILED",
-                    "error_type": type(exc).__name__,
-                    "error": str(exc)[:2000],
+                    "error_type": last["error_type"],
+                    "error": last["error"],
+                    "attempts": attempts,
                 }
             )
             result = {
