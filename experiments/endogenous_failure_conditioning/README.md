@@ -16,6 +16,8 @@ Current executable experiment: outcome-blind v2 Qwen2.5×Qwen3 crossed-repair pi
    gate.
 8. `wait_and_run_pilot.sh` uses only physical GPUs 4--7 after 18 consecutive ten-second
    idle observations and an independent last-moment check.
+9. `continue_after_models.sh` connects the CPU-only model download to the safe GPU
+   watcher; a failed model download terminates before GPU allocation.
 
 V1 never entered inference because Gemma access was gated; see
 [`V1_ACCESS_FAILURE.md`](V1_ACCESS_FAILURE.md).
