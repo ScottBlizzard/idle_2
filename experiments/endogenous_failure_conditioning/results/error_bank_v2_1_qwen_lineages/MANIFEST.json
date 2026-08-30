@@ -1,0 +1,28 @@
+{
+  "config_sha256": "c3ce5803da434b9d3a6436e06c57814b51f997d27975c65bdd79aa35a9e8103a",
+  "dataset_revision": "baf4cd773bda2c2fc9e07fae0ec64c898c3e9e1b",
+  "difficulty_sha256": "8dc2c91e7ce5d34c1f57f38b93c76fb40461c3599530fec2819f9f9b01b06843",
+  "error_bank_sha256": "ae0fcf6d04ed7c3374fa37bb5d1a7874d8eefddbca77056598bd79c95a26e57b",
+  "error_count": 480,
+  "selection": {
+    "gsm8k": {
+      "common_candidate_problems": 69,
+      "excluded_missing_public_difficulty": 108,
+      "raw_common_problems": 177,
+      "selected_problems": 60
+    },
+    "math500": {
+      "common_candidate_problems": 183,
+      "excluded_missing_public_difficulty": 0,
+      "raw_common_problems": 183,
+      "selected_problems": 60
+    }
+  },
+  "source_sha256": {
+    "qwen25_3b": "ee3b802bca8158cfeb62b8059ec9222e3f02f9f9c52aa0a3f7f17f42d9b6b0f6",
+    "qwen25_7b": "55f2340cc82cd9e4574b6dbad19b47ec6ce7add271922f90d43be9533d84c4b5",
+    "qwen3_4b": "1740d989cf24375fa15634e6434901435f88336987ce8aca9093834781d5aca2",
+    "qwen3_8b": "a95af9e6185b75dbf466f47822280c3ca38130cc39a84fd4598c1c59a2c57e6d"
+  },
+  "status": "ERROR_BANK_FROZEN"
+}

@@ -27,6 +27,26 @@ family interaction and an equal-budget complementarity-routing gain are required
 - Binding reset: [`../audits/CONTRADICTION_FIRST_SEED_RESET_2026-08-30.md`](../audits/CONTRADICTION_FIRST_SEED_RESET_2026-08-30.md)
 - Theory and kill design: [`../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md`](../theory/ENDOGENOUS_FAILURE_CONDITIONING_NOTE.md)
 
+### Pilot engineering status
+
+The original Qwen2.5×Gemma v1 grid stopped before inference because the frozen Gemma
+repositories are gated and unavailable both locally and on the 4090 host. No correction
+outcome was generated. An outcome-blind v2.1 amendment replaces the grid with Qwen2.5
+3B/7B and Qwen3 4B/8B, narrowing the first claim to a within-provider lineage
+interaction. All scientific thresholds remain unchanged, and a positive result still
+requires cross-provider replication.
+
+The v2.1 public bank is frozen at 480 unique errors over 60 common GSM8K and 60 common
+MATH-500 problems. All source, bank, config, and prompt inputs are hashed. Local
+preflight passed all four exact model revisions, 3,840 rendered prompts, and the 8,192
+token context gate with zero overflow. GPU inference has not started. Physical GPUs 4,
+6, and 7 were occupied by foreign jobs at the latest read-only check; they will not be
+stopped or modified.
+
+- Executable amendment: [`../../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL_AMENDMENT_V2.md`](../../experiments/endogenous_failure_conditioning/PILOT_PROTOCOL_AMENDMENT_V2.md)
+- V1 access record: [`../../experiments/endogenous_failure_conditioning/V1_ACCESS_FAILURE.md`](../../experiments/endogenous_failure_conditioning/V1_ACCESS_FAILURE.md)
+- V2.1 preflight: [`../../experiments/endogenous_failure_conditioning/results/error_bank_v2_1_qwen_lineages/PREFLIGHT_LOCAL.json`](../../experiments/endogenous_failure_conditioning/results/error_bank_v2_1_qwen_lineages/PREFLIGHT_LOCAL.json)
+
 ## Binding decision
 
 The **conditionally irrelevant competing-operator interference** confirmatory seed is a **NO-GO**.

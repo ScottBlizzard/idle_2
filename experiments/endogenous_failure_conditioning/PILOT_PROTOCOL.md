@@ -2,7 +2,13 @@
 
 ## 0. Decision boundary
 
-Status: `PREREGISTRATION DRAFT — NO RUN WHILE SSH IS UNAVAILABLE`.
+Status: `V1 ACCESS PREFLIGHT FAILED — SUPERSEDED OUTCOME-BLIND BY V2`.
+
+The original Qwen×Gemma grid below is preserved as v1. No correction outcome was
+generated. The gated Gemma weights were unavailable locally and on the 4090 server. The
+separately frozen Qwen2.5×Qwen3 lineage pilot is defined in
+[`PILOT_PROTOCOL_AMENDMENT_V2.md`](PILOT_PROTOCOL_AMENDMENT_V2.md); its positive result
+would still require cross-provider replication.
 
 The pilot is designed to kill, not confirm, two nested claims:
 

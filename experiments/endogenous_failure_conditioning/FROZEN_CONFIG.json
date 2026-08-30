@@ -1,0 +1,68 @@
+{
+  "protocol_version": "1.0-crossed-repair-pilot",
+  "seed": 20260830,
+  "dataset": {
+    "repo_id": "YefanZhou98/LLMVerify-Generator",
+    "revision": "baf4cd773bda2c2fc9e07fae0ec64c898c3e9e1b",
+    "difficulty_path": "math/model_gen_diff_math.npy",
+    "difficulty_sha256": "8dc2c91e7ce5d34c1f57f38b93c76fb40461c3599530fec2819f9f9b01b06843",
+    "difficulty_size": 666973
+  },
+  "domains": {
+    "gsm8k": "gsm8k_full",
+    "math500": "math500_full"
+  },
+  "problems_per_domain": 60,
+  "minimum_problems_per_domain": 40,
+  "max_error_characters": 12000,
+  "wrappers": [
+    "external_neutral",
+    "assistant_history"
+  ],
+  "max_new_tokens": 768,
+  "models": {
+    "qwen_3b": {
+      "family": "qwen",
+      "size_rank": 0,
+      "hf_id": "Qwen/Qwen2.5-3B-Instruct",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "source_path": "math/balanced_subsample/Qwen_Qwen2.5_3B_Instruct.jsonl",
+      "source_sha256": "ee3b802bca8158cfeb62b8059ec9222e3f02f9f9c52aa0a3f7f17f42d9b6b0f6",
+      "source_size": 79125065
+    },
+    "qwen_7b": {
+      "family": "qwen",
+      "size_rank": 1,
+      "hf_id": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "source_path": "math/balanced_subsample/Qwen_Qwen2.5_7B_Instruct.jsonl",
+      "source_sha256": "55f2340cc82cd9e4574b6dbad19b47ec6ce7add271922f90d43be9533d84c4b5",
+      "source_size": 77225643
+    },
+    "gemma_2b": {
+      "family": "gemma",
+      "size_rank": 0,
+      "hf_id": "google/gemma-2-2b-it",
+      "revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+      "source_path": "math/balanced_subsample/google_gemma_2_2b_it.jsonl",
+      "source_sha256": "b19c4610f52b2d4551c795ac0f3ac18d6e2216716230e67057b4dffd66365ff4",
+      "source_size": 60719789
+    },
+    "gemma_9b": {
+      "family": "gemma",
+      "size_rank": 1,
+      "hf_id": "google/gemma-2-9b-it",
+      "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "source_path": "math/balanced_subsample/google_gemma_2_9b_it.jsonl",
+      "source_sha256": "bf29b6977de7657d595a399869be769f277c38c7213b317d82180e13ad16de98",
+      "source_size": 57879221
+    }
+  },
+  "gates": {
+    "selection_reversal_points": 0.05,
+    "family_interaction_points": 0.05,
+    "maximum_parser_or_truncation_rate": 0.02,
+    "router_gain_points": 0.03,
+    "bootstrap_repetitions": 2000
+  }
+}

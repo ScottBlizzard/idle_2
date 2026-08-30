@@ -1,0 +1,72 @@
+{
+  "protocol_version": "1.0-crossed-repair-pilot",
+  "pilot_version": "v2.1-qwen-lineages-no-thinking",
+  "hypothesis_scope": "within-provider cross-lineage relational error depth",
+  "seed": 20260830,
+  "dataset": {
+    "repo_id": "YefanZhou98/LLMVerify-Generator",
+    "revision": "baf4cd773bda2c2fc9e07fae0ec64c898c3e9e1b",
+    "difficulty_path": "math/model_gen_diff_math.npy",
+    "difficulty_sha256": "8dc2c91e7ce5d34c1f57f38b93c76fb40461c3599530fec2819f9f9b01b06843",
+    "difficulty_size": 666973
+  },
+  "domains": {
+    "gsm8k": "gsm8k_full",
+    "math500": "math500_full"
+  },
+  "problems_per_domain": 60,
+  "minimum_problems_per_domain": 40,
+  "max_error_characters": 12000,
+  "wrappers": [
+    "external_neutral",
+    "assistant_history"
+  ],
+  "max_new_tokens": 768,
+  "models": {
+    "qwen25_3b": {
+      "family": "qwen25",
+      "size_rank": 0,
+      "hf_id": "Qwen/Qwen2.5-3B-Instruct",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "source_path": "math/balanced_subsample/Qwen_Qwen2.5_3B_Instruct.jsonl",
+      "source_sha256": "ee3b802bca8158cfeb62b8059ec9222e3f02f9f9c52aa0a3f7f17f42d9b6b0f6",
+      "source_size": 79125065
+    },
+    "qwen25_7b": {
+      "family": "qwen25",
+      "size_rank": 1,
+      "hf_id": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "source_path": "math/balanced_subsample/Qwen_Qwen2.5_7B_Instruct.jsonl",
+      "source_sha256": "55f2340cc82cd9e4574b6dbad19b47ec6ce7add271922f90d43be9533d84c4b5",
+      "source_size": 77225643
+    },
+    "qwen3_4b": {
+      "family": "qwen3",
+      "size_rank": 0,
+      "hf_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "chat_template_kwargs": {"enable_thinking": false},
+      "source_path": "math/balanced_subsample/Qwen_Qwen3_4B.jsonl",
+      "source_sha256": "1740d989cf24375fa15634e6434901435f88336987ce8aca9093834781d5aca2",
+      "source_size": 98545012
+    },
+    "qwen3_8b": {
+      "family": "qwen3",
+      "size_rank": 1,
+      "hf_id": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "chat_template_kwargs": {"enable_thinking": false},
+      "source_path": "math/balanced_subsample/Qwen_Qwen3_8B.jsonl",
+      "source_sha256": "a95af9e6185b75dbf466f47822280c3ca38130cc39a84fd4598c1c59a2c57e6d",
+      "source_size": 98855892
+    }
+  },
+  "gates": {
+    "selection_reversal_points": 0.05,
+    "family_interaction_points": 0.05,
+    "maximum_parser_or_truncation_rate": 0.02,
+    "router_gain_points": 0.03,
+    "bootstrap_repetitions": 2000
+  }
+}
