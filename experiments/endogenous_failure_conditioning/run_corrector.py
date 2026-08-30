@@ -76,12 +76,12 @@ def vllm_generate(
     return texts, counts, "vllm"
 
 
-def transformers_generate(
+def transformers_generate_batches(
     model_spec: dict[str, Any],
     cases: list[dict[str, Any]],
     max_new_tokens: int,
     batch_size: int,
-) -> tuple[list[str], list[int], str]:
+):
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -98,8 +98,6 @@ def transformers_generate(
         device_map={"": 0},
         low_cpu_mem_usage=True,
     ).eval()
-    texts: list[str] = []
-    counts: list[int] = []
     for start in range(0, len(cases), batch_size):
         batch = cases[start : start + batch_size]
         rendered = [
@@ -122,13 +120,51 @@ def transformers_generate(
                 pad_token_id=tokenizer.pad_token_id,
                 eos_token_id=tokenizer.eos_token_id,
             )
+        texts: list[str] = []
+        counts: list[int] = []
         for row in generated:
             continuation = row[prompt_length:].tolist()
             if tokenizer.eos_token_id in continuation:
                 continuation = continuation[: continuation.index(tokenizer.eos_token_id) + 1]
             texts.append(tokenizer.decode(continuation, skip_special_tokens=True))
             counts.append(len(continuation))
-    return texts, counts, "transformers"
+        yield batch, texts, counts
+
+
+def append_rows(
+    handle,
+    cases: list[dict[str, Any]],
+    texts: list[str],
+    token_counts: list[int],
+    model_key: str,
+    model_spec: dict[str, Any],
+    max_new_tokens: int,
+    backend: str,
+) -> None:
+    for case, text, token_count in zip(cases, texts, token_counts):
+        error = case["error"]
+        row = {
+            "case_id": case["case_id"],
+            "error_id": error["error_id"],
+            "domain": error["domain"],
+            "problem_key": error["problem_key"],
+            "generator_key": error["generator_key"],
+            "generator_family": error["generator_family"],
+            "corrector_key": model_key,
+            "corrector_family": model_spec["family"],
+            "corrector_size_rank": model_spec["size_rank"],
+            "wrapper": case["wrapper"],
+            "prompt_payload_sha256": prompt_payload_hash(error, case["wrapper"]),
+            "response": text,
+            "generated_tokens": token_count,
+            "hit_token_limit": token_count >= max_new_tokens,
+            "backend": backend,
+            "model_hf_id": model_spec["hf_id"],
+            "model_revision": model_spec["revision"],
+        }
+        handle.write(canonical_json(row) + "\n")
+    handle.flush()
+    os.fsync(handle.fileno())
 
 
 def main() -> None:
@@ -171,44 +207,35 @@ def main() -> None:
             backend = "vllm"
         except ImportError:
             backend = "transformers"
-    if backend == "vllm":
-        texts, token_counts, resolved_backend = vllm_generate(
-            model_spec, cases, int(config["max_new_tokens"])
-        )
-    else:
-        texts, token_counts, resolved_backend = transformers_generate(
-            model_spec,
-            cases,
-            int(config["max_new_tokens"]),
-            int(args.batch_size),
-        )
-
     args.output.parent.mkdir(parents=True, exist_ok=True)
+    processed = 0
     with args.output.open("a", encoding="utf-8", newline="\n") as handle:
-        for case, text, token_count in zip(cases, texts, token_counts):
-            error = case["error"]
-            row = {
-                "case_id": case["case_id"],
-                "error_id": error["error_id"],
-                "domain": error["domain"],
-                "problem_key": error["problem_key"],
-                "generator_key": error["generator_key"],
-                "generator_family": error["generator_family"],
-                "corrector_key": args.model_key,
-                "corrector_family": model_spec["family"],
-                "corrector_size_rank": model_spec["size_rank"],
-                "wrapper": case["wrapper"],
-                "prompt_payload_sha256": prompt_payload_hash(error, case["wrapper"]),
-                "response": text,
-                "generated_tokens": token_count,
-                "hit_token_limit": token_count >= int(config["max_new_tokens"]),
-                "backend": resolved_backend,
-                "model_hf_id": model_spec["hf_id"],
-                "model_revision": model_spec["revision"],
-            }
-            handle.write(canonical_json(row) + "\n")
-            handle.flush()
-            os.fsync(handle.fileno())
+        if backend == "vllm":
+            texts, token_counts, resolved_backend = vllm_generate(
+                model_spec, cases, int(config["max_new_tokens"])
+            )
+            append_rows(
+                handle, cases, texts, token_counts, args.model_key, model_spec,
+                int(config["max_new_tokens"]), resolved_backend,
+            )
+        else:
+            resolved_backend = "transformers"
+            for batch, texts, token_counts in transformers_generate_batches(
+                model_spec,
+                cases,
+                int(config["max_new_tokens"]),
+                int(args.batch_size),
+            ):
+                append_rows(
+                    handle, batch, texts, token_counts, args.model_key, model_spec,
+                    int(config["max_new_tokens"]), resolved_backend,
+                )
+                processed += len(batch)
+                print(
+                    f"progress model={args.model_key} "
+                    f"completed={len(completed) + processed}/{len(completed) + len(cases)}",
+                    flush=True,
+                )
 
     manifest = {
         "status": "CORRECTOR_PART_COMPLETE" if args.limit else "CORRECTOR_COMPLETE",
