@@ -220,3 +220,28 @@ Only one AI translation remains at `ONE_THEORY_FIRST_HOLD`: matched agent workfl
 This amendment does not authorize an active seed or GPU run. The current state is **`NO_ACTIVE_SEED — ONE_THEORY_FIRST_HOLD`**. A low-prior fail-stop compilation idea is retained only for red-team comparison against validators, abstention, postconditions, rollback, and AFT.
 
 - Binding deeper reassessment: [`../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md`](../audits/SNOOKER_DEEP_MECHANISM_REASSESSMENT.md)
+
+## Receiver-native error-gain diagnostic
+
+The Qwen-lineage correction anomaly has now yielded one active mechanism candidate at
+**`PROMISING_REQUIRES_CAUSAL_INTERVENTION`**. Across all 960 frozen GSM8K
+trace-by-receiver likelihood cells, same-lineage wrong traces were `1.3231` within-receiver
+standard deviations lower in mean NLL than cross-lineage traces (problem-cluster bootstrap
+95% CI `[-1.3983, -1.2502]`). Lower receiver NLL predicted retention of the source's
+specific wrong answer after problem, corrector, generator, length, and lineage controls.
+The external-neutral coefficient was `-1.0005` (95% CI `[-1.5013, -0.4998]`), and all
+four leave-one-corrector-out coefficients remained negative.
+
+Adding NLL attenuated the same-lineage log-odds coefficient by `126.9%` under the
+external-neutral wrapper and `71.0%` under assistant history. This passes the frozen
+post-hoc diagnostic gate, but it is not causal mediation and does not reopen either the
+parent `KILL_NO_SELECTION_REVERSAL` decision or the no-trace baseline's
+`NO_GO_ENGINEERING` gate.
+
+The only authorized continuation is a small matched causal kill test that holds the wrong
+answer and computational skeleton fixed while intervening on receiver-native trace
+realization. Cross-provider scaling is unauthorized until that intervention passes.
+
+- Frozen diagnostic: [`../../analysis/native_likelihood_error_gain/DIAGNOSTIC_PROTOCOL.md`](../../analysis/native_likelihood_error_gain/DIAGNOSTIC_PROTOCOL.md)
+- Chinese results report: [`../../analysis/native_likelihood_error_gain/RESULTS_REPORT_ZH.md`](../../analysis/native_likelihood_error_gain/RESULTS_REPORT_ZH.md)
+- Machine-readable result: [`../../analysis/native_likelihood_error_gain/results/v1/DIAGNOSTIC_RESULT.json`](../../analysis/native_likelihood_error_gain/results/v1/DIAGNOSTIC_RESULT.json)

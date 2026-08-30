@@ -1,0 +1,12 @@
+{
+  "bank_sha256": "ae0fcf6d04ed7c3374fa37bb5d1a7874d8eefddbca77056598bd79c95a26e57b",
+  "cuda_visible_devices": "4",
+  "elapsed_seconds": 12.928160429000854,
+  "hostname": "ubuntu",
+  "model_hf_id": "Qwen/Qwen2.5-3B-Instruct",
+  "model_key": "qwen25_3b",
+  "model_revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "output_sha256": "6a9e017131c679e3d2d79517321df0f468df73c35aa3a3332eeb36c0768ccfb1",
+  "rows": 240,
+  "status": "LIKELIHOOD_MODEL_COMPLETE"
+}
