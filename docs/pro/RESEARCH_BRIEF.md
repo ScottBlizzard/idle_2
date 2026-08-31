@@ -126,6 +126,17 @@ An idea that is merely publishable, fashionable, or easy to run should still be 
 
 ## 8. Desired output from the next scout
 
-The scout should first diverge across multiple AI subfields, then independently kill weak candidates through current literature, theory, and baseline analysis. It should recommend **at most one** seed for experiment. `NO_GO_NEED_NEW_SEED` is a valid and preferred answer if nothing clears the bar.
+The previous free-divergence pass generated 16 candidates across 13 subfields and still
+returned `NO_GO_NEED_NEW_SEED`. The next scout should therefore use
+[`../current/SNOOKER_HIGH_INFORMATION_RESIDUES.md`](../current/SNOOKER_HIGH_INFORMATION_RESIDUES.md)
+and begin from **pairs of strong published results that appear incompatible**, not from a
+carrier or method idea. Each candidate must identify a hidden regime variable, actuate it
+prospectively inside a strict equivalence class, and predict a qualitative sign reversal or
+phase boundary before compute.
+
+The ready task specification is
+[`PRO_ATLAS_CONTRADICTION_SEARCH.md`](PRO_ATLAS_CONTRADICTION_SEARCH.md). It should recommend
+**at most one** seed for experiment. `NO_GO_NEED_NEW_SEED` is a valid and preferred answer
+if nothing clears the bar.
 
 The final deliverable must be a single self-contained Markdown document, not scattered chat notes.

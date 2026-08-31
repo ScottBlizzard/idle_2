@@ -2,6 +2,29 @@
 
 Last updated: 2026-08-31
 
+## Current search route — contradiction-first Atlas pass
+
+There is still **no authorized active paper seed and no authorized GPU experiment**. The
+post-intervention Pro divergence generated 16 candidates across 13 subfields and returned
+`NO_GO_NEED_NEW_SEED`. Fourteen candidates had direct or mechanism-level literature
+collisions. Signed-cycle frustration and evidence-hypergraph frustration survived only to
+red team, where both reduced to occupied graph-consistency mechanisms plus obvious repair
+or arbitration methods.
+
+The next search is deliberately narrower and no longer carrier-first. Five high-information
+residues from the lossless snooker reconstruction are retained only as templates for hidden
+regime variables: ownership of uncertain outcomes by the first actor, pre-path restriction
+versus post-contact consequence images, rule-induced problem-type handoff, endogenous
+fallback participation, and irreversible object-role deletion. A candidate must begin from
+two strong results in real tension, identify one prospectively actuable variable that makes
+their signs diverge, and survive the repository's existing negative space.
+
+- Residue packet: [`SNOOKER_HIGH_INFORMATION_RESIDUES.md`](SNOOKER_HIGH_INFORMATION_RESIDUES.md)
+- New Pro prompt: [`../pro/PRO_ATLAS_CONTRADICTION_SEARCH.md`](../pro/PRO_ATLAS_CONTRADICTION_SEARCH.md)
+
+The residues are not AI claims and do not confer novelty. `NO_GO_NEED_NEW_SEED` remains a
+valid outcome of the next search.
+
 ## Lineage trace-exposure kill test — 2026-08-31
 
 The post-hoc GSM8K anomaly was converted into a separately frozen 240-call no-trace

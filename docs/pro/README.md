@@ -15,6 +15,22 @@ the obvious semantic-rewrite continuation as an Oral seed. Read
 and [`../current/CURRENT_STATUS.md`](../current/CURRENT_STATUS.md) before proposing another
 seed. There is no authorized active experiment.
 
+The subsequent post-intervention free-divergence search also returned
+`NO_GO_NEED_NEW_SEED`: sixteen candidates across thirteen subfields were either direct
+collisions or reduced to an occupied mechanism plus an obvious method. Its strongest
+near-miss, signed-cycle frustration under locally matched contrastive supervision, remains
+classical structural balance/frustration plus an expected repair heuristic. Do not launch
+its cheap counterfactual experiment merely because it fits the hardware budget. The compact
+decision record is
+[`../audits/POST_INTERVENTION_DIVERGENCE_DECISION.md`](../audits/POST_INTERVENTION_DIVERGENCE_DECISION.md).
+
+The next research-scout route is now contradiction-first rather than carrier-first. Read
+[`../current/SNOOKER_HIGH_INFORMATION_RESIDUES.md`](../current/SNOOKER_HIGH_INFORMATION_RESIDUES.md)
+and use the ready prompt
+[`PRO_ATLAS_CONTRADICTION_SEARCH.md`](PRO_ATLAS_CONTRADICTION_SEARCH.md). The five source
+residues are hidden-variable templates, not novelty claims and not an instruction to map
+billiards metaphors directly into AI.
+
 ## Latest post-Pro decision
 
 - [`../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md`](../proposals/AI_RESEARCH_ORAL_SEED_DIVERGENCE.md): completed 15-candidate Pro search; terminal result `NO_GO_NEED_NEW_SEED`.
