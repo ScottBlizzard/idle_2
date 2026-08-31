@@ -1,0 +1,62 @@
+{
+  "batch_size": 64,
+  "checkpoints": [
+    "step512",
+    "step1000",
+    "step2000",
+    "step4000",
+    "step8000",
+    "step12000",
+    "step16000",
+    "step24000",
+    "step32000",
+    "step48000",
+    "step64000",
+    "step80000",
+    "step96000",
+    "step112000",
+    "step128000",
+    "step143000"
+  ],
+  "confirmation_seeds": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "discovery_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "dtype": "float16",
+  "effect_lobe_min_abs_logit": 0.15,
+  "families": [
+    "key_value_order"
+  ],
+  "frozen_at": "2026-08-31",
+  "item_seed": 20260831,
+  "items_per_family": 256,
+  "max_prompt_tokens": 256,
+  "minimum_accuracy_each_representation": 0.7,
+  "minimum_combined_seed_support": 7,
+  "minimum_confirmation_seed_support": 3,
+  "minimum_discovery_seed_support": 4,
+  "model_repositories": {
+    "1": "EleutherAI/pythia-410m-seed1",
+    "2": "EleutherAI/pythia-410m-seed2",
+    "3": "EleutherAI/pythia-410m-seed3",
+    "4": "EleutherAI/pythia-410m-seed4",
+    "5": "EleutherAI/pythia-410m-seed5",
+    "6": "EleutherAI/pythia-410m-seed6",
+    "7": "EleutherAI/pythia-410m-seed7",
+    "8": "EleutherAI/pythia-410m-seed8",
+    "9": "EleutherAI/pythia-410m-seed9"
+  },
+  "model_size": "410m",
+  "required_sign_crossings": 2,
+  "second_scale_required_after_stage0": true,
+  "study_id": "metamorphic_reentry_v2_carrier_calibration"
+}

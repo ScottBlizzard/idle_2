@@ -1,0 +1,16 @@
+{
+  "batch_size": 64,
+  "checkpoints": [
+    "step143000"
+  ],
+  "dtype": "float16",
+  "families": [
+    "addition_associativity"
+  ],
+  "items_per_family": 96,
+  "max_prompt_tokens": 256,
+  "model_repositories": {
+    "1": "EleutherAI/pythia-410m-seed1"
+  },
+  "study_id": "addition_associativity_carrier_calibration"
+}

@@ -1,0 +1,15 @@
+{
+  "accuracies": {
+    "confirmation": {
+      "original": 0.9140625,
+      "transformed": 0.7265625
+    },
+    "discovery": {
+      "original": 0.6640625,
+      "transformed": 0.8359375
+    }
+  },
+  "decision": "CARRIER_CAPABILITY_FAIL",
+  "expected_records": 512,
+  "records": 512
+}

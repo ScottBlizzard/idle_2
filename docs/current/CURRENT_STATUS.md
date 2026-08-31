@@ -32,6 +32,18 @@ permitted only as a newly frozen, base-model-appropriate carrier with those defe
 
 - V1 failure record: [`../../experiments/metamorphic_reentry_dynamics/V1_PREFLIGHT_FAILURE.md`](../../experiments/metamorphic_reentry_dynamics/V1_PREFLIGHT_FAILURE.md)
 
+Two capability-only carrier calibrations now close the PolyPythias route rather than
+repair it. A key-value lookup carrier had a sub-threshold 66.41% cell and a large
+representation imbalance; a stricter small-integer associativity carrier remained at
+exactly 50% in both forms. Further simplification would reduce the task to copying. No v2
+discovery is authorized.
+
+The binding next process is residual-first: build a ledger of exact unexplained cells from
+recent papers with public artifacts, reproduce at most four anomalies for at most one GPU
+hour each, and only then design a separating causal cube. The consolidated three-agent
+decision is in
+[`../audits/MULTI_AGENT_ANOMALY_FIRST_RESET.md`](../audits/MULTI_AGENT_ANOMALY_FIRST_RESET.md).
+
 ## Current search route — contradiction-first Atlas pass
 
 There is still **no authorized active paper seed and no authorized GPU experiment**. The

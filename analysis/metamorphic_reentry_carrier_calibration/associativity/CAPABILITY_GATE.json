@@ -1,0 +1,12 @@
+{
+  "absolute_gap": 0.0,
+  "accuracies": {
+    "original": 0.5,
+    "transformed": 0.5
+  },
+  "decision": "CARRIER_CAPABILITY_FAIL",
+  "expected_records": 192,
+  "maximum_gap": 0.1,
+  "minimum_accuracy": 0.7,
+  "records": 192
+}
