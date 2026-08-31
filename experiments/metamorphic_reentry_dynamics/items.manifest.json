@@ -1,0 +1,11 @@
+{
+  "config_sha256": "9b3aae54e0f21ff12d429a8d8c8b5bfad3473ff9a88d3cba82db3fc9055079ed",
+  "families": {
+    "boolean_demorgan": 96,
+    "graph_bijection": 96,
+    "linear_reparameterization": 96
+  },
+  "items_sha256": "80d66b616298b8eea4e2e059d3f3315e024b751a16896f40a4c876f8d1403a7e",
+  "n_items": 288,
+  "study_id": "metamorphic_reentry_stage0_v1"
+}

@@ -1,0 +1,21 @@
+{
+  "accuracies": {
+    "boolean_demorgan": {
+      "original": 0.5520833333333334,
+      "transformed": 0.5833333333333334
+    },
+    "graph_bijection": {
+      "original": 0.40625,
+      "transformed": 0.4270833333333333
+    },
+    "linear_reparameterization": {
+      "original": 0.53125,
+      "transformed": 0.3958333333333333
+    }
+  },
+  "capable_families": [],
+  "decision": "NO_GO_PREFLIGHT_CAPABILITY_OR_COMPLETENESS",
+  "expected_records": 576,
+  "records": 576,
+  "study_id": "metamorphic_reentry_stage0_v1"
+}

@@ -1,5 +1,12 @@
 # Experiments
 
+## Current anomaly-discovery scan
+
+- [`metamorphic_reentry_dynamics/`](metamorphic_reentry_dynamics/): frozen Stage 0 scan
+  for cross-seed re-entrant sign changes in the effect of strictly equivalent input
+  transformations across PolyPythias training checkpoints. This is anomaly discovery,
+  not an active paper seed.
+
 Each experiment lives in a self-contained directory with its benchmark generator, inference code, tests, raw outputs, and analysis.
 
 ## Completed

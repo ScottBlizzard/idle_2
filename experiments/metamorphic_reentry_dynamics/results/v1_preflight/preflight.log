@@ -1,0 +1,25 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.6.0+cu118).
+Loading weights:   0%|          | 0/292 [00:00<?, ?it/s]Loading weights: 100%|██████████| 292/292 [00:00<00:00, 29157.62it/s]
+{"output": "/mnt/sdb/ccj/idle_2/metamorphic_reentry_dynamics/results/preflight/seed1_step143000.jsonl", "records": 576, "repo": "EleutherAI/pythia-410m-seed1", "checkpoint": "step143000"}
+{
+  "accuracies": {
+    "boolean_demorgan": {
+      "original": 0.5520833333333334,
+      "transformed": 0.5833333333333334
+    },
+    "graph_bijection": {
+      "original": 0.40625,
+      "transformed": 0.4270833333333333
+    },
+    "linear_reparameterization": {
+      "original": 0.53125,
+      "transformed": 0.3958333333333333
+    }
+  },
+  "capable_families": [],
+  "decision": "NO_GO_PREFLIGHT_CAPABILITY_OR_COMPLETENESS",
+  "expected_records": 576,
+  "records": 576,
+  "study_id": "metamorphic_reentry_stage0_v1"
+}

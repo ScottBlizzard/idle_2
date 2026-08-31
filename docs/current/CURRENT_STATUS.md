@@ -2,6 +2,36 @@
 
 Last updated: 2026-08-31
 
+## Anomaly-first reset — Stage 0 frozen
+
+The Atlas contradiction search returned `NO_GO_NEED_NEW_SEED`: all fifteen candidates
+collided or reduced to occupied learning geometry, security, reachability, or selection
+mechanisms. A three-way independent reset also found no paper seed. It did identify a
+better discovery process: stop deriving carriers from concepts and first search for a
+stable, unexplained residual in public longitudinal artifacts.
+
+One outcome-blind Stage 0 is now frozen, but no paper seed is active. It tests whether the
+effect of a strictly semantics-preserving transformation undergoes a reproducible
+re-entrant sign pattern across PolyPythias training checkpoints and independent training
+seeds. Static prompt sensitivity, monotone convergence, or one competence crossing are
+automatic failures. Discovery seeds 1–5 are separated from sealed confirmation seeds
+6–9, and a surviving pattern still requires a second model scale before any mechanism or
+paper claim is authorized.
+
+- Protocol: [`../../experiments/metamorphic_reentry_dynamics/PREREGISTRATION.md`](../../experiments/metamorphic_reentry_dynamics/PREREGISTRATION.md)
+- Frozen machine config: [`../../experiments/metamorphic_reentry_dynamics/FROZEN_CONFIG.json`](../../experiments/metamorphic_reentry_dynamics/FROZEN_CONFIG.json)
+- Source decision packet: [`SNOOKER_HIGH_INFORMATION_RESIDUES.md`](SNOOKER_HIGH_INFORMATION_RESIDUES.md)
+
+The v1 final-checkpoint preflight completed 576/576 records but failed its frozen
+capability gate: no task family exceeded 60% forced-choice accuracy in both equivalent
+representations. Discovery was not launched and no longitudinal effect was inspected.
+An independent code audit additionally found that the first gate counted checkpoint-wise
+majorities rather than the same seeds' complete trajectories and lacked executable
+confirmation sealing. V1 is therefore preserved as a failed design, not rescued. A v2 is
+permitted only as a newly frozen, base-model-appropriate carrier with those defects fixed.
+
+- V1 failure record: [`../../experiments/metamorphic_reentry_dynamics/V1_PREFLIGHT_FAILURE.md`](../../experiments/metamorphic_reentry_dynamics/V1_PREFLIGHT_FAILURE.md)
+
 ## Current search route — contradiction-first Atlas pass
 
 There is still **no authorized active paper seed and no authorized GPU experiment**. The
